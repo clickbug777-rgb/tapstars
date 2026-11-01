@@ -22,7 +22,7 @@ import { CONFIG } from '../../lib/config';
 
 export const BusinessProfilePage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const { getBusinessBySlug, recordEvent } = useData();
+  const { getBusinessBySlug, recordEvent, isLoading } = useData();
 
   const business = slug ? getBusinessBySlug(slug) : undefined;
 
@@ -37,6 +37,17 @@ export const BusinessProfilePage: React.FC = () => {
       });
     }
   }, [business?.id]);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-neutral-100/70 flex items-center justify-center p-4">
+        <div className="flex flex-col items-center gap-3">
+          <div className="w-8 h-8 border-2 border-neutral-900 border-t-transparent rounded-full animate-spin"></div>
+          <span className="text-xs text-neutral-500 font-medium">Opening business profile...</span>
+        </div>
+      </div>
+    );
+  }
 
   if (!business) {
     return (

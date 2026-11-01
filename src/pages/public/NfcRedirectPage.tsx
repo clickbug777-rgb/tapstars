@@ -10,10 +10,12 @@ export const NfcRedirectPage: React.FC = () => {
   const cardUid = searchParams.get('cid') || undefined;
   const navigate = useNavigate();
 
-  const { getBusinessBySlug, recordEvent } = useData();
+  const { getBusinessBySlug, recordEvent, isLoading } = useData();
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   useEffect(() => {
+    if (isLoading) return; // Wait for database fetch
+
     if (!slug) {
       navigate('/');
       return;

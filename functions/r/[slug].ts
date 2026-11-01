@@ -7,6 +7,9 @@ interface Env {
   SUPABASE_ANON_KEY?: string;
 }
 
+const DEFAULT_SUPABASE_URL = 'https://zxuxszlfshakdtdrwqtk.supabase.co';
+const DEFAULT_SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp4dXhzemxmc2hha2R0ZHJ3cXRrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM1MTk3NDcsImV4cCI6MjEwOTA5NTc0N30.KDzXeEQwV9YoWr-7iO9xQuavB86VvdnIKSKuA_yUn8w';
+
 export const onRequest: PagesFunction<Env> = async (context) => {
   const { request, params, env } = context;
   const slug = params.slug as string;
@@ -26,16 +29,11 @@ export const onRequest: PagesFunction<Env> = async (context) => {
   // Detect bots/crawlers
   const isBot = /bot|spider|crawl|preview|slurp|facebookexternalhit|whatsapp/i.test(userAgent);
 
-  const supabaseUrl = env.SUPABASE_URL || env.VITE_SUPABASE_URL;
-  const supabaseKey = env.SUPABASE_ANON_KEY || env.VITE_SUPABASE_ANON_KEY;
+  const supabaseUrl = env.SUPABASE_URL || env.VITE_SUPABASE_URL || DEFAULT_SUPABASE_URL;
+  const supabaseKey = env.SUPABASE_ANON_KEY || env.VITE_SUPABASE_ANON_KEY || DEFAULT_SUPABASE_ANON_KEY;
 
   if (!slug) {
     return Response.redirect(`${url.origin}/`, 302);
-  }
-
-  // If Supabase is not configured yet, redirect to SPA route to handle seamlessly
-  if (!supabaseUrl || !supabaseKey) {
-    return Response.redirect(`${url.origin}/#/r/${slug}${url.search}`, 302);
   }
 
   try {
@@ -52,46 +50,19 @@ export const onRequest: PagesFunction<Env> = async (context) => {
     });
 
     if (!res.ok) {
-      // Fallback to client-side routing
       return Response.redirect(`${url.origin}/p/${slug}`, 302);
     }
 
     const data: any = await res.json();
     if (!data || data.length === 0) {
-      // Slug not found
-      return Response.redirect(`${url.origin}/p/not-found?slug=${encodeURIComponent(slug)}`, 302);
+      return Response.redirect(`${url.origin}/p/${slug}`, 302);
     }
 
     const business = data[0];
 
     // If business is paused/inactive
     if (!business.is_active) {
-      return new Response(
-        `<!DOCTYPE html>
-        <html>
-          <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>Card Inactive - TapStars</title>
-            <style>
-              body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background: #fafafa; color: #18181b; }
-              .card { background: white; padding: 2rem; border-radius: 1rem; border: 1px solid #e4e4e7; max-width: 400px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-              h1 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; }
-              p { font-size: 0.875rem; color: #71717a; line-height: 1.5; }
-            </style>
-          </head>
-          <body>
-            <div class="card">
-              <h1>Card Inactive</h1>
-              <p>This business profile is currently suspended or undergoing updates. Please check back shortly.</p>
-            </div>
-          </body>
-        </html>`,
-        {
-          status: 403,
-          headers: { 'Content-Type': 'text/html; charset=utf-8' },
-        }
-      );
+      return Response.redirect(`${url.origin}/p/${business.slug}`, 302);
     }
 
     // Record analytics asynchronously in background without blocking redirect
@@ -107,6 +78,7 @@ export const onRequest: PagesFunction<Env> = async (context) => {
           },
           body: JSON.stringify({
             business_id: business.id,
+            card_id: cardUid || null,
             event_type: 'nfc_tap',
             device_category: deviceCategory,
             destination_mode: business.destination_mode,
@@ -117,18 +89,17 @@ export const onRequest: PagesFunction<Env> = async (context) => {
     }
 
     // Determine target redirect destination
+    // Mode A: Direct Google Review
     if (business.destination_mode === 'direct_review' && business.google_review_url) {
-      // Validate review URL protocol to prevent open redirect vulnerabilities
       const targetUrl = business.google_review_url.trim();
-      if (/^https:\/\//i.test(targetUrl)) {
+      if (/^https?:\/\//i.test(targetUrl)) {
         return Response.redirect(targetUrl, 302);
       }
     }
 
-    // Default or Mode B: Digital Business Profile
+    // Mode B: Digital Business Profile
     return Response.redirect(`${url.origin}/p/${business.slug}`, 302);
   } catch (error) {
-    // If anything fails at edge, fallback to SPA
     return Response.redirect(`${url.origin}/p/${slug}`, 302);
   }
 };
