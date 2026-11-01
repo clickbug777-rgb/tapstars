@@ -14,6 +14,8 @@ interface BusinessFormModalProps {
 }
 
 const CATEGORIES = [
+  'Education & School',
+  'Play School & Daycare',
   'Restaurant & Cafe',
   'Salon & Spa',
   'Clinic & Healthcare',
