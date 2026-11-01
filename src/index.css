@@ -1,33 +1,31 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* TapStars design tokens are in tokens.css */
-@import "./tokens.css";
+@layer base {
+  :root {
+    --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
 
-:root {
-  --accent: #0066cc;
-  --accent-bg: #e6f0ff;
-  --accent-border: #0066cc40;
+  body {
+    font-family: var(--font-sans);
+    color: #0f172a;
+    background-color: #fafafa;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
-/* Focus visible - always visible, never removed */
-:focus-visible {
-  outline: 2px solid var(--color-ring, #0066cc);
-  outline-offset: 2px;
-}
-
-/* Overflow-x: clip - never hidden, never 100vw (Hallmark floor rule 34) */
-html, body {
-  overflow-x: clip;
-}
-
-/* Scrollbar */
-.scrollbar-thin::-webkit-scrollbar {
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
-.scrollbar-thin::-webkit-scrollbar-thumb {
-  background-color: var(--color-border, #e6e6ea);
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
   border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa;
 }
