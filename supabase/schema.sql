@@ -68,11 +68,14 @@ CREATE INDEX IF NOT EXISTS idx_analytics_event_type ON public.analytics_events(e
 
 -- 5. Updated_at Trigger
 CREATE OR REPLACE FUNCTION update_updated_at_column()
-RETURNS TRIGGER AS $$
+RETURNS TRIGGER 
+LANGUAGE plpgsql
+AS $$
 BEGIN
     NEW.updated_at = now();
     RETURN NEW;
-$$ language 'plpgsql';
+END;
+$$;
 
 DROP TRIGGER IF EXISTS update_businesses_updated_at ON public.businesses;
 CREATE TRIGGER update_businesses_updated_at
@@ -89,14 +92,12 @@ ALTER TABLE public.nfc_cards ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.analytics_events ENABLE ROW LEVEL SECURITY;
 
 -- A. Businesses RLS
--- Public can view active businesses
 DROP POLICY IF EXISTS "Public can view active businesses" ON public.businesses;
 CREATE POLICY "Public can view active businesses"
     ON public.businesses
     FOR SELECT
     USING (is_active = true);
 
--- Authenticated users (Admins) have full management rights
 DROP POLICY IF EXISTS "Admins have full access to businesses" ON public.businesses;
 CREATE POLICY "Admins have full access to businesses"
     ON public.businesses
@@ -106,14 +107,12 @@ CREATE POLICY "Admins have full access to businesses"
     WITH CHECK (true);
 
 -- B. NFC Cards RLS
--- Public can read active cards for card UID lookup
 DROP POLICY IF EXISTS "Public can read active NFC cards" ON public.nfc_cards;
 CREATE POLICY "Public can read active NFC cards"
     ON public.nfc_cards
     FOR SELECT
     USING (is_active = true);
 
--- Admins have full access to NFC cards
 DROP POLICY IF EXISTS "Admins have full access to nfc_cards" ON public.nfc_cards;
 CREATE POLICY "Admins have full access to nfc_cards"
     ON public.nfc_cards
@@ -123,14 +122,12 @@ CREATE POLICY "Admins have full access to nfc_cards"
     WITH CHECK (true);
 
 -- C. Analytics Events RLS
--- Public can log events (nfc taps, scans, clicks)
 DROP POLICY IF EXISTS "Public can record analytics events" ON public.analytics_events;
 CREATE POLICY "Public can record analytics events"
     ON public.analytics_events
     FOR INSERT
     WITH CHECK (true);
 
--- Admins can read and analyze analytics events
 DROP POLICY IF EXISTS "Admins can view analytics events" ON public.analytics_events;
 CREATE POLICY "Admins can view analytics events"
     ON public.analytics_events
@@ -138,7 +135,6 @@ CREATE POLICY "Admins can view analytics events"
     TO authenticated
     USING (true);
 
--- Admins can delete or manage old analytics
 DROP POLICY IF EXISTS "Admins can manage analytics events" ON public.analytics_events;
 CREATE POLICY "Admins can manage analytics events"
     ON public.analytics_events
