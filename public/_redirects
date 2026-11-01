@@ -1,0 +1,3 @@
+# Cloudflare Pages SPA & Functions redirects
+/r/*    /r/:splat   200
+/*      /index.html 200
