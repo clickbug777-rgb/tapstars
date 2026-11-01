@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import {
   Phone,
@@ -19,12 +19,46 @@ import { useData } from '../../context/DataContext';
 import { downloadVCard } from '../../lib/vcard';
 import { formatWhatsAppUrl, sanitizePhone, getDeviceCategory, isBot } from '../../lib/utils';
 import { CONFIG } from '../../lib/config';
+import { Business } from '../../types';
 
 export const BusinessProfilePage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const { getBusinessBySlug, recordEvent, isLoading } = useData();
 
-  const business = slug ? getBusinessBySlug(slug) : undefined;
+  const [directBusiness, setDirectBusiness] = useState<Business | null>(null);
+  const [directLoading, setDirectLoading] = useState(false);
+
+  const business = directBusiness || (slug ? getBusinessBySlug(slug) : undefined);
+
+  // Fallback: If not found in context cache, query Supabase directly by slug
+  useEffect(() => {
+    if (!slug) return;
+    const cached = getBusinessBySlug(slug);
+    if (!cached && !isLoading) {
+      setDirectLoading(true);
+      fetch(
+        `${CONFIG.supabaseUrl}/rest/v1/businesses?slug=eq.${encodeURIComponent(
+          slug.trim().toLowerCase()
+        )}&select=*`,
+        {
+          headers: {
+            apikey: CONFIG.supabaseAnonKey,
+            Authorization: `Bearer ${CONFIG.supabaseAnonKey}`,
+          },
+        }
+      )
+        .then((r) => r.json())
+        .then((data: any) => {
+          if (Array.isArray(data) && data.length > 0) {
+            setDirectBusiness(data[0] as Business);
+          }
+          setDirectLoading(false);
+        })
+        .catch(() => {
+          setDirectLoading(false);
+        });
+    }
+  }, [slug, getBusinessBySlug, isLoading]);
 
   useEffect(() => {
     // Record profile view analytics on mount if not a bot
@@ -38,7 +72,7 @@ export const BusinessProfilePage: React.FC = () => {
     }
   }, [business?.id]);
 
-  if (isLoading) {
+  if (isLoading || directLoading) {
     return (
       <div className="min-h-screen bg-neutral-100/70 flex items-center justify-center p-4">
         <div className="flex flex-col items-center gap-3">
@@ -356,7 +390,7 @@ export const BusinessProfilePage: React.FC = () => {
         {/* Footer Brand Seal */}
         <div className="py-4 border-t border-neutral-100 text-center text-[10px] text-neutral-400 font-medium">
           <Link to="/" className="inline-flex items-center gap-1 hover:text-neutral-700 transition-colors">
-            <Sparkles className="w-3 h-3 text-amber-500" />
+            <Sparkles className="w-3 mx-auto text-amber-500" />
             <span>Powered by TapStars NFC Platform</span>
           </Link>
         </div>
