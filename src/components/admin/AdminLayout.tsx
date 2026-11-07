@@ -6,7 +6,7 @@ import { useAuth } from '../../context/AuthContext';
 import { Menu, X } from 'lucide-react';
 
 export const AdminLayout: React.FC = () => {
-  const { isAdmin, isLoading } = useAuth();
+  const { user, isAdmin, isLoading } = useAuth();
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
 
   if (isLoading) {
@@ -17,8 +17,15 @@ export const AdminLayout: React.FC = () => {
     );
   }
 
-  if (!isAdmin) {
+  // Strict backend role verification:
+  // 1. If not logged in -> redirect to /login
+  if (!user) {
     return <Navigate to="/login" replace />;
+  }
+
+  // 2. If logged in but NOT an authorized administrator -> redirect to client dashboard
+  if (!isAdmin) {
+    return <Navigate to="/dashboard" replace />;
   }
 
   return (

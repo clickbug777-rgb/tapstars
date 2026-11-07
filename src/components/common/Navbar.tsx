@@ -9,12 +9,12 @@ export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-white/85 border-b border-neutral-200/70 transition-all">
+    <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-white/90 border-b border-neutral-200/70 transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Brand Logo */}
           <Link to="/" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 rounded-xl bg-neutral-900 text-white flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform duration-200">
+            <div className="w-9 h-9 rounded-xl bg-neutral-900 text-white flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform duration-200">
               <Smartphone className="w-5 h-5 text-blue-400" />
             </div>
             <div className="flex flex-col">
@@ -48,27 +48,37 @@ export const Navbar: React.FC = () => {
 
           {/* Desktop Right Actions */}
           <div className="hidden md:flex items-center gap-3">
-            {isAdmin ? (
-              <button
-                onClick={() => navigate('/admin')}
-                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-neutral-900 hover:bg-neutral-800 rounded-full shadow-sm transition-all"
-              >
-                <LayoutDashboard className="w-4 h-4 text-blue-400" />
-                Admin Dashboard
-              </button>
+            {user ? (
+              isAdmin ? (
+                <button
+                  onClick={() => navigate('/admin')}
+                  className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-neutral-950 hover:bg-neutral-800 rounded-full shadow-xs transition-all"
+                >
+                  <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
+                  <span>Admin Portal</span>
+                </button>
+              ) : (
+                <button
+                  onClick={() => navigate('/dashboard')}
+                  className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-full shadow-xs transition-all"
+                >
+                  <LayoutDashboard className="w-3.5 h-3.5 text-white" />
+                  <span>Client Dashboard</span>
+                </button>
+              )
             ) : (
               <>
                 <Link
                   to="/login"
-                  className="px-4 py-2 text-sm font-medium text-neutral-700 hover:text-neutral-950 transition-colors"
+                  className="px-3.5 py-2 text-xs font-semibold text-neutral-700 hover:text-neutral-950 transition-colors"
                 >
-                  Admin Sign In
+                  Client Sign In
                 </Link>
                 <a
                   href="#contact"
-                  className="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium text-white bg-neutral-900 hover:bg-neutral-800 rounded-full shadow-sm transition-all group"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-white bg-neutral-950 hover:bg-neutral-800 rounded-full shadow-xs transition-all group"
                 >
-                  Order NFC Cards
+                  <span>Order NFC Cards</span>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
                 </a>
               </>
@@ -124,31 +134,31 @@ export const Navbar: React.FC = () => {
           >
             FAQ
           </a>
-          <div className="pt-3 border-t border-neutral-200/70 flex flex-col gap-2.5">
-            {isAdmin ? (
+
+          <div className="pt-4 border-t border-neutral-200 space-y-2">
+            {user ? (
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);
-                  navigate('/admin');
+                  navigate(isAdmin ? '/admin' : '/dashboard');
                 }}
-                className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium text-white bg-neutral-900 rounded-xl"
+                className="w-full text-center py-2.5 rounded-xl font-semibold text-xs bg-neutral-950 text-white"
               >
-                <LayoutDashboard className="w-4 h-4 text-blue-400" />
-                Go to Admin Dashboard
+                Go to Dashboard
               </button>
             ) : (
               <>
                 <Link
                   to="/login"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="w-full text-center py-2.5 text-sm font-medium text-neutral-800 bg-neutral-100 rounded-xl"
+                  className="block text-center py-2.5 rounded-xl font-semibold text-xs border border-neutral-200 text-neutral-900"
                 >
-                  Admin Sign In
+                  Client Sign In
                 </Link>
                 <a
                   href="#contact"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="w-full text-center py-2.5 text-sm font-medium text-white bg-neutral-900 rounded-xl"
+                  className="block text-center py-2.5 rounded-xl font-semibold text-xs bg-neutral-950 text-white"
                 >
                   Order NFC Cards
                 </a>

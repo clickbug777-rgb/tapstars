@@ -28,16 +28,36 @@ export const CONFIG = {
   tagline: 'One Tap. Your Entire Business.',
   defaultDomain: 'tapstars.pages.dev',
   getBaseUrl: getInitialBaseUrl,
+  
+  // Permanent Edge Card Tracking Identity (Highest priority)
+  getCardTrackingUrl: (cardUid: string): string => {
+    const base = getInitialBaseUrl();
+    return `${base}/t/${encodeURIComponent(cardUid.toLowerCase())}`;
+  },
+
+  // Permanent Edge QR Code Tracking Identity
+  getQrTrackingUrl: (cardUid: string): string => {
+    const base = getInitialBaseUrl();
+    return `${base}/t/${encodeURIComponent(cardUid.toLowerCase())}?qr=1`;
+  },
+
+  // Backward compatible NFC URL (for existing pre-programmed cards)
   getNfcUrl: (slug: string, cardUid?: string): string => {
     const base = getInitialBaseUrl();
     const query = cardUid ? `?cid=${encodeURIComponent(cardUid)}` : '';
     return `${base}/r/${slug}${query}`;
   },
+
   getProfileUrl: (slug: string): string => {
     const base = getInitialBaseUrl();
     return `${base}/p/${slug}`;
   },
+
   supabaseUrl: import.meta.env.VITE_SUPABASE_URL || DEFAULT_SUPABASE_URL,
   supabaseAnonKey: import.meta.env.VITE_SUPABASE_ANON_KEY || DEFAULT_SUPABASE_ANON_KEY,
-  isSupabaseConfigured: (): boolean => true,
+  isSupabaseConfigured: (): boolean => {
+    const url = import.meta.env.VITE_SUPABASE_URL;
+    const key = import.meta.env.VITE_SUPABASE_ANON_KEY;
+    return Boolean(url && key && url.includes('supabase.co'));
+  },
 };
