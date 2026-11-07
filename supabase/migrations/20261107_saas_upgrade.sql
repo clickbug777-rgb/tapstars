@@ -1,5 +1,5 @@
 -- ==============================================================================
--- TAPSTARS V2 — SAAS PLATFORM UPGRADE MIGRATION
+-- TAPSTARS V2 — SAAS PLATFORM UPGRADE MIGRATION (IDEMPOTENT & PRODUCTION READY)
 -- Multi-Tenant Client Dashboards, Card Assignment, RLS & Reputation Architecture
 -- ==============================================================================
 
@@ -131,7 +131,27 @@ CREATE INDEX IF NOT EXISTS idx_tracking_events_biz_time ON public.tracking_event
 CREATE INDEX IF NOT EXISTS idx_tracking_events_card ON public.tracking_events(card_id);
 CREATE INDEX IF NOT EXISTS idx_tracking_events_type ON public.tracking_events(event_type);
 
--- Keep backwards-compatible view for analytics_events
+-- Safe Migration for analytics_events:
+-- If analytics_events already exists as a physical table from v1, migrate any records and drop table
+DO $$
+BEGIN
+    IF EXISTS (
+        SELECT 1 FROM information_schema.tables 
+        WHERE table_schema = 'public' 
+        AND table_name = 'analytics_events' 
+        AND table_type = 'BASE TABLE'
+    ) THEN
+        INSERT INTO public.tracking_events (id, business_id, card_id, event_type, device_category, destination_mode, referrer, created_at)
+        SELECT 
+            id, business_id, card_id, event_type, device_category, destination_mode, referrer, created_at
+        FROM public.analytics_events
+        ON CONFLICT DO NOTHING;
+
+        DROP TABLE public.analytics_events CASCADE;
+    END IF;
+END $$;
+
+-- Create backwards-compatible view so legacy code querying analytics_events works seamlessly
 CREATE OR REPLACE VIEW public.analytics_events AS
 SELECT * FROM public.tracking_events;
 
