@@ -5,6 +5,11 @@ import { DataProvider } from './context/DataContext';
 
 // 1. Marketing & Public Pages
 import { HomePage } from './pages/marketing/HomePage';
+import { ProductsPage } from './pages/marketing/ProductsPage';
+import { SolutionsPage } from './pages/marketing/SolutionsPage';
+import { HowItWorksPage } from './pages/marketing/HowItWorksPage';
+import { AboutPage } from './pages/marketing/AboutPage';
+import { ContactPage } from './pages/marketing/ContactPage';
 import { BusinessProfilePage } from './pages/public/BusinessProfilePage';
 import { NfcRedirectPage } from './pages/public/NfcRedirectPage';
 import { CardTapLandingPage } from './pages/public/CardTapLandingPage';
@@ -38,6 +43,11 @@ export const App: React.FC = () => {
           <Routes>
             {/* 1. Public Marketing Website */}
             <Route path="/" element={<HomePage />} />
+            <Route path="/products" element={<ProductsPage />} />
+            <Route path="/solutions" element={<SolutionsPage />} />
+            <Route path="/how-it-works" element={<HowItWorksPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
 
             {/* 2. Customer Contactless Touchpoints */}
             {/* Digital Business Profile */}
