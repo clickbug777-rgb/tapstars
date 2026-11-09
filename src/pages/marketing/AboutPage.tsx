@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, MessageCircle } from 'lucide-react';
 import { Navbar } from '../../components/common/Navbar';
 import { Footer } from '../../components/common/Footer';
+import { InstagramIcon } from '../../components/common/SocialIcons';
 
 export const AboutPage: React.FC = () => {
   return (
@@ -89,6 +90,39 @@ export const AboutPage: React.FC = () => {
                 We measure real customer taps, not vanity claims. Built to deliver tangible reputation and operational
                 growth.
               </p>
+            </div>
+          </div>
+
+          {/* Founder Profile */}
+          <div className="p-8 rounded-3xl bg-neutral-950 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-md border border-neutral-800">
+            <div className="space-y-2 text-center sm:text-left">
+              <span className="text-[11px] font-mono uppercase tracking-wider text-blue-400 font-semibold">
+                Founder & Vision
+              </span>
+              <h3 className="text-2xl font-bold">JayrajSinh Mahida</h3>
+              <p className="text-xs text-neutral-400 max-w-md leading-relaxed">
+                Building zero-friction NFC and QR touchpoints designed for restaurants, salons, clinics, and modern businesses.
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center justify-center sm:justify-end gap-3 shrink-0">
+              <a
+                href="https://instagram.com/the__jayrajsinh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-xs text-white transition-colors"
+              >
+                <InstagramIcon className="w-3.5 h-3.5 text-pink-500" />
+                <span>@the__jayrajsinh</span>
+              </a>
+              <a
+                href="https://wa.me/917383273362?text=Hi%20Jayraj,%20I%20am%20interested%20in%20TapStars"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-xs text-white font-bold transition-colors shadow-sm"
+              >
+                <MessageCircle className="w-3.5 h-3.5 fill-white" />
+                <span>WhatsApp</span>
+              </a>
             </div>
           </div>
         </div>

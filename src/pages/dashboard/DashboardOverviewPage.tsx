@@ -155,7 +155,7 @@ export const DashboardOverviewPage: React.FC = () => {
               Configure Google Review URL
             </Link>
             <a
-              href="mailto:support@tapstars.dev?subject=New%20NFC%20Card%20Request"
+              href="https://wa.me/917383273362?text=Hi%20Jayraj,%20I%20would%20like%20to%20order%20additional%20physical%20NFC%20cards"
               className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-neutral-100 text-neutral-800 text-xs font-semibold hover:bg-neutral-200 transition-colors"
             >
               Order Physical NFC Cards

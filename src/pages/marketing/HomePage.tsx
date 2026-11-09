@@ -41,6 +41,8 @@ export const HomePage: React.FC = () => {
   const handleInquirySubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setInquirySent(true);
+    const text = `Hi Jayraj, I would like to order TapStars cards.\nName: ${inquiryName}\nPhone: ${inquiryPhone}\nPackage: ${inquiryProduct}`;
+    window.open(`https://wa.me/917383273362?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   const faqs = [
@@ -1043,7 +1045,7 @@ export const HomePage: React.FC = () => {
                       required
                       value={inquiryPhone}
                       onChange={(e) => setInquiryPhone(e.target.value)}
-                      placeholder="+91 98200 12345"
+                      placeholder="+91 73832 73362"
                       className="w-full text-xs bg-white/10 border border-white/20 rounded-xl px-3.5 py-2.5 text-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                   </div>
@@ -1082,7 +1084,7 @@ export const HomePage: React.FC = () => {
                   </button>
 
                   <a
-                    href="https://wa.me/919820012345?text=Hi%20TapStars,%20I%20am%20interested%20in%20ordering%20NFC%20Google%20Review%20cards"
+                    href="https://wa.me/917383273362?text=Hi%20Jayraj,%20I%20am%20interested%20in%20ordering%20TapStars%20NFC%20Google%20Review%20cards"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full sm:w-auto px-5 py-3 rounded-xl bg-white/10 text-white text-xs font-semibold hover:bg-white/20 transition-colors border border-white/15 text-center flex items-center justify-center gap-1.5"

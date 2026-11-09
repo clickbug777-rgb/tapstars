@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Wifi, ShieldCheck, Star, ArrowUpRight, CheckCircle2, Heart } from 'lucide-react';
+import { Wifi, Phone, Mail, MessageCircle } from 'lucide-react';
+import { InstagramIcon } from './SocialIcons';
+
+const currentYear = new Date().getFullYear();
 
 export const Footer: React.FC = () => {
   return (
@@ -19,13 +22,14 @@ export const Footer: React.FC = () => {
               One Tap. Endless Possibilities. Connect your customers to your business with smart contactless NFC and QR
               solutions &mdash; powered by permanent edge redirects you control from your dashboard.
             </p>
+
             <div className="pt-2 flex items-center gap-2 text-xs text-neutral-400">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               <span>Cloudflare Global Edge Network • Supabase PostgreSQL Live</span>
             </div>
           </div>
 
-          {/* Column 1: Products */}
+          {/* Column 1: Hardware & Solutions */}
           <div className="lg:col-span-2 space-y-3">
             <h4 className="font-bold text-xs uppercase tracking-wider text-neutral-200 font-mono">
               Hardware
@@ -47,58 +51,19 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/products" className="hover:text-white transition-colors">
-                  Countertop Standees
+                <Link to="/solutions" className="hover:text-white transition-colors">
+                  All 8 Solutions
                 </Link>
               </li>
               <li>
-                <Link to="/products" className="hover:text-white transition-colors">
-                  Hardware Specifications
+                <Link to="/how-it-works" className="hover:text-white transition-colors">
+                  How It Works
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 2: Solutions */}
-          <div className="lg:col-span-3 space-y-3">
-            <h4 className="font-bold text-xs uppercase tracking-wider text-neutral-200 font-mono">
-              Solutions
-            </h4>
-            <ul className="space-y-2 text-xs text-neutral-400">
-              <li>
-                <Link to="/solutions" className="hover:text-white transition-colors">
-                  Google Reputation & Reviews
-                </Link>
-              </li>
-              <li>
-                <Link to="/solutions" className="hover:text-white transition-colors">
-                  Restaurant Digital Menus
-                </Link>
-              </li>
-              <li>
-                <Link to="/solutions" className="hover:text-white transition-colors">
-                  Digital Business Cards (vCard)
-                </Link>
-              </li>
-              <li>
-                <Link to="/solutions" className="hover:text-white transition-colors">
-                  Social Media Hub Cards
-                </Link>
-              </li>
-              <li>
-                <Link to="/solutions" className="hover:text-white transition-colors">
-                  UPI & Instant Payment Links
-                </Link>
-              </li>
-              <li>
-                <Link to="/solutions" className="hover:text-white transition-colors">
-                  Appointment & Booking Links
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 3: Platform & Company */}
+          {/* Column 2: Platform & Pages */}
           <div className="lg:col-span-3 space-y-3">
             <h4 className="font-bold text-xs uppercase tracking-wider text-neutral-200 font-mono">
               Platform & Access
@@ -115,27 +80,76 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/how-it-works" className="hover:text-white transition-colors">
-                  How It Works
-                </Link>
-              </li>
-              <li>
                 <Link to="/about" className="hover:text-white transition-colors">
                   About TapStars
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="hover:text-white transition-colors">
-                  Contact & Order
+                  Order Cards
                 </Link>
               </li>
             </ul>
+          </div>
+
+          {/* Column 3: Contact & Founder */}
+          <div className="lg:col-span-3 space-y-3">
+            <h4 className="font-bold text-xs uppercase tracking-wider text-neutral-200 font-mono">
+              Direct Contact
+            </h4>
+            <div className="space-y-2.5 text-xs text-neutral-400">
+              <div className="text-white font-semibold">JayrajSinh Mahida</div>
+              
+              <div>
+                <a
+                  href="https://wa.me/917383273362?text=Hi%20Jayraj,%20I%20am%20interested%20in%20TapStars%20smart%20NFC%20cards"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 hover:text-emerald-400 transition-colors"
+                >
+                  <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
+                  <span className="font-mono">+91 73832 73362</span>
+                </a>
+              </div>
+
+              <div>
+                <a
+                  href="tel:+917383273362"
+                  className="inline-flex items-center gap-2 hover:text-white transition-colors"
+                >
+                  <Phone className="w-3.5 h-3.5 text-neutral-400" />
+                  <span className="font-mono">+91 73832 73362</span>
+                </a>
+              </div>
+
+              <div>
+                <a
+                  href="mailto:jayrajs.work@gmail.com"
+                  className="inline-flex items-center gap-2 hover:text-white transition-colors"
+                >
+                  <Mail className="w-3.5 h-3.5 text-neutral-400" />
+                  <span>jayrajs.work@gmail.com</span>
+                </a>
+              </div>
+
+              <div className="pt-1">
+                <a
+                  href="https://instagram.com/the__jayrajsinh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-neutral-900 border border-neutral-800 text-neutral-300 hover:text-white hover:border-neutral-700 transition-colors text-[11px]"
+                >
+                  <InstagramIcon className="w-3.5 h-3.5 text-pink-500" />
+                  <span>@the__jayrajsinh</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-neutral-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
-          <p>© {new Date().getFullYear()} TapStars Platform. All rights reserved.</p>
+          <p>© {currentYear} TapStars Platform. Built by JayrajSinh Mahida.</p>
           <div className="flex items-center gap-6">
             <span>Waterproof PVC</span>
             <span>•</span>

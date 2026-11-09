@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import { Navbar } from '../../components/common/Navbar';
 import { Footer } from '../../components/common/Footer';
+import { InstagramIcon } from '../../components/common/SocialIcons';
 
 export const ContactPage: React.FC = () => {
   const [name, setName] = useState('');
@@ -23,6 +24,8 @@ export const ContactPage: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
+    const text = `Hi Jayraj, I would like to order TapStars NFC cards for my business.\nName: ${name}\nBusiness: ${businessName}\nPhone: ${phone}\nEmail: ${email}\nPackage: ${quantity} (${cardType})\nMessage: ${message || 'None'}`;
+    window.open(`https://wa.me/917383273362?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   return (
@@ -66,13 +69,13 @@ export const ContactPage: React.FC = () => {
                 </div>
 
                 <a
-                  href="https://wa.me/919820012345?text=Hi%20TapStars,%20I%20would%20like%20to%20order%20smart%20NFC%20cards%20for%20my%20business."
+                  href="https://wa.me/917383273362?text=Hi%20Jayraj,%20I%20would%20like%20to%20order%20smart%20NFC%20cards%20for%20my%20business."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-colors shadow-md"
                 >
                   <MessageCircle className="w-4 h-4 fill-white" />
-                  <span>Chat on WhatsApp (+91 98200 12345)</span>
+                  <span>Chat on WhatsApp (+91 73832 73362)</span>
                 </a>
               </div>
 
@@ -80,15 +83,15 @@ export const ContactPage: React.FC = () => {
               <div className="p-8 rounded-3xl bg-white border border-neutral-200/80 shadow-xs space-y-4">
                 <h4 className="font-bold text-neutral-950 text-sm">Direct Contact Channels</h4>
 
-                <div className="space-y-3 text-xs text-neutral-600">
+                <div className="space-y-3.5 text-xs text-neutral-600">
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-lg bg-neutral-100 flex items-center justify-center text-neutral-900 shrink-0">
                       <Mail className="w-4 h-4" />
                     </div>
                     <div>
                       <div className="font-semibold text-neutral-900">Email Inquiries</div>
-                      <a href="mailto:support@tapstars.dev" className="text-blue-600 hover:underline">
-                        support@tapstars.dev
+                      <a href="mailto:jayrajs.work@gmail.com" className="text-blue-600 hover:underline">
+                        jayrajs.work@gmail.com
                       </a>
                     </div>
                   </div>
@@ -98,8 +101,27 @@ export const ContactPage: React.FC = () => {
                       <PhoneCall className="w-4 h-4" />
                     </div>
                     <div>
-                      <div className="font-semibold text-neutral-900">Phone Support</div>
-                      <span className="text-neutral-700 font-mono">+91 98200 12345 (Mon–Sat, 10 AM – 7 PM)</span>
+                      <div className="font-semibold text-neutral-900">Direct Support (JayrajSinh Mahida)</div>
+                      <a href="tel:+917383273362" className="text-neutral-700 font-mono hover:text-neutral-950">
+                        +91 73832 73362
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-neutral-100 flex items-center justify-center text-neutral-900 shrink-0">
+                      <InstagramIcon className="w-4 h-4 text-pink-600" />
+                    </div>
+                    <div>
+                      <div className="font-semibold text-neutral-900">Instagram Profile</div>
+                      <a
+                        href="https://instagram.com/the__jayrajsinh"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-pink-600 hover:underline font-medium"
+                      >
+                        @the__jayrajsinh
+                      </a>
                     </div>
                   </div>
 
@@ -180,7 +202,7 @@ export const ContactPage: React.FC = () => {
                         required
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
-                        placeholder="+91 98200 12345"
+                        placeholder="+91 73832 73362"
                         className="w-full text-xs bg-neutral-50 border border-neutral-200 rounded-xl px-3.5 py-2.5 text-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-900/10"
                       />
                     </div>
@@ -192,7 +214,7 @@ export const ContactPage: React.FC = () => {
                         required
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        placeholder="hello@abccafe.in"
+                        placeholder="yourname@business.com"
                         className="w-full text-xs bg-neutral-50 border border-neutral-200 rounded-xl px-3.5 py-2.5 text-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-900/10"
                       />
                     </div>
