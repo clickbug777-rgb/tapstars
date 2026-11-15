@@ -116,7 +116,11 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
             subMap[sb.business_id] = sb;
           });
 
-          setBusinesses(bizRes.data as Business[]);
+          const realBusinesses = (bizRes.data as Business[]).filter(
+            (b) => !b.slug.startsWith('_system_')
+          );
+
+          setBusinesses(realBusinesses);
           setCards(mappedCards);
           setEvents((evtRes.data || []) as AnalyticsEvent[]);
           setGoogleProfiles(googleMap);

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import {
   Users,
   Search,
@@ -13,14 +13,26 @@ import {
   LayoutGrid,
   List,
   X,
+  Cloud,
+  RefreshCw,
 } from 'lucide-react';
 import { INITIAL_LEADS, Lead } from '../../data/defaultLeads';
 import { useData } from '../../context/DataContext';
+import { supabase } from '../../lib/supabase';
 
 const STORAGE_KEY = 'tapstars_leads_crm_v1';
 
 export const LeadsPage: React.FC = () => {
-  const { createBusiness } = useData();
+  const { createBusiness, isSupabaseLive } = useData();
+  const [isCloudSyncing, setIsCloudSyncing] = useState(false);
+  const [isManualSyncing, setIsManualSyncing] = useState(false);
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
+  const isInitialMount = useRef(true);
+
+  const showToast = useCallback((msg: string) => {
+    setToastMessage(msg);
+    setTimeout(() => setToastMessage(null), 3500);
+  }, []);
 
   // Initialize leads from localStorage or default Gandhinagar leads
   const [leads, setLeads] = useState<Lead[]>(() => {
@@ -36,14 +48,143 @@ export const LeadsPage: React.FC = () => {
     return INITIAL_LEADS;
   });
 
-  // Save to localStorage on change
+  // Load leads from Supabase Cloud on mount & subscribe to real-time changes
   useEffect(() => {
+    let isMounted = true;
+
+    async function loadCloudLeads() {
+      if (!supabase) return;
+      try {
+        const { data, error } = await supabase
+          .from('businesses')
+          .select('custom_links')
+          .eq('slug', '_system_leads_pipeline')
+          .single();
+
+        if (!error && data?.custom_links && Array.isArray(data.custom_links) && data.custom_links.length > 0) {
+          if (isMounted) {
+            setLeads(data.custom_links as Lead[]);
+            try {
+              localStorage.setItem(STORAGE_KEY, JSON.stringify(data.custom_links));
+            } catch {
+              // ignore
+            }
+          }
+        }
+      } catch (err) {
+        console.warn('[TapStars] Error fetching cloud leads:', err);
+      }
+    }
+
+    loadCloudLeads();
+
+    // Subscribe to real-time updates so changes made on mobile phone instantly reflect on desktop
+    let channel: any = null;
+    if (supabase) {
+      try {
+        channel = supabase
+          .channel('system-leads-realtime')
+          .on(
+            'postgres_changes',
+            {
+              event: 'UPDATE',
+              schema: 'public',
+              table: 'businesses',
+              filter: 'slug=eq._system_leads_pipeline',
+            },
+            (payload: any) => {
+              if (
+                payload.new?.custom_links &&
+                Array.isArray(payload.new.custom_links) &&
+                payload.new.custom_links.length > 0
+              ) {
+                setLeads(payload.new.custom_links as Lead[]);
+                try {
+                  localStorage.setItem(STORAGE_KEY, JSON.stringify(payload.new.custom_links));
+                } catch {
+                  // ignore
+                }
+              }
+            }
+          )
+          .subscribe();
+      } catch (err) {
+        console.warn('[TapStars] Realtime channel setup error:', err);
+      }
+    }
+
+    return () => {
+      isMounted = false;
+      if (channel && supabase) {
+        supabase.removeChannel(channel);
+      }
+    };
+  }, []);
+
+  // Save to localStorage & push to Supabase Cloud on change
+  useEffect(() => {
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      return;
+    }
+
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(leads));
     } catch (e) {
       console.error('Failed to save leads to localStorage:', e);
     }
+
+    const client = supabase;
+    if (client) {
+      const timer = setTimeout(async () => {
+        setIsCloudSyncing(true);
+        try {
+          await client
+            .from('businesses')
+            .update({
+              custom_links: leads as any,
+              updated_at: new Date().toISOString(),
+            })
+            .eq('slug', '_system_leads_pipeline');
+        } catch (err) {
+          console.warn('[TapStars] Error syncing leads to Supabase:', err);
+        } finally {
+          setIsCloudSyncing(false);
+        }
+      }, 400);
+
+      return () => clearTimeout(timer);
+    }
   }, [leads]);
+
+  // Manual pull from cloud
+  const handleManualCloudSync = useCallback(async () => {
+    if (!supabase) {
+      showToast('Offline Mode: Supabase not active');
+      return;
+    }
+
+    setIsManualSyncing(true);
+    try {
+      const { data, error } = await supabase
+        .from('businesses')
+        .select('custom_links')
+        .eq('slug', '_system_leads_pipeline')
+        .single();
+
+      if (!error && data?.custom_links && Array.isArray(data.custom_links) && data.custom_links.length > 0) {
+        setLeads(data.custom_links as Lead[]);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(data.custom_links));
+        showToast('Pulled latest leads from cloud');
+      } else {
+        showToast('Already up to date with cloud');
+      }
+    } catch {
+      showToast('Failed to sync from cloud');
+    } finally {
+      setIsManualSyncing(false);
+    }
+  }, [showToast]);
 
   // View mode: 'kanban' | 'list'
   const [viewMode, setViewMode] = useState<'kanban' | 'list'>('kanban');
@@ -59,7 +200,6 @@ export const LeadsPage: React.FC = () => {
   // Modal States
   const [selectedLead, setSelectedLead] = useState<Lead | null>(null);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
-  const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   // New Lead Form State
   const [newLeadName, setNewLeadName] = useState('');
@@ -70,11 +210,6 @@ export const LeadsPage: React.FC = () => {
   const [newLeadReviews, setNewLeadReviews] = useState('10');
   const [newLeadRating, setNewLeadRating] = useState('5.0');
   const [newLeadDealValue, setNewLeadDealValue] = useState('1499');
-
-  const showToast = (msg: string) => {
-    setToastMessage(msg);
-    setTimeout(() => setToastMessage(null), 3500);
-  };
 
   // Extract unique categories & areas
   const categories = useMemo(() => {
@@ -323,11 +458,27 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
   };
 
   // Reset to default 69 Gandhinagar leads
-  const handleResetLeads = () => {
-    if (window.confirm('Reset all leads back to the default 69 verified Gandhinagar businesses?')) {
+  const handleResetLeads = async () => {
+    if (window.confirm('Reset all leads back to the default 69 verified Gandhinagar businesses across all devices?')) {
       setLeads(INITIAL_LEADS);
-      localStorage.removeItem(STORAGE_KEY);
-      showToast('Reset leads to default Gandhinagar list');
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(INITIAL_LEADS));
+      if (supabase) {
+        setIsCloudSyncing(true);
+        try {
+          await supabase
+            .from('businesses')
+            .update({
+              custom_links: INITIAL_LEADS as any,
+              updated_at: new Date().toISOString(),
+            })
+            .eq('slug', '_system_leads_pipeline');
+        } catch (e) {
+          console.warn('Error resetting leads in Supabase:', e);
+        } finally {
+          setIsCloudSyncing(false);
+        }
+      }
+      showToast('Reset leads to default Gandhinagar list across all devices');
     }
   };
 
@@ -353,21 +504,47 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
       {/* Header Bar */}
       <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-neutral-200/80">
         <div>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2.5">
             <div className="w-7 h-7 rounded-lg bg-neutral-900 text-white flex items-center justify-center shadow-xs">
               <Users className="w-4 h-4 text-amber-400" />
             </div>
             <h1 className="text-xl sm:text-2xl font-extrabold text-neutral-950 tracking-tight">
               Lead Pipeline & Client CRM
             </h1>
+
+            {/* Cloud Sync Status Badge */}
+            <div className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold border ${
+              isSupabaseLive
+                ? 'bg-emerald-50 text-emerald-800 border-emerald-200/80'
+                : 'bg-amber-50 text-amber-800 border-amber-200/80'
+            }`}>
+              <Cloud className={`w-3.5 h-3.5 ${isCloudSyncing ? 'animate-pulse text-amber-600' : isSupabaseLive ? 'text-emerald-600' : 'text-amber-600'}`} />
+              <span>
+                {isCloudSyncing
+                  ? 'Saving to Cloud...'
+                  : isSupabaseLive
+                  ? 'Cloud Synced (Live)'
+                  : 'Offline (Local)'}
+              </span>
+            </div>
           </div>
           <p className="text-xs text-neutral-500 mt-1">
-            Gandhinagar High-Opportunity Businesses • NFC Google Review Card Sales System
+            Gandhinagar High-Opportunity Businesses • NFC Google Review Card Sales System • Auto-synced across Phone & Laptop
           </p>
         </div>
 
         {/* Global Action Buttons */}
         <div className="flex flex-wrap items-center gap-2.5">
+          <button
+            onClick={handleManualCloudSync}
+            disabled={isManualSyncing}
+            title="Pull latest updates from Supabase Cloud"
+            className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white border border-neutral-200 text-neutral-700 text-xs font-semibold hover:bg-neutral-50 transition-colors shadow-xs"
+          >
+            <RefreshCw className={`w-3.5 h-3.5 text-neutral-500 ${isManualSyncing ? 'animate-spin' : ''}`} />
+            <span>{isManualSyncing ? 'Syncing...' : 'Sync Cloud'}</span>
+          </button>
+
           <button
             onClick={() => setIsAddModalOpen(true)}
             className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-neutral-950 text-white text-xs font-bold hover:bg-neutral-800 transition-colors shadow-xs"

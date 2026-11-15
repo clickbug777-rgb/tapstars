@@ -95,42 +95,53 @@ VITE_APP_BASE_URL=https://tapstars.pages.dev`;
         </div>
 
         <p className="text-xs text-neutral-600 leading-relaxed">
-          TapStars uses Supabase for production database records, Row Level Security (RLS), and admin
-          authentication.
+          TapStars uses Supabase for production database records, Row Level Security (RLS), real-time synchronization, and admin authentication.
         </p>
 
-        {/* Instructions Card for Beginner */}
-        <div className="p-4 rounded-2xl bg-neutral-50 border border-neutral-200 space-y-3 text-xs">
-          <h4 className="font-bold text-neutral-900">How to Connect Your Free Supabase Project:</h4>
-          <ol className="list-decimal list-inside space-y-1.5 text-neutral-600">
-            <li>
-              Go to{' '}
-              <a
-                href="https://supabase.com/dashboard"
-                target="_blank"
-                rel="noreferrer"
-                className="text-blue-600 font-semibold underline inline-flex items-center gap-0.5"
-              >
-                supabase.com/dashboard <ExternalLink className="w-3 h-3" />
-              </a>{' '}
-              and sign up for free.
-            </li>
-            <li>Click <strong>New Project</strong> and name it <strong>tapstars</strong>.</li>
-            <li>
-              Open the <strong>SQL Editor</strong> tab on the left in Supabase, and run the SQL code from{' '}
-              <code className="text-neutral-800 font-mono bg-neutral-200/70 px-1 py-0.5 rounded">
-                supabase/schema.sql
-              </code>.
-            </li>
-            <li>
-              Copy your <strong>Project URL</strong> and <strong>anon public key</strong> from Project Settings → API.
-            </li>
-            <li>
-              Paste them into your local <code className="font-mono bg-neutral-200 px-1 py-0.5 rounded">.env</code> file
-              or Cloudflare Pages Environment Variables!
-            </li>
-          </ol>
-        </div>
+        {isSupabaseLive ? (
+          <div className="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200 space-y-2 text-xs">
+            <div className="flex items-center gap-2 text-emerald-900 font-bold">
+              <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+              <span>Supabase Cloud Database is Active & Synchronized</span>
+            </div>
+            <p className="text-emerald-800 leading-relaxed">
+              Connected to <code className="font-mono bg-emerald-100/70 px-1.5 py-0.5 rounded text-emerald-900">{CONFIG.supabaseUrl}</code>. All businesses, physical NFC cards, tracking analytics, and your Gandhinagar leads pipeline automatically sync across your mobile phone and desktop computer in real time.
+            </p>
+          </div>
+        ) : (
+          /* Instructions Card for Beginner */
+          <div className="p-4 rounded-2xl bg-neutral-50 border border-neutral-200 space-y-3 text-xs">
+            <h4 className="font-bold text-neutral-900">How to Connect Your Free Supabase Project:</h4>
+            <ol className="list-decimal list-inside space-y-1.5 text-neutral-600">
+              <li>
+                Go to{' '}
+                <a
+                  href="https://supabase.com/dashboard"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-blue-600 font-semibold underline inline-flex items-center gap-0.5"
+                >
+                  supabase.com/dashboard <ExternalLink className="w-3 h-3" />
+                </a>{' '}
+                and sign up for free.
+              </li>
+              <li>Click <strong>New Project</strong> and name it <strong>tapstars</strong>.</li>
+              <li>
+                Open the <strong>SQL Editor</strong> tab on the left in Supabase, and run the SQL code from{' '}
+                <code className="text-neutral-800 font-mono bg-neutral-200/70 px-1 py-0.5 rounded">
+                  supabase/schema.sql
+                </code>.
+              </li>
+              <li>
+                Copy your <strong>Project URL</strong> and <strong>anon public key</strong> from Project Settings → API.
+              </li>
+              <li>
+                Paste them into your local <code className="font-mono bg-neutral-200 px-1 py-0.5 rounded">.env</code> file
+                or Cloudflare Pages Environment Variables!
+              </li>
+            </ol>
+          </div>
+        )}
 
         {/* .env Helper */}
         <div>

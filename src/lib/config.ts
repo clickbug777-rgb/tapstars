@@ -56,8 +56,8 @@ export const CONFIG = {
   supabaseUrl: import.meta.env.VITE_SUPABASE_URL || DEFAULT_SUPABASE_URL,
   supabaseAnonKey: import.meta.env.VITE_SUPABASE_ANON_KEY || DEFAULT_SUPABASE_ANON_KEY,
   isSupabaseConfigured: (): boolean => {
-    const url = import.meta.env.VITE_SUPABASE_URL;
-    const key = import.meta.env.VITE_SUPABASE_ANON_KEY;
+    const url = import.meta.env.VITE_SUPABASE_URL || DEFAULT_SUPABASE_URL;
+    const key = import.meta.env.VITE_SUPABASE_ANON_KEY || DEFAULT_SUPABASE_ANON_KEY;
     return Boolean(url && key && url.includes('supabase.co'));
   },
 };
