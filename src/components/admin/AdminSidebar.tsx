@@ -10,10 +10,12 @@ import {
   Smartphone,
   ExternalLink,
   UserCheck,
+  Users,
 } from 'lucide-react';
 
 const NAV_ITEMS = [
   { to: '/admin', label: 'Overview', icon: LayoutDashboard, end: true },
+  { to: '/admin/leads', label: 'Leads & Client Pipeline', icon: Users },
   { to: '/admin/businesses', label: 'Businesses', icon: Building2 },
   { to: '/admin/cards', label: 'NFC Cards & Assignment', icon: CreditCard },
   { to: '/admin/qr-studio', label: 'QR Code Studio', icon: QrCode },

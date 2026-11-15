@@ -34,6 +34,7 @@ import { CardsPage } from './pages/admin/CardsPage';
 import { QrStudioPage } from './pages/admin/QrStudioPage';
 import { AnalyticsPage } from './pages/admin/AnalyticsPage';
 import { SettingsPage as AdminSettings } from './pages/admin/SettingsPage';
+import { LeadsPage } from './pages/admin/LeadsPage';
 
 export const App: React.FC = () => {
   return (
@@ -80,6 +81,7 @@ export const App: React.FC = () => {
             {/* 5. Protected TapStars Admin Workspace (Platform Administrators) */}
             <Route path="/admin" element={<AdminLayout />}>
               <Route index element={<AdminOverview />} />
+              <Route path="leads" element={<LeadsPage />} />
               <Route path="businesses" element={<BusinessesPage />} />
               <Route path="cards" element={<CardsPage />} />
               <Route path="qr-studio" element={<QrStudioPage />} />
