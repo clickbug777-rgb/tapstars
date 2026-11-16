@@ -457,9 +457,9 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
     showToast('Exported CSV file');
   };
 
-  // Reset to default 69 Gandhinagar leads
+  // Reset to default 151 Gandhinagar leads
   const handleResetLeads = async () => {
-    if (window.confirm('Reset all leads back to the default 69 verified Gandhinagar businesses across all devices?')) {
+    if (window.confirm('Reset all leads back to the default 151 verified Gandhinagar businesses across all devices?')) {
       setLeads(INITIAL_LEADS);
       localStorage.setItem(STORAGE_KEY, JSON.stringify(INITIAL_LEADS));
       if (supabase) {
@@ -563,7 +563,7 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
 
           <button
             onClick={handleResetLeads}
-            title="Reset to default 69 verified Gandhinagar leads"
+            title="Reset to default 151 verified Gandhinagar leads"
             className="p-2 rounded-xl bg-white border border-neutral-200 text-neutral-500 hover:text-neutral-900 hover:bg-neutral-50 transition-colors shadow-xs"
           >
             <RotateCcw className="w-3.5 h-3.5" />
