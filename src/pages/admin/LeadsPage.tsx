@@ -225,6 +225,31 @@ export const LeadsPage: React.FC = () => {
     return Array.from(set).sort();
   }, [leads]);
 
+  // Segregated areas for Bharuch and Gandhinagar with counts
+  const bharuchAreas = useMemo(() => {
+    const counts: Record<string, number> = {};
+    leads.forEach((l) => {
+      if ((l.city || 'Gandhinagar') === 'Bharuch' && l.area) {
+        counts[l.area] = (counts[l.area] || 0) + 1;
+      }
+    });
+    return Object.keys(counts)
+      .sort((a, b) => counts[b] - counts[a])
+      .map((name) => ({ name, count: counts[name] }));
+  }, [leads]);
+
+  const gandhinagarAreas = useMemo(() => {
+    const counts: Record<string, number> = {};
+    leads.forEach((l) => {
+      if ((l.city || 'Gandhinagar') === 'Gandhinagar' && l.area) {
+        counts[l.area] = (counts[l.area] || 0) + 1;
+      }
+    });
+    return Object.keys(counts)
+      .sort((a, b) => counts[b] - counts[a])
+      .map((name) => ({ name, count: counts[name] }));
+  }, [leads]);
+
   const categories = useMemo(() => {
     const set = new Set<string>();
     leads.forEach((l) => {
@@ -233,23 +258,28 @@ export const LeadsPage: React.FC = () => {
     return Array.from(set).sort();
   }, [leads]);
 
-  const areas = useMemo(() => {
-    const set = new Set<string>();
-    leads.forEach((l) => {
-      if (selectedCity === 'all' || (l.city || 'Gandhinagar') === selectedCity) {
-        if (l.area) set.add(l.area);
-      }
-    });
-    return Array.from(set).sort();
-  }, [leads, selectedCity]);
-
   // Filtered and Sorted Leads
   const filteredLeads = useMemo(() => {
     return leads
       .filter((lead) => {
-        // City filter
-        if (selectedCity !== 'all' && (lead.city || 'Gandhinagar') !== selectedCity) {
+        const leadCity = lead.city || 'Gandhinagar';
+
+        // Filter 1: Primary City filter
+        if (selectedCity !== 'all' && leadCity !== selectedCity) {
           return false;
+        }
+
+        // Filter 2: Sub-filter by Area (segregated by city)
+        if (selectedArea !== 'all') {
+          if (selectedArea.startsWith('Bharuch::')) {
+            const areaName = selectedArea.replace('Bharuch::', '');
+            if (leadCity !== 'Bharuch' || lead.area !== areaName) return false;
+          } else if (selectedArea.startsWith('Gandhinagar::')) {
+            const areaName = selectedArea.replace('Gandhinagar::', '');
+            if (leadCity !== 'Gandhinagar' || lead.area !== areaName) return false;
+          } else {
+            if (lead.area !== selectedArea) return false;
+          }
         }
 
         // Search query
@@ -259,7 +289,7 @@ export const LeadsPage: React.FC = () => {
             lead.business_name.toLowerCase().includes(q) ||
             lead.phone.toLowerCase().includes(q) ||
             lead.address.toLowerCase().includes(q) ||
-            (lead.city || 'Gandhinagar').toLowerCase().includes(q) ||
+            leadCity.toLowerCase().includes(q) ||
             lead.area.toLowerCase().includes(q) ||
             lead.category.toLowerCase().includes(q);
           if (!matches) return false;
@@ -267,11 +297,6 @@ export const LeadsPage: React.FC = () => {
 
         // Category filter
         if (selectedCategory !== 'all' && lead.category !== selectedCategory) {
-          return false;
-        }
-
-        // Area filter
-        if (selectedArea !== 'all' && lead.area !== selectedArea) {
           return false;
         }
 
@@ -704,49 +729,204 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
           </div>
         </div>
 
-        {/* City Filter Pills */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 pt-0.5">
-          <button
-            onClick={() => {
-              setSelectedCity('all');
-              setSelectedArea('all');
-            }}
-            className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 ${
-              selectedCity === 'all'
-                ? 'bg-neutral-950 text-white shadow-xs'
-                : 'bg-neutral-100 text-neutral-600 hover:text-neutral-900 hover:bg-neutral-200/70'
-            }`}
-          >
-            <Building2 className="w-3.5 h-3.5" />
-            <span>All Cities ({leads.length})</span>
-          </button>
-          {cities.map((c) => {
-            const count = leads.filter((l) => (l.city || 'Gandhinagar') === c).length;
-            return (
+        {/* Filter 1: Primary City Selector Bar */}
+        <div className="pt-1 space-y-2 border-t border-neutral-100">
+          <div className="flex items-center justify-between">
+            <span className="text-[11px] font-bold text-neutral-800 uppercase tracking-wider font-mono flex items-center gap-1.5">
+              <span className="w-4 h-4 rounded-full bg-neutral-950 text-white inline-flex items-center justify-center text-[10px]">1</span>
+              <span>City Filter:</span>
+            </span>
+            {selectedArea !== 'all' && (
               <button
-                key={c}
-                onClick={() => {
-                  setSelectedCity(c);
-                  setSelectedArea('all');
-                }}
-                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 ${
-                  selectedCity === c
-                    ? 'bg-neutral-950 text-white shadow-xs'
-                    : 'bg-neutral-100 text-neutral-600 hover:text-neutral-900 hover:bg-neutral-200/70'
+                onClick={() => setSelectedArea('all')}
+                className="text-[10px] text-amber-700 font-semibold hover:underline"
+              >
+                Clear Area Sub-filter
+              </button>
+            )}
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2">
+            <button
+              onClick={() => {
+                setSelectedCity('Bharuch');
+                setSelectedArea('all');
+              }}
+              className={`inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold transition-all shadow-xs ${
+                selectedCity === 'Bharuch'
+                  ? 'bg-neutral-950 text-white ring-2 ring-neutral-950 ring-offset-1'
+                  : 'bg-neutral-100 text-neutral-700 hover:text-neutral-950 hover:bg-neutral-200'
+              }`}
+            >
+              <MapPin className="w-3.5 h-3.5 text-amber-400" />
+              <span>Bharuch</span>
+              <span
+                className={`text-[10px] px-1.5 py-0.5 rounded-md font-mono ${
+                  selectedCity === 'Bharuch' ? 'bg-neutral-800 text-amber-300' : 'bg-neutral-200/80 text-neutral-700'
                 }`}
               >
-                <MapPin className="w-3.5 h-3.5 text-amber-500" />
-                <span>{c} ({count})</span>
-              </button>
-            );
-          })}
+                {leads.filter((l) => (l.city || 'Gandhinagar') === 'Bharuch').length}
+              </span>
+            </button>
+
+            <button
+              onClick={() => {
+                setSelectedCity('Gandhinagar');
+                setSelectedArea('all');
+              }}
+              className={`inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold transition-all shadow-xs ${
+                selectedCity === 'Gandhinagar'
+                  ? 'bg-neutral-950 text-white ring-2 ring-neutral-950 ring-offset-1'
+                  : 'bg-neutral-100 text-neutral-700 hover:text-neutral-950 hover:bg-neutral-200'
+              }`}
+            >
+              <MapPin className="w-3.5 h-3.5 text-blue-400" />
+              <span>Gandhinagar</span>
+              <span
+                className={`text-[10px] px-1.5 py-0.5 rounded-md font-mono ${
+                  selectedCity === 'Gandhinagar' ? 'bg-neutral-800 text-blue-300' : 'bg-neutral-200/80 text-neutral-700'
+                }`}
+              >
+                {leads.filter((l) => (l.city || 'Gandhinagar') === 'Gandhinagar').length}
+              </span>
+            </button>
+
+            <button
+              onClick={() => {
+                setSelectedCity('all');
+                setSelectedArea('all');
+              }}
+              className={`inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold transition-all shadow-xs ${
+                selectedCity === 'all'
+                  ? 'bg-neutral-950 text-white ring-2 ring-neutral-950 ring-offset-1'
+                  : 'bg-neutral-100 text-neutral-700 hover:text-neutral-950 hover:bg-neutral-200'
+              }`}
+            >
+              <Building2 className="w-3.5 h-3.5 text-neutral-400" />
+              <span>All Cities</span>
+              <span
+                className={`text-[10px] px-1.5 py-0.5 rounded-md font-mono ${
+                  selectedCity === 'all' ? 'bg-neutral-800 text-neutral-300' : 'bg-neutral-200/80 text-neutral-700'
+                }`}
+              >
+                {leads.length}
+              </span>
+            </button>
+          </div>
+        </div>
+
+        {/* Filter 2: Segregated Area Sub-Filter */}
+        <div className="pt-2 pb-1 space-y-1.5 border-t border-neutral-100">
+          <div className="flex items-center justify-between text-[11px] font-bold text-neutral-800 uppercase tracking-wider font-mono">
+            <span className="flex items-center gap-1.5">
+              <span className="w-4 h-4 rounded-full bg-neutral-950 text-white inline-flex items-center justify-center text-[10px]">2</span>
+              <span>
+                {selectedCity === 'Bharuch' && 'Bharuch Areas Sub-Filter (14 Localities):'}
+                {selectedCity === 'Gandhinagar' && 'Gandhinagar Areas Sub-Filter (17 Sectors):'}
+                {selectedCity === 'all' && 'Area Sub-Filter (Segregated by City):'}
+              </span>
+            </span>
+            {selectedArea !== 'all' && (
+              <span className="text-[10px] font-semibold text-emerald-700 font-sans normal-case">
+                Active: {selectedArea.replace('Bharuch::', '').replace('Gandhinagar::', '')}
+              </span>
+            )}
+          </div>
+
+          {/* Quick Area Sub-Filter Pills */}
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-1.5">
+            <button
+              onClick={() => setSelectedArea('all')}
+              className={`px-2.5 py-1 rounded-lg text-[11px] font-bold shrink-0 transition-colors ${
+                selectedArea === 'all'
+                  ? 'bg-neutral-900 text-white shadow-2xs'
+                  : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200 hover:text-neutral-900'
+              }`}
+            >
+              {selectedCity === 'Bharuch'
+                ? 'All Bharuch Areas'
+                : selectedCity === 'Gandhinagar'
+                ? 'All Gandhinagar Areas'
+                : 'All Areas'}
+            </button>
+
+            {selectedCity === 'Bharuch' &&
+              bharuchAreas.map((a) => (
+                <button
+                  key={a.name}
+                  onClick={() => setSelectedArea(selectedArea === a.name ? 'all' : a.name)}
+                  className={`px-2.5 py-1 rounded-lg text-[11px] font-medium shrink-0 transition-all ${
+                    selectedArea === a.name
+                      ? 'bg-amber-500 text-neutral-950 font-bold shadow-xs ring-1 ring-amber-600'
+                      : 'bg-amber-50 text-amber-900 border border-amber-200 hover:bg-amber-100'
+                  }`}
+                >
+                  <span>{a.name}</span>{' '}
+                  <span className="text-[10px] opacity-75 font-mono">({a.count})</span>
+                </button>
+              ))}
+
+            {selectedCity === 'Gandhinagar' &&
+              gandhinagarAreas.map((a) => (
+                <button
+                  key={a.name}
+                  onClick={() => setSelectedArea(selectedArea === a.name ? 'all' : a.name)}
+                  className={`px-2.5 py-1 rounded-lg text-[11px] font-medium shrink-0 transition-all ${
+                    selectedArea === a.name
+                      ? 'bg-blue-600 text-white font-bold shadow-xs ring-1 ring-blue-700'
+                      : 'bg-blue-50 text-blue-900 border border-blue-200 hover:bg-blue-100'
+                  }`}
+                >
+                  <span>{a.name}</span>{' '}
+                  <span className="text-[10px] opacity-75 font-mono">({a.count})</span>
+                </button>
+              ))}
+
+            {selectedCity === 'all' && (
+              <>
+                <span className="text-[10px] uppercase font-bold text-neutral-400 font-mono px-1">Bharuch:</span>
+                {bharuchAreas.map((a) => (
+                  <button
+                    key={`bh-${a.name}`}
+                    onClick={() =>
+                      setSelectedArea(selectedArea === `Bharuch::${a.name}` ? 'all' : `Bharuch::${a.name}`)
+                    }
+                    className={`px-2.5 py-1 rounded-lg text-[11px] font-medium shrink-0 transition-all ${
+                      selectedArea === `Bharuch::${a.name}`
+                        ? 'bg-amber-500 text-neutral-950 font-bold'
+                        : 'bg-amber-50 text-amber-900 border border-amber-200 hover:bg-amber-100'
+                    }`}
+                  >
+                    {a.name} ({a.count})
+                  </button>
+                ))}
+                <span className="text-[10px] uppercase font-bold text-neutral-400 font-mono px-1">Gandhinagar:</span>
+                {gandhinagarAreas.map((a) => (
+                  <button
+                    key={`gn-${a.name}`}
+                    onClick={() =>
+                      setSelectedArea(selectedArea === `Gandhinagar::${a.name}` ? 'all' : `Gandhinagar::${a.name}`)
+                    }
+                    className={`px-2.5 py-1 rounded-lg text-[11px] font-medium shrink-0 transition-all ${
+                      selectedArea === `Gandhinagar::${a.name}`
+                        ? 'bg-blue-600 text-white font-bold'
+                        : 'bg-blue-50 text-blue-900 border border-blue-200 hover:bg-blue-100'
+                    }`}
+                  >
+                    {a.name} ({a.count})
+                  </button>
+                ))}
+              </>
+            )}
+          </div>
         </div>
 
         {/* Dropdown Filters Row */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 pt-2 border-t border-neutral-100 text-xs">
           <div>
-            <label className="block text-[10px] font-semibold text-neutral-500 mb-1 uppercase tracking-wider font-mono">
-              City
+            <label className="block text-[10px] font-bold text-neutral-900 mb-1 uppercase tracking-wider font-mono flex items-center gap-1">
+              <span className="w-3.5 h-3.5 rounded-full bg-neutral-900 text-white inline-flex items-center justify-center text-[9px]">1</span>
+              <span>City</span>
             </label>
             <select
               value={selectedCity}
@@ -754,14 +934,65 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
                 setSelectedCity(e.target.value);
                 setSelectedArea('all');
               }}
-              className="w-full text-xs bg-neutral-50 border border-neutral-200 rounded-xl px-2.5 py-1.5 text-neutral-800 font-medium focus:outline-none"
+              className="w-full text-xs bg-neutral-50 border border-neutral-300 rounded-xl px-2.5 py-1.5 text-neutral-900 font-bold focus:outline-none focus:ring-2 focus:ring-neutral-900/10"
             >
               <option value="all">All Cities ({leads.length})</option>
-              {cities.map((c) => (
-                <option key={c} value={c}>
-                  {c} ({leads.filter((l) => (l.city || 'Gandhinagar') === c).length})
-                </option>
-              ))}
+              <option value="Bharuch">Bharuch ({leads.filter((l) => (l.city || 'Gandhinagar') === 'Bharuch').length})</option>
+              <option value="Gandhinagar">Gandhinagar ({leads.filter((l) => (l.city || 'Gandhinagar') === 'Gandhinagar').length})</option>
+            </select>
+          </div>
+
+          <div>
+            <label className="block text-[10px] font-bold text-neutral-900 mb-1 uppercase tracking-wider font-mono flex items-center gap-1">
+              <span className="w-3.5 h-3.5 rounded-full bg-neutral-900 text-white inline-flex items-center justify-center text-[9px]">2</span>
+              <span>Area Sub-Filter</span>
+            </label>
+            <select
+              value={selectedArea}
+              onChange={(e) => setSelectedArea(e.target.value)}
+              className="w-full text-xs bg-neutral-50 border border-neutral-300 rounded-xl px-2.5 py-1.5 text-neutral-900 font-medium focus:outline-none focus:ring-2 focus:ring-neutral-900/10"
+            >
+              {selectedCity === 'Bharuch' && (
+                <>
+                  <option value="all">All Areas in Bharuch ({bharuchAreas.reduce((a, b) => a + b.count, 0)})</option>
+                  {bharuchAreas.map((a) => (
+                    <option key={a.name} value={a.name}>
+                      {a.name} ({a.count})
+                    </option>
+                  ))}
+                </>
+              )}
+
+              {selectedCity === 'Gandhinagar' && (
+                <>
+                  <option value="all">All Areas in Gandhinagar ({gandhinagarAreas.reduce((a, b) => a + b.count, 0)})</option>
+                  {gandhinagarAreas.map((a) => (
+                    <option key={a.name} value={a.name}>
+                      {a.name} ({a.count})
+                    </option>
+                  ))}
+                </>
+              )}
+
+              {selectedCity === 'all' && (
+                <>
+                  <option value="all">All Areas Across Gujarat ({leads.length})</option>
+                  <optgroup label="── 📍 BHARUCH AREAS (14) ──">
+                    {bharuchAreas.map((a) => (
+                      <option key={`bh-${a.name}`} value={`Bharuch::${a.name}`}>
+                        {a.name} ({a.count})
+                      </option>
+                    ))}
+                  </optgroup>
+                  <optgroup label="── 📍 GANDHINAGAR AREAS (17) ──">
+                    {gandhinagarAreas.map((a) => (
+                      <option key={`gn-${a.name}`} value={`Gandhinagar::${a.name}`}>
+                        {a.name} ({a.count})
+                      </option>
+                    ))}
+                  </optgroup>
+                </>
+              )}
             </select>
           </div>
 
@@ -778,24 +1009,6 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
               {categories.map((c) => (
                 <option key={c} value={c}>
                   {c}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          <div>
-            <label className="block text-[10px] font-semibold text-neutral-500 mb-1 uppercase tracking-wider font-mono">
-              Area / Sector
-            </label>
-            <select
-              value={selectedArea}
-              onChange={(e) => setSelectedArea(e.target.value)}
-              className="w-full text-xs bg-neutral-50 border border-neutral-200 rounded-xl px-2.5 py-1.5 text-neutral-800 font-medium focus:outline-none"
-            >
-              <option value="all">All Areas</option>
-              {areas.map((a) => (
-                <option key={a} value={a}>
-                  {a}
                 </option>
               ))}
             </select>
