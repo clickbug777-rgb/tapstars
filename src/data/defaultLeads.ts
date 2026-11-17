@@ -9,6 +9,7 @@ export interface Lead {
   review_rating: number;
   stage: 'new' | 'contacted' | 'demo_scheduled' | 'pitched' | 'won' | 'delivered' | 'lost';
   website?: string;
+  google_maps_url?: string;
   notes?: string;
   deal_value?: number;
   created_at: string;
@@ -29,7 +30,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Unique+dental+%26+homoeopathy+clinic%2C+Unique+dental+%26+homoeopathy+clinic%2C+Plot%3A1323%2FB-1%2C%2C+Sector%3A7%2FD%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-002",
@@ -44,7 +46,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "http://smilecareclinic.co.in/",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Smile+Care+Dental+Clinic%2C+Smile+Care+Dental+Clinic%2C+Niramay+Medical+Hub%2C+Plot+no+1282%2C+FF+101%2C+Besides+HP+petrol+pump%2C+Sector+6%2C+Gandhinagar%2C+Gujarat+382006"
   },
   {
     "id": "gn-lead-003",
@@ -59,7 +62,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SOHAM+Dental+Care%2C+SOHAM+Dental+Care%2C+218%2F5%2C+CHH+Rd%2C+Sector+21%2C+Gandhinagar%2C+Gujarat+382021"
   },
   {
     "id": "gn-lead-004",
@@ -74,7 +78,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Viswa+beauty+salon%2C+Viswa+beauty+salon%2C+Avkar+complex%2C+1364%2F2%2C+near+by+Uma+selection%2C+Sector+7D%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-005",
@@ -89,7 +94,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "http://www.impressive32.co.in/",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=IMPRESSIVE+32+-+MULTISPECIALITY+DENTAL+CARE+%26+DENTAL+IMPLANT+CENTER%2C+135%2C136+First+Floor%2C+IMPRESSIVE+32+-+MULTISPECIALITY+DENTAL+CARE+%26+DENTAL+IMPLANT+CENTER%2C+SUPER+MALL-2%2C+Circle%2C+nr.+GH-0%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-006",
@@ -104,7 +110,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr.+Hemant+Kumar+Suthar+Dental+Clinic+%26+Dr.+Ashish+Parikh%2C+Dr.+Hemant+Kumar+Suthar+Dental+Clinic+%26+Dr.+Ashish+Parikh%2C+Gayatri+Hospital%2C+G-2%2C+G+Rd%2C+Sector+6%2FC%2C+Sector+6%2C+Gandhinagar%2C+Gujarat+382006"
   },
   {
     "id": "gn-lead-007",
@@ -119,7 +126,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Vishal+Dental+Care%2C+SHOP+NO%3AG-2%2C+Vishal+Dental+Care%2C+Shreenath+Complex%2C+Bus+Stop%2C+Rd+No.+5%2C+near+to+17%2F22%2C+below+Sarvoday+Laboratory%2C+Sector+22%2C+Gandhinagar%2C+Gujarat+382021"
   },
   {
     "id": "gn-lead-008",
@@ -134,7 +142,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://drsimranjeetsingh.com/",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SJ+Dental+Care%2C+shop+number+104%2C+SJ+Dental+Care%2C+Harigold+Apartment%2C+Pandit+Dindayal+Upadhyay+Marg%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-009",
@@ -149,7 +158,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=FACEMAX+DENTAL+CLINIC+AND+IMPLANT+CENTRE%2C+Shop+E+152%2C+FACEMAX+DENTAL+CLINIC+AND+IMPLANT+CENTRE%2C+Pramukh+Anand+Orbit+Mall%2C+near+Reliance+circle%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-010",
@@ -164,7 +174,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "http://www.teethcare.co.in/",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Teeth+Care+Dental+Clinic+-+Gandhinagar%2C+Teeth+Care+Dental+Clinic+-+Gandhinagar%2C+1st+Floor%2C+Pramukh+Apartments%2C+Gandhinagar+Sector+20%2C%2C+Gandhinagar%2C+Gujarat+382021"
   },
   {
     "id": "gn-lead-011",
@@ -179,7 +190,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Diva+Salon+%26+Academy+-+Gandhinagar%2C+shop+no.+91+%26+92%2C+Diva+Salon+%26+Academy+-+Gandhinagar%2C+orbit+Mall%2C+Gandhinagar+-+Kudasan+Rd%2C+Kudasan%2C+Ahmedabad%2C+Gandhinagar%2C+Gujarat+382421"
   },
   {
     "id": "gn-lead-012",
@@ -194,7 +206,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Pooja+Dental+Care%2C+Basement%2C+plot+no+718%2C+Pooja+Dental+Care%2C+Shopping+Centre%2C+Sector+22%2C+Gandhinagar%2C+Gujarat+382021"
   },
   {
     "id": "gn-lead-013",
@@ -209,7 +222,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://yashdeepcarehospitals.co.in/",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Yashdeep+Care+Hospital+I+Dental+Clinic+I+Dr.+Avadhi+Patel+B.D.S.%2C+Yashdeep+Care+Hospital+I+Dental+Clinic+I+Dr.+Avadhi+Patel+B.D.S.%2C+Plot+no.+191%2FB%2C+near+Sec+-29%2C+near+CH+-6%2C+Sector+29%2C+Gandhinagar%2C+Gujarat+382028"
   },
   {
     "id": "gn-lead-014",
@@ -224,7 +238,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://ateliersalon.in/",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Atelier+The+Family+Salon%2C+Shop+No.+1%2C+Atelier+The+Family+Salon%2C+SUNSHINE+HEIGHTS-1%2C+nr.+Nanda+Hero+Showroom%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382426"
   },
   {
     "id": "gn-lead-015",
@@ -239,7 +254,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.mahidentalclinic.com/",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Mahi+Dental+Clinic%2C+Block+C%2C+Mahi+Dental+Clinic%2C+Block+C%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-016",
@@ -254,7 +270,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://gmdcdental.com/",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=GMDC+Dental+Clinic+-+GIFT+City+Gandhinagar%2C+E-1%2C+GMDC+Dental+Clinic+-+GIFT+City+Gandhinagar%2C+Radhe+Infinity%2C+E-506%2C+nr.+Raksha+Shakti+Circle%2C+GIFT+City%2C+Gandhinagar%2C+Gujarat+382426"
   },
   {
     "id": "gn-lead-017",
@@ -269,7 +286,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "http://www.yashdeepdentalclinic.com/",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Yashdeep+Dental+Clinic+in+Gandhinagar%2C+Yashdeep+Dental+Clinic+in+Gandhinagar%2C+589%2F2%2C+Bside+Patel+Parlour.+Gh-2%2C+GH+Rd%2C+Sector+7%2FB%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382006"
   },
   {
     "id": "gn-lead-018",
@@ -284,7 +302,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://cordsdental.in/",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=CORDS+Dental+Clinic%2C+Shop+307%2C+CORDS+Dental+Clinic%2C+Sant+Vihar+3%2C+Happiness+Rd%2C+near+GNLU+Metro+station%2C+Koba%2C+Gandhinagar%2C+Gujarat+382426"
   },
   {
     "id": "gn-lead-019",
@@ -299,7 +318,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "http://www.absodentclinic.com/",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr.+Ajay+Patel+-+Absodent+Dental+Clinic+Gandhinagar+Branch%2C+GF-14%2C+Dr.+Ajay+Patel+-+Absodent+Dental+Clinic+Gandhinagar+Branch%2C+Samarth+Heaven+-+6%2C+K+Raheja+Rd%2C+Koba%2C+Gandhinagar%2C+Gujarat+382426"
   },
   {
     "id": "gn-lead-020",
@@ -314,7 +334,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SJ+Unisex+Salon%2C+Shop+No%2C+SJ+Unisex+Salon%2C+1st+Floor%2C+Pramukh+Arcade%2C+B133+%26+B144%2C+nr.+Reliance+Circle%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-021",
@@ -329,7 +350,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.finefeather.in/our-branches/dentist-gandhinagar/",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Fine+Feather+Dental+Clinic%2C+1st+floor%2C+Fine+Feather+Dental+Clinic%2C+Narayani+Hospital%2C+1008%2F2%2C+Rd+Number+3%2C+above+Narayani+Hospital%2C+opposite+S+T+Depot%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-022",
@@ -344,7 +366,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Top+In+Town+Hair+Salon%2C+Top+In+Town+Hair+Salon%2C+B-12+Radhe+Arcade%2C+nr.+SBI+Bank%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-023",
@@ -359,7 +382,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=sparkle+salon%2C+1ST+FLOOR%2C+sparkle+salon%2C+RADHE+SQUARE%2C+109%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-024",
@@ -374,7 +398,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rudra+Dental+Clinic%2C+Rudra+Dental+Clinic%2C+opp.+Sant+Rohidas+Teple%2C+Plot+No+848%2F1%2C+Sector+6%2FC%2C+Sector+6%2C+Gandhinagar%2C+Gujarat+382006"
   },
   {
     "id": "gn-lead-025",
@@ -389,7 +414,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rajvi+Hair+Cut+Salon%2C+1st+Floor%2C+Rajvi+Hair+Cut+Salon%2C+Keshav+Aaradhyam%2C+110%2C+Gandhinagar+-+Kudasan+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-026",
@@ -404,7 +430,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Susmit+Multispeciality+Dental+Clinic+%26+Oral+Implant+Centre%2C+Susmit+Multispeciality+Dental+Clinic+%26+Oral+Implant+Centre%2C+Plot+no+1225%2F1%2C+opposite+Chaudhary+school%2C+Sector+7D%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-027",
@@ -419,7 +446,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=RC+salon+%26+academy%2C+Second+floor%2C+RC+salon+%26+academy%2C+The+landmark%2C+A-219%2C+opp.+Kansar+restaurant%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-028",
@@ -434,7 +462,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dhara+Dental+Clinic%2C+Dhara+Dental+Clinic%2C+Sector-7%27C%2C+Plot+925%2F2%2C+near+ST+Depot%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-029",
@@ -449,7 +478,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.instagram.com/reel/CnE3TgIgBAn/?igshid=MzRlODBiNWFlZA%3D%3D",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Blossom+Beauty+Salon%2C+168%2C+Blossom+Beauty+Salon%2C+Suyash+Solitaire%2C+Road%2C+opp.+Podar+Internation+School%2C+Kudasan%2C+Por%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-030",
@@ -464,7 +494,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr+Dhara+Patel+%2F+Dr+Bhavin+Patel+%22+OraCare+-+Advance+dental+care+and+implant+centre%22%2C+Ground+Floor%2C+Dr+Dhara+Patel+%2F+Dr+Bhavin+Patel+%22+OraCare+-+Advance+dental+care+and+implant+centre%22%2C+Plot+No+-+31%2F1%2C+Sector-3%2FA%2C+Sector+3%2C+Gandhinagar%2C+Gujarat+382006"
   },
   {
     "id": "gn-lead-031",
@@ -479,7 +510,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.siarathesalon.in/",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Siara+The+Salon%2C+Shop+No-106%2C+Kabirshilp%2C+Siara+The+Salon%2C+Kudasan-Por+Rd%2C+opp.+kansar+hotel%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-032",
@@ -494,7 +526,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "http://www.shraddhadeepdental.com/",
     "notes": "",
     "deal_value": 1499,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shraddhadeep+Dental+Clinic%2C+Shraddhadeep+Dental+Clinic%2C+PLOT+NO.+259%2F2%2C+SECTOR+2%2FB%2C+NR.+GH-0+CROSS+ROAD%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-033",
@@ -509,7 +542,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://saloohairbychets.vercel.app/",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Saloo+Hair+By+Chets%2C+Shop+no+w00-7%2C+Saloo+Hair+By+Chets%2C+Siddhraj+Z+Square%2C+near+by+union+bank+of+india%2C+opposite+The+Landmark%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-034",
@@ -524,7 +558,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=On+the+Rocks+Cafe%2C+Shop+No.6%2C+On+the+Rocks+Cafe%2C+Shopping+Centre%2C+Sector+9%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-035",
@@ -539,7 +574,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.instagram.com/saheli.beautycare",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Saheli+beauty+care%2C+FF-104%2C+Saheli+beauty+care%2C+RADHE+Times+Square%2C+cross+Road%2C+nr.+Hotel+Management+College%2C+Kudasan%2C+Bhaijipura%2C+Gujarat+382426"
   },
   {
     "id": "gn-lead-036",
@@ -554,7 +590,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Blush+The+Beauty+Point%2C+Blush+The+Beauty+Point%2C+Pramukh+Arcade%2C+A-122%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-037",
@@ -569,7 +606,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rich+Salon+%26+Academy%2C+Rich+Salon+%26+Academy%2C+Suyash+Solitaire%2C+38%2C+Kudasan-Por+Rd%2C+opp.+PRATISTHA+ELEGANCE%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-038",
@@ -584,7 +622,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.facebook.com/neeta.chauhan.927980?mibextid=D4KYlr",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=shree+Beauty+zone%2C+shop+no+36%2C+shree+Beauty+zone%2C+shivalaya+residency%2C+36%2C+Ground+floor%2C+Palm+Rd%2C+opposite+Vishal+Super+Market%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-039",
@@ -599,7 +638,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rati+Beauty+salon%2C+Rati+Beauty+salon%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-040",
@@ -614,7 +654,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Viyana+Dental+Care+%26+Implant+Center+-+Gandhinagar%2C+6J7H%2B4X6+Viyana+Dental+Care+%26+Implant+Center+-+Gandhinagar%2C+653%2C+Gayatri+Hospital%2C+G+Rd%2C+Sector+6-b%2C+Sector+6%2C+Gandhinagar%2C+Gujarat+382006"
   },
   {
     "id": "gn-lead-041",
@@ -629,7 +670,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tulip+the+beauty+lounge%2C+106%2C+1st+floor%2C+Tulip+the+beauty+lounge%2C+Pramukh+Mastana%2C+A-105%2C+near+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-042",
@@ -644,7 +686,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Hair+Lab+Family+Salon%2C+Hair+Lab+Family+Salon%2C+Shop+no.+C-117+Swagata+Rainforest+2+Commercial+Complex-c%2C+opp.+Royal+Honda%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-043",
@@ -659,7 +702,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Be+Rich+Luxury+Salon+Gandhinagar%2C+1st+floor%2C+Be+Rich+Luxury+Salon+Gandhinagar%2C+Siddharth+Z+Square%2C+E-102%2C+opp.+THE+MASALA+SECRETS%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-044",
@@ -674,7 +718,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shrrijee+Dental+Care+%28+Dr.Ankur+Parmar+%29%2C+6J8R%2B2R3+Shrrijee+Dental+Care+%28+Dr.Ankur+Parmar+%29%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-045",
@@ -689,7 +734,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://miracle-touch-beauty.grexa.site/",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Miracle+Touch+Beauty+Salon%2C+Miracle+Touch+Beauty+Salon%2C+Manorath+Lifestyle%2C+7%2C+B%2Fh%2C+Panchdev+Temple+Rd%2C+Urjanagar+1%2C+Randesan%2C+Gandhinagar%2C+Gujarat+382426"
   },
   {
     "id": "gn-lead-046",
@@ -704,7 +750,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Beauty+Gallery+Salon%2C+Shop+-7%2C+The+Beauty+Gallery+Salon%2C+POORNAM+RESIDENCY%2C+Prominent+Hotel+Rd%2C+opp.+south+Indian+bank%2C+Urjanagar+1%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-047",
@@ -719,7 +766,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Horizon+dental+clinic+and+implant+center%2C+Horizon+dental+clinic+and+implant+center%2C+Pramukh+Horizon-2%2C+108%2C+PSY+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-048",
@@ -734,7 +782,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.instagram.com/mbracedentalcare?igsh=eXJ1dTYycGtjNWQy",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MBrace+Dental+Care-+MBrace+Dental+Clinic+in+Gandhinagar+%7C+Best+Dentist+%26+Orthodontist+Clinic+%7C+Teeth+Whitening+Clinic%2C+Shop+No-158%2C+MBrace+Dental+Care-+MBrace+Dental+Clinic+in+Gandhinagar+%7C+Best+Dentist+%26+Orthodontist+Clinic+%7C+Teeth+Whitening+Clinic%2C+Suyash+Solitaire%2C+Kudasan-Por+Rd%2C+nr.+Podar+International+School%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-049",
@@ -749,7 +798,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "http://drbhagirathpatel.in/",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shubham+Dental+Care+%26+Implant+Center%2C+2+nd+floor%2C+Shubham+Dental+Care+%26+Implant+Center%2C+Shivalay+Arcade%2C+Shubham+Dental+Care%2C+above+GV+Books%2C+near+Apna+Bajar%2C+Sector+6%2FA%2C+Gandhinagar%2C+Gujarat+382006"
   },
   {
     "id": "gn-lead-050",
@@ -764,7 +814,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.careaboutsmile.com/",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Care+about+Smile+%26+Skin+-+Dental+%26+Aesthetics+By+Dr+Crima%2C+Care+about+Smile+%26+Skin+-+Dental+%26+Aesthetics+By+Dr+Crima%2C+Pramukh+Anand+Orbit+Malls%2C+Urjanagar+1%2C+D+255+256%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-051",
@@ -779,7 +830,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://janvi-hair-and.grexa.site/",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Janvi+Hair+and+Beauty+Studio%2C+Shop+No.114%2C+Janvi+Hair+and+Beauty+Studio%2C+The+Urbania+Complex%2C+Palm+Rd%2C+above+SBI+Bank%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382421"
   },
   {
     "id": "gn-lead-052",
@@ -794,7 +846,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://clovedental.in/",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Clove+Dental+Clinic+-+Kudasan%2C+Gandhinagar%2C+Shop+No.+%3A-+25%2C+26%2C+Clove+Dental+Clinic+-+Kudasan%2C+Gandhinagar%2C+27%2C+Akshat+Heaven+Rd%2C+near+Sahajanand+City%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382421"
   },
   {
     "id": "gn-lead-053",
@@ -809,7 +862,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://linktr.ee/tiara_salon",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tiara+Beauty+Studio%2C+Tiara+Beauty+Studio%2C+112-A%2C+School%2C+opp.+Swaminarayan+Dham+International+School%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382426"
   },
   {
     "id": "gn-lead-054",
@@ -824,7 +878,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Royal+Dental+Care%2C+Royal+Dental+Care%2C+Plot+No+145%2C+2nd+Floor%2C+Royal+Honda+Showroom%2C+Sector+21%2C+Gandhinagar%2C+Gujarat+382021"
   },
   {
     "id": "gn-lead-055",
@@ -839,7 +894,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Black+queen+salon+%26+Academy%2C+Black+queen+salon+%26+Academy%2C+KANAM+RESIDENCY-2%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-056",
@@ -854,7 +910,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "http://32smilestonedentalclinic.in/",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=32+Smile+Stone+Dental+Clinic+and+implant+center%2C+32+Smile+Stone+Dental+Clinic+and+implant+center%2C+Plot+No.148%2C+Near+R-world+theatre%2C+Nr.+Honda+Show+Room%2C+District+Shopping+Center%2C+CHH+Rd%2C+Sector+21%2C+Gandhinagar%2C+Gujarat+382021"
   },
   {
     "id": "gn-lead-057",
@@ -869,7 +926,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Ashirwad+Dental+hospital+and+Implant+center%2C+Ashirwad+Dental+hospital+and+Implant+center%2C+911%2F1%2C+sec+7+c%2C+behind+vadilal+ice+cream+parlor%2C+gandhinagar+St+bus+stop%2C%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-058",
@@ -884,7 +942,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr+Komal%27+s+Dental+Clinic%2C+Dr+Komal%27+s+Dental+Clinic%2C+Ground+floor+23%2C+Sarthak+Fortune+Mall+Opposite+City+Pulse+theatre%2C+near+Smvs+hospital%2C+Randesan%2C+Gandhinagar%2C+Gujarat+382426"
   },
   {
     "id": "gn-lead-059",
@@ -899,7 +958,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://gandhinagardental.co.in/",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sure+Cure+Multispeciality+Dental+Clinic%2C+Sure+Cure+Multispeciality+Dental+Clinic%2C+Pramukh+Arcade%2C+A-220%2C+Reliance+Cross+Rd%2C+above+Furat+Restaurant%2C+opp.+NID%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-060",
@@ -914,7 +974,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Waves+The+Salon+%28+hair+and+beauty+%29%2C+Waves+The+Salon+%28+hair+and+beauty+%29%2C+Shop+no+110%2CPramukh+Arcade+2%2C+Near%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-061",
@@ -929,7 +990,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Smile+up+dental+clinic%2C+First+floor%2C+Smile+up+dental+clinic%2C+Pramukh+Arista%2C+Shreeji+Rd%2C+near+The+Emperial%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-062",
@@ -944,7 +1006,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "http://www.vinayakorthopaedicdental.com/index.html",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Vinayak+Orthopaedic%2C+Vinayak+Orthopaedic%2C+Bus+Stand%2C+958%2F2%2C+Sector+7%2FC%2C+GH+3+Cir%2C+opposite+S+T%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-063",
@@ -959,7 +1022,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.instagram.com/d.k_unisex_salon07_gandhinagar/",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dk+unisex+salon%2C+%27%27+Shree+%27%27%2C+Dk+unisex+salon%2C+nr.+Nexa+Showroom%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-064",
@@ -974,7 +1038,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://bharatdentalhospital.com/",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bharat+Dental+Hospital+-+A+Multispeciality+Cosmetic+-+Laser+%26+Implant+Clinic%2C+Bharat+Dental+Hospital+-+A+Multispeciality+Cosmetic+-+Laser+%26+Implant+Clinic%2C+Anand+Vatika+Society%2C+146%2F2%2C+Sector+22%2C+Gandhinagar%2C+Gujarat+382021"
   },
   {
     "id": "gn-lead-065",
@@ -989,7 +1054,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://thespa.net.in/",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Spa+-+Gandhinagar%2C+Fourth+Floor%2C+The+Spa+-+Gandhinagar%2C+Pramukh+Mastana+Complex%2C+D-459%2C+Gandhinagar+-+Kudasan+Rd%2C+nr.+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-066",
@@ -1004,7 +1070,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "http://www.assignatureunisexsalon.in/",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=AS+Signature+Unisex+Salon%2C+Ground+Floor%2C+AS+Signature+Unisex+Salon%2C+Pramukh+Anand+Orbit+Mall%2C+Block+B%2B+C%2C+Shop+No-25%2C+near+Starbucks%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-067",
@@ -1019,7 +1086,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.instagram.com/hometownluxe_unisex_hairsalon",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=HOMETOWNLUXE+Unisex+Hair+Salon%2C+Shop+No.+25%2C+HOMETOWNLUXE+Unisex+Hair+Salon%2C+The+Landmark%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-068",
@@ -1034,7 +1102,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SHIVAM+DENTAL+CLINIC+%28CGHS+%26+ECHS+Empanelled+%29%2C+SHIVAM+DENTAL+CLINIC+%28CGHS+%26+ECHS+Empanelled+%29%2C+Shivam+Dental+Clinic%2C+Sector+22%2C+Gandhinagar%2C+Gujarat+382021"
   },
   {
     "id": "gn-lead-069",
@@ -1049,7 +1118,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "",
     "deal_value": 999,
-    "created_at": "2026-11-15T10:00:00Z"
+    "created_at": "2026-11-15T10:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Scissor+Hand%27s+Unisex+Salon+Kudasan%2C+Scissor+Hand%27s+Unisex+Salon+Kudasan%2C+Swagat+Rainforest+1%2C+Ground+Floor%2C+A-6%2C+Service+Rd%2C+near+%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%A1%E0%A4%BF%E0%A4%95%E0%A5%87%E0%A4%9F+%E0%A4%AC%E0%A5%88%E0%A4%82%E0%A4%95%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-070",
@@ -1064,7 +1134,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rajwadu+Caf%C3%A9%2C+Rajwadu+Caf%C3%A9%2C+Pramukh+Arcade%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-071",
@@ -1079,7 +1150,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Melt+n+Fizz%2C+Shop+no.+27%2C+Ground+Floor%2C+Melt+n+Fizz%2C+Pramukh+Anand+Orbit+Mall%2C+near+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-072",
@@ -1094,7 +1166,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Lifafa+Cafe+%26+Restro%2C+Shop+No+15%2C+The+Lifafa+Cafe+%26+Restro%2C+Keshav+Aaradhyam%2C+Prominent+Hotel+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-073",
@@ -1109,7 +1182,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Barista+coffee%2C+Ground+Floor%2C+Barista+coffee%2C+Pramukh+Orbit+mall%2C+B14%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-074",
@@ -1124,7 +1198,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=TeaMax+Cafe+Gandhinagar+Gujarat%2C+GF-12%2C+TeaMax+Cafe+Gandhinagar+Gujarat%2C+SHREEDHAR+AURUM%2C+near+SHIVALAY+PARISAR%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-075",
@@ -1139,7 +1214,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.instagram.com/chaigaram_gandhinagar?igsh=ajlpemE3N3FoMXNn",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chai+Garam+-+Pocket+Caf%C3%A9%2C+Chai+Garam+-+Pocket+Caf%C3%A9%2C+VRUNDAVAN+TRADE+CENTER%2C+B13%2C+nr.+Reliance+Cross+Road%2C+opposite+Kanam+Party+Plot%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-076",
@@ -1154,7 +1230,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Garden+Cafe+bites+%26+brilliance%2C+95%2C96%2C+The+Garden+Cafe+bites+%26+brilliance%2C+Pramukh+Mastana+Complex%2C+D-+94%2C+Reliance+Circle%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-077",
@@ -1169,7 +1246,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Roller+Coaster+Cafe%2C+Shop+No.+40%2C+Ground+floor%2C+Roller+Coaster+Cafe%2C+Suyash+Solitaire%2C+Kudasan-Por+Rd%2C+near+Poddar+International+School%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-078",
@@ -1184,7 +1262,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Wokk+N+Soul+kitchen%2C+shop+no+10%2C+Wokk+N+Soul+kitchen%2C+Suyash+solitaire%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-079",
@@ -1199,7 +1278,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dine+with+Didi%2C+Dine+with+Didi%2C+Suyash+Solitaire%2C+3%2C+nr.+Poddar+International+School%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-080",
@@ -1214,7 +1294,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.krazeyarena.com/",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Krazey+Arena+PlayStation+Gaming+Cafe+%28Game+Zone%29%2C+Krazey+Arena+PlayStation+Gaming+Cafe+%28Game+Zone%29%2C+The+Landmark%2C+C-208%2C+Pandit+Dindayal+Upadhyay+Marg%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-081",
@@ -1229,7 +1310,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=AS+Cafe%2C+1st+Floor%2C+AS+Cafe%2C+elixir+mall%2C+tales+cafe%2C+Raysan+Rd%2C+near+Taste+%26%2C+PDPU%2C+Gandhinagar%2C+Gujarat+382426"
   },
   {
     "id": "gn-lead-082",
@@ -1244,7 +1326,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe+Offbeat+-+Gandhinagar%2C+Cafe+Offbeat+-+Gandhinagar%2C+Elixir+%2C+PDPU%2C+Raysan+Rd%2C+Gujarat+International+Finance+Tec-City%2C+Gujarat+382426"
   },
   {
     "id": "gn-lead-083",
@@ -1259,7 +1342,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=karma+Cafe+Gandhinagar%2C+karma+Cafe+Gandhinagar%2C+Five+11%2C+J-ROAD%2C+beside+sarita+udhyan%2C+Indroda%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-084",
@@ -1274,7 +1358,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://friendliest-menu-site.lovable.app/",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=No+Space+by+KAER%2C+GF+6%2C+No+Space+by+KAER%2C+Shivansh+15%2C+No+Space+By+KAER%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-085",
@@ -1289,7 +1374,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=KanChi%27s+Cake+%26+Coffee+Culture%2C+2+floor%2C+208%2C+KanChi%27s+Cake+%26+Coffee+Culture%2C+Vinayak+Courtyard%2C+PDPU+University+Road%2C+opp.+GUJARAT+NATIONAL+LAW+UNIVERSITY%2C+University%2C+Raysan%2C+Gandhinagar%2C+Gujarat+382426"
   },
   {
     "id": "gn-lead-086",
@@ -1304,7 +1390,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.shivascoffeebar.com/",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shiva%27s+coffee+bar%2C+Shop+no.+5%2C+Shiva%27s+coffee+bar%2C+Shree+status%2C+SWAMINARAYAN+MANDIR+VASNA+SANSTHA%2C+road%2C+near+Ground+floor%2C+kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-087",
@@ -1319,7 +1406,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "http://coffeestand.in/",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=COFFEE+STAND+%C2%AE-+PDPU%2C+COFFEE+STAND+%C2%AE-+PDPU%2C+Coffee+Stand+Happiness+Circle%2C+PDPU+Rd%2C+Raysan%2C+Gandhinagar%2C+Gujarat+382426"
   },
   {
     "id": "gn-lead-088",
@@ -1334,7 +1422,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shelter+cafe%2FPickleball+club%2C+Shelter+cafe%2FPickleball+club%2C+Shelter+cafe+Shree+Square%2C+PDPU+Hostel+Rd%2C+opp.+Meera+Skyvue%2C+Nr.PDEU%2C+Raysan%2C+Gujarat+382426"
   },
   {
     "id": "gn-lead-089",
@@ -1349,7 +1438,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rider+Coffee+Bar%2C+Rider+Coffee+Bar%2C+Gandhinagar+-+Kudasan+Rd%2C+opposite+side+tata+consultancy+services%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-090",
@@ -1364,7 +1454,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bhukhhad+Cafe+%26+Restaurant%2C+Stall+No.+1+%26+2%2C+Bhukhhad+Cafe+%26+Restaurant%2C+The+Spicy+Street%2C+opp.+Landmark%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-091",
@@ -1379,7 +1470,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.instagram.com/jadejascafe_24?igsh=MXB0NWlyaWd1ZDZmOA%3D%3D",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Jadeja%E2%80%99s+Restaurant+and+cafe%2C+Jadeja%E2%80%99s+Restaurant+and+cafe%2C+PDPU+collage+road%2C+near+Imperial+sky%2C+next+to+Shahi+sigdi+restaurant%2C+Raysan%2C+Gandhinagar%2C+Gujarat+382426"
   },
   {
     "id": "gn-lead-092",
@@ -1394,7 +1486,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe%2C+ground+floor%2C+Cafe%2C+C+74%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-093",
@@ -1409,7 +1502,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Karan+Go+Insta+Cafe%2C+Karan+Go+Insta+Cafe%2C+103%2C+1st+Floor%2C+Anexi+mall+GH-0%2C+Circle%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-094",
@@ -1424,7 +1518,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=AUG+-+Arena+of+Undefeated+Gamers%2C+survey+no%2C60%2C+AUG+-+Arena+of+Undefeated+Gamers%2C+Pramukh+Anand+Orbit+Mall%2C+E-143%2C+near+Reliance+Cross+Road%2C+opp.+NID+college%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-095",
@@ -1439,7 +1534,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chahgram%2C+A5%2C+Chahgram%2C+Madhuram+Greens%2C+Chowk%2C+near+Sargasan%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-096",
@@ -1454,7 +1550,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Madhuli+Kathiyawadi+Restaurant+%28Porbandar-wala%29+Gujarati+Thali%2C+Madhuli+Kathiyawadi+Restaurant+%28Porbandar-wala%29+Gujarati+Thali%2C+Pramukh+Arcade%2C+Reliance+Cross+Rd%2C+above+The+Shake+Maker%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-097",
@@ -1469,7 +1566,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bhookh+Lagi+Hai%3F%2C+Block+B%2C+Bhookh+Lagi+Hai%3F%2C+Pramukh+Mastana%2C+Shop+No%2C+118-122%2C+nearby+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-098",
@@ -1484,7 +1582,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.theleela.com/the-leela-gandhinagar/restaurants/citrus-junction",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Citrus+Junction%2C+Citrus+Junction%2C+Ahmedabad+State+Highway%2C+nearby+MMCEC%2C+above+Railway+Station%2C+Sector+14%2C+Gandhinagar%2C+Gujarat+382016"
   },
   {
     "id": "gn-lead-099",
@@ -1499,7 +1598,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe+Pride%2C+Cafe+Pride%2C+The+Plutus%2C+opp.+Ashka+Hospital%2C+above+Pantaloons+and+Croma%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-100",
@@ -1514,7 +1614,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=RRASOI+GADH%2C+Shop+A+39%2C+RRASOI+GADH%2C+Pramukh+Anand+Orbit+Mall%2C+behind+Star+Bux%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-101",
@@ -1529,7 +1630,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Hella+Good+Pizzeria+%28Kudasan%29%2C+Ground+Floor%2C+Hella+Good+Pizzeria+%28Kudasan%29%2C+Pramukh+Anand+Orbit+Mall%2C+B-16%2C+near+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-102",
@@ -1544,7 +1646,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Punjabi+Virsa+-+Kudasan%2C+Ground+Floor%2C+The+Punjabi+Virsa+-+Kudasan%2C+Pramukh+Anand+Orbit+Mall%2C+Shop+No%2C+66-C%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-103",
@@ -1559,7 +1662,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=3+Idiots+surti+egg+restaurant%2C+shop-49%2C+3+Idiots+surti+egg+restaurant%2C+Pramukh+Mastana+Complex%2C+Block-B%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-104",
@@ -1574,7 +1678,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Gir+Kathiyavadi+Nehdo%2C+Gir+Kathiyavadi+Nehdo%2C+Pramukh+Mastana+Complex%2C+B-50%2C+Reliance+Cross+Rd%2C+near+Navdurga+Pavbhaji%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-105",
@@ -1589,7 +1694,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Blue+Broccoli+%26+Olives%2C+Blue+Broccoli+%26+Olives%2C+Pramukh+Arcade%2C+GF-11%2C+nr.+rajdhani+society%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-106",
@@ -1604,7 +1710,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=P+R+CAFE%2C+Shop+no.20%2C+P+R+CAFE%2C+Shivanjali+Imperia%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-107",
@@ -1619,7 +1726,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Munching+Moments%2C+Shop+no+4%2C+3rd+floor%2C+Munching+Moments%2C+Swagat+Holiday+Mall+Rd%2C+opposite+Swagat+Flamingo%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-108",
@@ -1634,7 +1742,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=IndieGenie+Cafe+Sargasan%2C+Shop+No.+6%2C+IndieGenie+Cafe+Sargasan%2C+Callisto+Sapphire%2C+The%2C+Palm+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-109",
@@ -1649,7 +1758,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MS+Fast+Food+%26+Cafe%2C+gf+32%2C+MS+Fast+Food+%26+Cafe%2C+Samved+Dreams%2C+Palm+Rd%2C+opp.+Atishay+Shivalay+3%2C+Sargasan%2C+Ahmedabad%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-110",
@@ -1664,7 +1774,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=THE+OVEN+CAFE+AND+FAST+FOOD%2C+THE+OVEN+CAFE+AND+FAST+FOOD%2C+shreeji+swastik+road%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-111",
@@ -1679,7 +1790,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kanji+Kathiyawadi%2C+Kanji+Kathiyawadi%2C+Atria+Business+Hub%2C+A-120+%26+121%2C+KH+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-112",
@@ -1694,7 +1806,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Radhe+Restaurant%2C+Shop+no.+27%2C+Radhe+Restaurant%2C+Pramukh+Tangent%2C+Sargasan+Cross+Rd%2C+near+macdonald%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-113",
@@ -1709,7 +1822,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=KAILASH+FOOD+CORNER%2C+Shop+8%2C+KAILASH+FOOD+CORNER%2C+avani+prasth%2C+nr.+maruti+amrakunj+3%2C+TP+9%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-114",
@@ -1724,7 +1838,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "http://www.dwaekesh.com/",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dwarkesh+dining+hall%2C+Shop+no.+8%2C+g-1%2C+Dwarkesh+dining+hall%2C+sangeet+Circle%2C+shalin+galleria%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382006"
   },
   {
     "id": "gn-lead-115",
@@ -1739,7 +1854,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Namaste+Nagher+%7C+The+Kathiyawadi+Taste%2C+Namaste+Nagher+%7C+The+Kathiyawadi+Taste%2C+Namste+Nagher%2C+Shalin+Galleria+Complex+G+-+37%2C+RTO+Road%2C+G-1+sangit+circle%2C+Gandhinagar%2C+Gujarat+-+382002%2C+Gandhinagar%2C+Gujarat+382006"
   },
   {
     "id": "gn-lead-116",
@@ -1754,7 +1870,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.instagram.com/ma_kathiyawadi.dhaba?igsh=ZDNlZDc0MzIxNw%3D%3D",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MA+KATHIYAWADI+DHABA%2C+Shop+Number+41%2C+MA+KATHIYAWADI+DHABA%2C+Shalin+Galleria%2C+Sangeet+Cir+G1%2C+near+G.1%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382006"
   },
   {
     "id": "gn-lead-117",
@@ -1769,7 +1886,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Zorko+Sargasan+%26+UK+Waffles+%7Ba+unit+of+veer+ventures%7D%2C+Near%3A%2C+Zorko+Sargasan+%26+UK+Waffles+%7Ba+unit+of+veer+ventures%7D%2C+Shreeji+Swastik%2C+14%2Corigin+heights%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-118",
@@ -1784,7 +1902,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.zomato.com/ahmedabad/hetvi-food-sargasan-gandhinagar/order",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=HETVI+FOOD%2C+TP+9%2C+HETVI+FOOD%2C+SHARAN+RESIDENCY%2C+E+401%2C+Shreeji+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-119",
@@ -1799,7 +1918,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.instagram.com/vaishnodevigathiya_gj18?rpxt=c3lxdWFnbm9obzFp",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Vaishnodevi+Ganthiya%2C+Ground+floor%2C+Vaishnodevi+Ganthiya%2C+Atria-b%2C+Shop+B19%2C+20%2C21%2C23%2C+KH0%2C+Sargasan+Cross+Rd%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-120",
@@ -1814,7 +1934,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bombay+bliss%2C+Bombay+bliss%2C+Bhagat+Singh+Marg%2C+opposite+Aashka+Multi-Speciality+Hospital%2C+near+kameshwar+international+school%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-121",
@@ -1829,7 +1950,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Talod+Instaserrve%2C+Shop+No-+K%2C+Talod+Instaserrve%2C+11%2C+Swagat+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-122",
@@ -1844,7 +1966,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kathiyawadi+Village+restaurant%2C+Kathiyawadi+Village+restaurant%2C+103%2C+KH+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-123",
@@ -1859,7 +1982,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tirupati+khiru+sargasan%2C+Tirupati+khiru+sargasan%2C+Shop+5+pramukh+pacific%2C+opposite+Landmark+Harmony%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-124",
@@ -1874,7 +1998,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.instagram.com/gorillazzz_zzz?igsh=OG9rOW9rd3dpaTZ2",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=GorillazZz%2C+GorillazZz%2C+Surya+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-125",
@@ -1889,7 +2014,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Nadiad+Puffwala+Gandhinagar+SARGASAN%2C+Nadiad+Puffwala+Gandhinagar+SARGASAN%2C+ATRIA+-B%2C+nr.+BANK+OF+BARODA%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-126",
@@ -1904,7 +2030,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://ajays.co.in/",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Ajay%E2%80%99s+Caf%C3%A9+Infocity%2C+Gandhinagar%2C+SHOP+NO%2C+Ajay%E2%80%99s+Caf%C3%A9+Infocity%2C+Gandhinagar%2C+SUPER+MALL-2%2C+42%2C+GH-0+CIRCLE%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-127",
@@ -1919,7 +2046,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Crave+Corner+Cafe%2C+6J3F%2B7FW+The+Crave+Corner+Cafe%2C+Sangeet+Cir+G1%2C+Sector+3B%2C+Sector+4%2C+Gandhinagar%2C+Gujarat+382006"
   },
   {
     "id": "gn-lead-128",
@@ -1934,7 +2062,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tomato%E2%80%99s+Gandhinagar%2C+FF101%2C+1st+Floor%2C+Tomato%E2%80%99s+Gandhinagar%2C+SUPER+MALL-2%2C+0%2C+Circle%2C+near+GH+Road%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-129",
@@ -1949,7 +2078,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Urban+Delights%2C+Shop+6%2F7%2C+Urban+Delights%2C+Tower+2%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-130",
@@ -1964,7 +2094,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Khetlaaapa+Gujarati+Thali%2C+108%2C+first+floor%2C+Khetlaaapa+Gujarati+Thali%2C+super+mall+1%2C+107%2C+Infocity+Rd%2C+near+sbi%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-131",
@@ -1979,7 +2110,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Harikrushna+Dining+Hall%2C+Harikrushna+Dining+Hall%2C+super+mall+1%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-132",
@@ -1994,7 +2126,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=ShriNivas+Bhojan+shala%2C+ShriNivas+Bhojan+shala%2C+1%2C+Infocity+Service+Rd%2C+G+Block%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-133",
@@ -2009,7 +2142,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shreeji+Bhojnalay%2C+Shop+No+15%2C+Shreeji+Bhojnalay%2C+super+mall+1%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-134",
@@ -2024,7 +2158,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Eat+Entry+Restaurant+%26+cafe%2C+Shop+No.+14-15%2C+Eat+Entry+Restaurant+%26+cafe%2C+SUPER+MALL-2%2C+behind+HDFC+Bank%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-135",
@@ -2039,7 +2174,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SB+DOSA%2C+SB+DOSA%2C+148%2C+Infocity+Rd%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-136",
@@ -2054,7 +2190,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Engineer%27s+food%2C+The+Engineer%27s+food%2C+Infocity%2C+Gandhinagar+-+Kudasan+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-137",
@@ -2069,7 +2206,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Barbeque+Bois%2C+Barbeque+Bois%2C+Dhirubhai+Ambani+Institute+Of+Information+And+Communication+Technology+Lab%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-138",
@@ -2084,7 +2222,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://pizzacentralgiftcity.netlify.app/",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Pizza+Central+Gift+City%2C+Stall+No+16%2C+Pizza+Central+Gift+City%2C+Maple+99%2C+Food+County%2C+near+GIFT+Tower+2%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382050"
   },
   {
     "id": "gn-lead-139",
@@ -2099,7 +2238,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dev+Cafe+%26+Refreshment+Pure+Veg%2C+Dev+Cafe+%26+Refreshment+Pure+Veg%2C+SEZ%2C+Ground+Floor%2C+Hiranandani+Signature+Building%2C+Block%2C+21B%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382050"
   },
   {
     "id": "gn-lead-140",
@@ -2114,7 +2254,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://all.accor.com/hotel/A741/index.en.shtml",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sangam+%3A+All+Day+Dining%2C+Sangam+%3A+All+Day+Dining%2C+Grand+Mercure%2C+Gujarat+International+Finance+Tec-City%2C+Techcity%2C+Gujarat+382355"
   },
   {
     "id": "gn-lead-141",
@@ -2129,7 +2270,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MADRAS+Cafe%2C+Gift+City%2C+MADRAS+Cafe%2C+Gift+City%2C+Mapple+99%2C+food+county%2C+Gujarat+International+Finance+Tec-City%2C+Gujarat+382050"
   },
   {
     "id": "gn-lead-142",
@@ -2144,7 +2286,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Indrani+Parlour%2C+Indrani+Parlour%2C+Sector+9%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-143",
@@ -2159,7 +2302,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.chaig.in/",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chai+G+Gift+city%2C+Chai+G+Gift+city%2C+360+Matrix+club%2C+gift+city+circle%2C+Shahpur+cross+road%2C+nr.+nayara+petrol+pump%2C+Gandhinagar%2C+Gujarat+382355"
   },
   {
     "id": "gn-lead-144",
@@ -2174,7 +2318,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://sankalprestaurants.com/",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sankalp+express%2C+Sankalp+express%2C+Non+SEZ+Zone%2C+opp.+Gift+Tower-2%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382050"
   },
   {
     "id": "gn-lead-145",
@@ -2189,7 +2334,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://aao-haveli-pe.grexa.site/",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Aao+haveli+pe%2C+Aao+haveli+pe%2C+Near%2Cbasan+before+IIT+Diversion+Rd%2C+Gandhinagar%2C+Palaj%2C+Giftcity%2C+Basan%2C+Gandhinagar%2C+Gujarat+382055"
   },
   {
     "id": "gn-lead-146",
@@ -2204,7 +2350,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.lamilano.pizza/",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=LA+MILANO+PIZZERIA%2C+LA+MILANO+PIZZERIA%2C+12%2C+ELIXIR%2C+OPP+SHREE+RANG+UPVAN+PDPU%2C+TO%2C+Raysan+Rd%2C+GIFT+CITY%2C+Gandhinagar%2C+Gujarat+382426"
   },
   {
     "id": "gn-lead-147",
@@ -2219,7 +2366,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Saurashtra+Nasta+House%2C+Saurashtra+Nasta+House%2C+Sector+3B%2C+Sector+3%2C+Gandhinagar%2C+Gujarat+382006"
   },
   {
     "id": "gn-lead-148",
@@ -2234,7 +2382,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SHAHI+FRY+CENTRE%2C+SHAHI+FRY+CENTRE%2C+1%2C+opp.+Pragati+Medan%2C+Sector+6%2C+Gandhinagar%2C+Gujarat+382006"
   },
   {
     "id": "gn-lead-149",
@@ -2249,7 +2398,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=RAJVEE+EATERY+GIFT+CITY%2C+SHOP+NO+-+06%2C+RAJVEE+EATERY+GIFT+CITY%2C+JANAADHAR+MANGLA%2C+near+GIFT+CITY%2C+East+Gate%2C+Gujarat+International+Finance+Tec-City%2C+Pirojpur%2C+Gandhinagar%2C+Gujarat+382050"
   },
   {
     "id": "gn-lead-150",
@@ -2264,7 +2414,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rajendra+Egg+Centar%2C+Rajendra+Egg+Centar%2C+Shopping+Centre%2C+Sector+9%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-151",
@@ -2279,7 +2430,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.instagram.com/viva_mexico_italia?igsh=emV0ZWkya2d3OGk4",
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
-    "created_at": "2026-11-16T08:00:00Z"
+    "created_at": "2026-11-16T08:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=VIVA+MEXICO+ITALIA%2C+VIVA+MEXICO+ITALIA%2C+Maple+99%2C+Food+County+Garba+Ground%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382050"
   },
   {
     "id": "gn-lead-152",
@@ -2294,7 +2446,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Herb+%26+Crust%2C+shop+no+06%2C+Herb+%26+Crust%2C+Rworld+Complex%2C+Side+to+Zudio%2C+Sector+16%2C+Gandhinagar%2C+Gujarat+382016"
   },
   {
     "id": "gn-lead-153",
@@ -2309,7 +2462,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Ramchandra+Cafe%2C+The+Ramchandra+Cafe%2C+Ramchandra+Niwas%2C+Plot+No.%3A192%2FA%2C+Gandhinagar%2C+Gujarat+382028"
   },
   {
     "id": "gn-lead-154",
@@ -2324,7 +2478,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://tbrcafe.com/",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Bean+Room%2C+5JGH%2BJQX+The+Bean+Room%2C+The+Landmark%2C+B+-+20%2C+Kudasan-Por+Rd%2C+Urjanagar+1%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-155",
@@ -2339,7 +2494,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.shivascoffeebar.com/",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shiva%27s+Coffee+Bar+%28Gandhinagar%29%2C+Shop+No.+02%2C+Shiva%27s+Coffee+Bar+%28Gandhinagar%29%2C+Sharan+Business%2C+near+D-Mart%2C+Green+City%2C+Sector+26%2C+Gandhinagar%2C+Gujarat+382028"
   },
   {
     "id": "gn-lead-156",
@@ -2354,7 +2510,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sandwich+Wale+coffee+bar+%26+snacks%2C+Sandwich+Wale+coffee+bar+%26+snacks%2C+Plot+385%2C+GH+Rd%2C+Sector+16%2C+Gandhinagar%2C+Gujarat+382016"
   },
   {
     "id": "gn-lead-157",
@@ -2369,7 +2526,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe+Cawfee+Tawk%2C+Cafe+Cawfee+Tawk%2C+Road%2C+near+Shahpur+Road%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382355"
   },
   {
     "id": "gn-lead-158",
@@ -2384,7 +2542,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://theindoriartistcafe.lovable.app/",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+indori+artist+cafe%2C+The+indori+artist+cafe%2C+Atria%2C+Sargasan+Cross+Rd%2C+Vasana+Hadmatia%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-159",
@@ -2399,7 +2558,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Great+Indian+Waffle%2C+Shop+no+A+34%2C+Great+Indian+Waffle%2C+orbit+mall%2C+near+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-160",
@@ -2414,7 +2574,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://order.theobroma.in/store-locator/Gandhinagar/theobroma-orbit-mall-gandhinagar",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Theobroma+Bakery+and+Cake+Shop+-+Orbit+Mall%2C+Gandhinagar%2C+Ground+Floor+Unit+no.+17%2C+Theobroma+Bakery+and+Cake+Shop+-+Orbit+Mall%2C+Gandhinagar%2C+Block+B%2BC%29%2C+Orbit+Mall%2C+near+Taco+Bell%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-161",
@@ -2429,7 +2590,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shiv+Cold+Cafe+%26+Har+Har+Bhole+Lassi%2C+Shiv+Cold+Cafe+%26+Har+Har+Bhole+Lassi%2C+Abhishek+Complex%2C+opp.+Hotel+Hawally%2C+Sector+11%2C+Gandhinagar%2C+Gujarat+382010"
   },
   {
     "id": "gn-lead-162",
@@ -2444,7 +2606,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Retro+90%27s+cafe%2C+Retro+90%27s+cafe%2C+Elixir+complex%2C+PDPU+Rd%2C+Raysan%2C+Gujarat+382426"
   },
   {
     "id": "gn-lead-163",
@@ -2459,7 +2622,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chai+Pilo+Kudasan%2C+A19%2C+Chai+Pilo+Kudasan%2C+Ground%2C+Pramukh+Arcade%2C+1%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-164",
@@ -2474,7 +2638,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.chaig.in/",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chai+G+Sector-9%2C+Shop+no+3%2C+Chai+G+Sector-9%2C+Shopping+Center%2C+nr.+NFSU+Campus%2C+Sector+9%2C+Gandhinagar%2C+Gujarat+382007"
   },
   {
     "id": "gn-lead-165",
@@ -2489,7 +2654,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=THE+GLASS+DOOR+CAFE+%26+RESTRO%2C+THE+GLASS+DOOR+CAFE+%26+RESTRO%2C+opp.+VEGETABLE+MARKET%2C+SACHIVALAYA+GYMKHANA%2C+Sector+21%2C+Gandhinagar%2C+Gujarat+382021"
   },
   {
     "id": "gn-lead-166",
@@ -2504,7 +2670,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Har+Har+Bhole+Lassi+Wala%2C+Haveli+Arcade%2C+Har+Har+Bhole+Lassi+Wala%2C+har+har+bohle+lassiwala%2C+opp.+hotal%2C+Sector+11%2C+Gandhinagar%2C+Gujarat+382010"
   },
   {
     "id": "gn-lead-167",
@@ -2519,7 +2686,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Waffle+and+Wings+Gandhinagar%2C+Waffle+and+Wings+Gandhinagar%2C+SHREEJI+CHAIWALAE%2C+Sector+16%2C+Gandhinagar%2C+Gujarat+382016"
   },
   {
     "id": "gn-lead-168",
@@ -2534,7 +2702,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://stores.starbucks.in/store-pages/starbucks-ahmedabad-8/",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Starbucks+-+Hansol%2C+Unit+No.+27%2C+Lower+Ground+Floor%2C+Starbucks+-+Hansol%2C+Cargo+Terminal+T3%2C+Sardar+Vallabhbhai+Patel+International+Airport%2C+Hansol%2C+Ahmedabad%2C+Gujarat+380004"
   },
   {
     "id": "gn-lead-169",
@@ -2549,7 +2718,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "http://www.goldencoffee.in/",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Golden+Coffee+Mfg+Co.%2C+92%2C+Golden+Coffee+Mfg+Co.%2C+Alkapuri+Rowhouse%2C+near+super+School%2C+Ghatlodiya%2C+Ahmedabad%2C+Gujarat+380061"
   },
   {
     "id": "gn-lead-170",
@@ -2564,7 +2734,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://coffeeverse.in/",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Coffeeverse+Experience+Centre%2C+Coffeeverse+Experience+Centre%2C+Premchandnagar+Row+House%2C+Spring+Field%2C+40%2C+Judges+Bunglow+Rd%2C+near+Amul+Auda+Garden%2C+Bodakdev%2C+Ahmedabad%2C+Gujarat+380054"
   },
   {
     "id": "gn-lead-171",
@@ -2579,7 +2750,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://breww47.com/",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Breww+47%2C+G.F.+-+01%2C+Breww+47%2C+Shilp+paradise%2C+Block+-+A%2C+opp.+Times+Square+2%2C+nr.+Maple+County+Road%2C+Bodakdev%2C+Ahmedabad%2C+Gujarat+380059"
   },
   {
     "id": "gn-lead-172",
@@ -2594,7 +2766,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "http://coffeestand.in/",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Coffee+Stand-+Vijay+Cross+Road%2C+11%2C+Coffee+Stand-+Vijay+Cross+Road%2C+Supath+Complex%2C+Vijay+Cross+Rd%2C+Sarvottam+Nagar+Society%2C+Navrangpura%2C+Ahmedabad%2C+Gujarat+380009"
   },
   {
     "id": "gn-lead-173",
@@ -2609,7 +2782,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://korebi.coffee/",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Korebi+Gourmet+HQ%2C+Korebi+Gourmet+HQ%2C+A+501%2C+Mondeal+Heights%2C+Sarkhej+-+Gandhinagar+Hwy%2C+near+Novotel+Hotel%2C+Ahmedabad%2C+Gujarat+380015"
   },
   {
     "id": "gn-lead-174",
@@ -2624,7 +2798,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://dailygrind.in/",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Daily+Grind%2C+2nd+Floor%2C+Daily+Grind%2C+Navneet+Plaza%2C+nr.+Municipal+Market%2C+Mithakhali%2C+Navrangpura%2C+Ahmedabad%2C+Gujarat+380009"
   },
   {
     "id": "gn-lead-175",
@@ -2639,7 +2814,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "http://www.lithosphereuc.com/",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Core+The+Coffee+Shop%2C+Core+The+Coffee+Shop%2C+Rajpath+Rangoli+Rd%2C+behind+Rajpath+Club%2C+Bodakdev%2C+Ahmedabad%2C+Gujarat+380059"
   },
   {
     "id": "gn-lead-176",
@@ -2654,7 +2830,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Mainline+Coffee%2C+GF-001%2C+Mainline+Coffee%2C+Aeon+Complex%2C+Vijay+Cross+Rd%2C+near+HDFC+Bank%2C+Roads%2C+Navrangpura%2C+Ahmedabad%2C+Gujarat+380009"
   },
   {
     "id": "gn-lead-177",
@@ -2669,7 +2846,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://sites.google.com/view/coffee1-coffee-house/home",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Coffee1+SPECIALITY+COFFEE%2C+Coffee1+SPECIALITY+COFFEE%2C+Char+Rasta%2C+near+NID%2C+Rajnagar+Society%2C+Paldi%2C+Ahmedabad%2C+Gujarat+380007"
   },
   {
     "id": "gn-lead-178",
@@ -2684,7 +2862,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://brewgarten.in/menu.html",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Brewgarten%2C+Brewgarten%2C+Besides+Havmor+Ice+Cream+Parlour%2C+Plot+340%2C+Vijay+Cross+Rd%2C+nr.+Nilima+Park+Society%2C+Navrangpura%2C+Ahmedabad%2C+Gujarat+380009"
   },
   {
     "id": "gn-lead-179",
@@ -2699,7 +2878,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Night+out+cold+coffee+bar%2C+Night+out+cold+coffee+bar%2C+Sarkhej+-+Gandhinagar+Hwy%2C+Satellite%2C+Ahmedabad%2C+Gujarat+380015"
   },
   {
     "id": "gn-lead-180",
@@ -2714,7 +2894,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "http://soulbrewcoffee.in/",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Soul+Brew+Coffee%2C+Soul+Brew+Coffee%2C+Bodakdev+36+Rajpath+Rowhouse%2C+opposite+Ahmedabad+International+School%2C+Bodakdev%2C+Ahmedabad%2C+Gujarat+380015"
   },
   {
     "id": "gn-lead-181",
@@ -2729,7 +2910,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://viahventures.com/",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Viah+Ventures%2C+Suite+%231289%2C+Viah+Ventures%2C+Shapath+1%2C+501%2C+Ahmedabad%2C+Gujarat+380054"
   },
   {
     "id": "gn-lead-182",
@@ -2744,7 +2926,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=IndieGenie+Cafe+Randesan%2C+Shop+No+2%2C+IndieGenie+Cafe+Randesan%2C+Hill+Town+Luxuria%2C+Panchdev+Temple+Rd%2C+Randesan%2C+Gandhinagar%2C+Gujarat+382426"
   },
   {
     "id": "gn-lead-183",
@@ -2759,7 +2942,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Kerla+Kitchen+Cafe+-+PDPU%2C+The+Kerla+Kitchen+Cafe+-+PDPU%2C+PDPU+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382426"
   },
   {
     "id": "gn-lead-184",
@@ -2774,7 +2958,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "http://gag.coffee/",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=GAG+Coffee+-+Gift+City%2C+S-1%2C+GAG+Coffee+-+Gift+City%2C+Sangath+smart+life%2C+Shram+Marg%2C+opposite+Jamnabai+Narsee+School%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382050"
   },
   {
     "id": "gn-lead-185",
@@ -2789,7 +2974,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.theleela.com/the-leela-gandhinagar/restaurants/moksha-lounge",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Moksha+Lounge%2C+Moksha+Lounge%2C+The+Leela%2C+Ahmedabad+State+Highway%2C+nearby+MMCEC%2C+above+Railway+Station%2C+Sector+14%2C+Gandhinagar%2C+Gujarat+382016"
   },
   {
     "id": "gn-lead-186",
@@ -2804,7 +2990,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://giftcityclub.com/",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=GIFT+City+Club%2C+5M6Q%2B5X3+GIFT+City+Club%2C+Shram+Marg%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382050"
   },
   {
     "id": "gn-lead-187",
@@ -2819,7 +3006,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Venus+Rooftop+Restro+%26+Cafe%2C+Venus+Rooftop+Restro+%26+Cafe%2C+Terrace+%40%2C+The+Emporio%2C+GJ+SH+41%2C+above+Croma%2C+opp.+PVR+4D+Square+Mall%2C+Harikurpa+Society%2C+Chandkheda%2C+Gandhinagar%2C+Ahmedabad%2C+Gujarat+382424"
   },
   {
     "id": "gn-lead-188",
@@ -2834,7 +3022,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SHIVAYA+CAFE+%26+360%C2%B0+BOXCRICKET%2C+SHIVAYA+CAFE+%26+360%C2%B0+BOXCRICKET%2C+Tarapur+Service+Road%2C+opp.+Swagat+Holiday+Mall+Road%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382421"
   },
   {
     "id": "gn-lead-189",
@@ -2849,7 +3038,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=At20-Ahemdabads+Highest+Rooftop+Cafe%2C+At20-Ahemdabads+Highest+Rooftop+Cafe%2C+Praveg%E2%80%99s+Grand+Eulogia%2C+Sindhu+Bhavan+Road%2C+Sardar+Patel+Ring+Rd%2C+near+Sarkhej+-+Gandhinagar+Highway%2C+Thaltej%2C+Ahmedabad%2C+Gujarat+380058"
   },
   {
     "id": "gn-lead-190",
@@ -2864,7 +3054,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Car+War+Cafe%2C+Car+War+Cafe%2C+Shahpur+Rd%2C+Gujarat+International+Finance+Tec-City%2C+Shahpur%2C+Gujarat+382355"
   },
   {
     "id": "gn-lead-191",
@@ -2879,7 +3070,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://www.instagram.com/shivasuvarsad?igshid=OGQ5ZDc2ODk2ZA==",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shiva%E2%80%99s+coffee+bar+%28Uvarsad%29%2C+5HXP%2BX2V+Shiva%E2%80%99s+coffee+bar+%28Uvarsad%29%2C+Shivas+Coffee+Bar%2C+Uvarsad-Vavol+Rd%2C+Gandhinagar%2C+Gujarat+382422"
   },
   {
     "id": "gn-lead-192",
@@ -2894,7 +3086,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Seven+Cafe-rooftop+cafe%2C+Seven+Cafe-rooftop+cafe%2C+New+Judges+Bungalow+Road%2C+Sarkhej+-+Gandhinagar+Hwy%2C+opp.+High+Court+of+Gujarat%2C+Ahmedabad%2C+Gujarat+380059"
   },
   {
     "id": "gn-lead-193",
@@ -2909,7 +3102,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Indie+Spice%2C+Indie+Spice%2C+Hotel+Empyrean%2C+30352%2C+Gandhinagar%2C+Gujarat+382016"
   },
   {
     "id": "gn-lead-194",
@@ -2924,7 +3118,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shri+PATIDAR+RAJWADI+CHAI+KUDASAN%2C+Shri+PATIDAR+RAJWADI+CHAI+KUDASAN%2C+A%2F25%2C+Pramukh+Arcade%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-195",
@@ -2939,7 +3134,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "http://www.wafflecastle.in/",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1499,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Waffle+Castle%2C+Gandhinagar%2C+Shop+Number+58%2C+Waffle+Castle%2C+Gandhinagar%2C+Pramukh+Anand+Orbit+Mall%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-196",
@@ -2954,7 +3150,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Brown+Butter+Gandhinagar%2C+Brown+Butter+Gandhinagar%2C+Pramukh+Mastana%2C+C65%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-197",
@@ -2969,7 +3166,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Jaggery+Ice+Gola+-+Kudasan%2C+Shop+No.+19%2C+Jaggery+Ice+Gola+-+Kudasan%2C+POORNAM+RESIDENCY%2C+opp.+Radhe+111%2C+near+The+Lifafa+Cafe+%26+Restro%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-198",
@@ -2984,7 +3182,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=UpSarpanch+Chai%2C+UpSarpanch+Chai%2C+pramukh+mastana%2C+C-65%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-199",
@@ -2999,7 +3198,8 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MADRAS+DOSA+CAFE%2C+MADRAS+DOSA+CAFE%2C+nr.+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   },
   {
     "id": "gn-lead-200",
@@ -3014,6 +3214,7 @@ export const INITIAL_LEADS: Lead[] = [
     "website": "https://fizzbub-dx3ykky.gamma.site/",
     "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
     "deal_value": 1999,
-    "created_at": "2026-11-17T02:00:00Z"
+    "created_at": "2026-11-17T02:00:00Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Fizzbub+the+boba+bar%2C+Shop+no+13%2C+Fizzbub+the+boba+bar%2C+The+spicy+street%2C+opposite+landmark%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
   }
 ];
