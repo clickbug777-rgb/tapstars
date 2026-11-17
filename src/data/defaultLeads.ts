@@ -4,6 +4,7 @@ export interface Lead {
   phone: string;
   category: string;
   address: string;
+  city: string;
   area: string;
   review_count: number;
   review_rating: number;
@@ -31,7 +32,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Unique+dental+%26+homoeopathy+clinic%2C+Unique+dental+%26+homoeopathy+clinic%2C+Plot%3A1323%2FB-1%2C%2C+Sector%3A7%2FD%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Unique+dental+%26+homoeopathy+clinic%2C+Unique+dental+%26+homoeopathy+clinic%2C+Plot%3A1323%2FB-1%2C%2C+Sector%3A7%2FD%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-002",
@@ -47,7 +49,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Smile+Care+Dental+Clinic%2C+Smile+Care+Dental+Clinic%2C+Niramay+Medical+Hub%2C+Plot+no+1282%2C+FF+101%2C+Besides+HP+petrol+pump%2C+Sector+6%2C+Gandhinagar%2C+Gujarat+382006"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Smile+Care+Dental+Clinic%2C+Smile+Care+Dental+Clinic%2C+Niramay+Medical+Hub%2C+Plot+no+1282%2C+FF+101%2C+Besides+HP+petrol+pump%2C+Sector+6%2C+Gandhinagar%2C+Gujarat+382006",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-003",
@@ -63,7 +66,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SOHAM+Dental+Care%2C+SOHAM+Dental+Care%2C+218%2F5%2C+CHH+Rd%2C+Sector+21%2C+Gandhinagar%2C+Gujarat+382021"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SOHAM+Dental+Care%2C+SOHAM+Dental+Care%2C+218%2F5%2C+CHH+Rd%2C+Sector+21%2C+Gandhinagar%2C+Gujarat+382021",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-004",
@@ -79,7 +83,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Viswa+beauty+salon%2C+Viswa+beauty+salon%2C+Avkar+complex%2C+1364%2F2%2C+near+by+Uma+selection%2C+Sector+7D%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Viswa+beauty+salon%2C+Viswa+beauty+salon%2C+Avkar+complex%2C+1364%2F2%2C+near+by+Uma+selection%2C+Sector+7D%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-005",
@@ -95,7 +100,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=IMPRESSIVE+32+-+MULTISPECIALITY+DENTAL+CARE+%26+DENTAL+IMPLANT+CENTER%2C+135%2C136+First+Floor%2C+IMPRESSIVE+32+-+MULTISPECIALITY+DENTAL+CARE+%26+DENTAL+IMPLANT+CENTER%2C+SUPER+MALL-2%2C+Circle%2C+nr.+GH-0%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=IMPRESSIVE+32+-+MULTISPECIALITY+DENTAL+CARE+%26+DENTAL+IMPLANT+CENTER%2C+135%2C136+First+Floor%2C+IMPRESSIVE+32+-+MULTISPECIALITY+DENTAL+CARE+%26+DENTAL+IMPLANT+CENTER%2C+SUPER+MALL-2%2C+Circle%2C+nr.+GH-0%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-006",
@@ -111,7 +117,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr.+Hemant+Kumar+Suthar+Dental+Clinic+%26+Dr.+Ashish+Parikh%2C+Dr.+Hemant+Kumar+Suthar+Dental+Clinic+%26+Dr.+Ashish+Parikh%2C+Gayatri+Hospital%2C+G-2%2C+G+Rd%2C+Sector+6%2FC%2C+Sector+6%2C+Gandhinagar%2C+Gujarat+382006"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr.+Hemant+Kumar+Suthar+Dental+Clinic+%26+Dr.+Ashish+Parikh%2C+Dr.+Hemant+Kumar+Suthar+Dental+Clinic+%26+Dr.+Ashish+Parikh%2C+Gayatri+Hospital%2C+G-2%2C+G+Rd%2C+Sector+6%2FC%2C+Sector+6%2C+Gandhinagar%2C+Gujarat+382006",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-007",
@@ -127,7 +134,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Vishal+Dental+Care%2C+SHOP+NO%3AG-2%2C+Vishal+Dental+Care%2C+Shreenath+Complex%2C+Bus+Stop%2C+Rd+No.+5%2C+near+to+17%2F22%2C+below+Sarvoday+Laboratory%2C+Sector+22%2C+Gandhinagar%2C+Gujarat+382021"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Vishal+Dental+Care%2C+SHOP+NO%3AG-2%2C+Vishal+Dental+Care%2C+Shreenath+Complex%2C+Bus+Stop%2C+Rd+No.+5%2C+near+to+17%2F22%2C+below+Sarvoday+Laboratory%2C+Sector+22%2C+Gandhinagar%2C+Gujarat+382021",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-008",
@@ -143,7 +151,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SJ+Dental+Care%2C+shop+number+104%2C+SJ+Dental+Care%2C+Harigold+Apartment%2C+Pandit+Dindayal+Upadhyay+Marg%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SJ+Dental+Care%2C+shop+number+104%2C+SJ+Dental+Care%2C+Harigold+Apartment%2C+Pandit+Dindayal+Upadhyay+Marg%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-009",
@@ -159,7 +168,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=FACEMAX+DENTAL+CLINIC+AND+IMPLANT+CENTRE%2C+Shop+E+152%2C+FACEMAX+DENTAL+CLINIC+AND+IMPLANT+CENTRE%2C+Pramukh+Anand+Orbit+Mall%2C+near+Reliance+circle%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=FACEMAX+DENTAL+CLINIC+AND+IMPLANT+CENTRE%2C+Shop+E+152%2C+FACEMAX+DENTAL+CLINIC+AND+IMPLANT+CENTRE%2C+Pramukh+Anand+Orbit+Mall%2C+near+Reliance+circle%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-010",
@@ -175,7 +185,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Teeth+Care+Dental+Clinic+-+Gandhinagar%2C+Teeth+Care+Dental+Clinic+-+Gandhinagar%2C+1st+Floor%2C+Pramukh+Apartments%2C+Gandhinagar+Sector+20%2C%2C+Gandhinagar%2C+Gujarat+382021"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Teeth+Care+Dental+Clinic+-+Gandhinagar%2C+Teeth+Care+Dental+Clinic+-+Gandhinagar%2C+1st+Floor%2C+Pramukh+Apartments%2C+Gandhinagar+Sector+20%2C%2C+Gandhinagar%2C+Gujarat+382021",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-011",
@@ -191,7 +202,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Diva+Salon+%26+Academy+-+Gandhinagar%2C+shop+no.+91+%26+92%2C+Diva+Salon+%26+Academy+-+Gandhinagar%2C+orbit+Mall%2C+Gandhinagar+-+Kudasan+Rd%2C+Kudasan%2C+Ahmedabad%2C+Gandhinagar%2C+Gujarat+382421"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Diva+Salon+%26+Academy+-+Gandhinagar%2C+shop+no.+91+%26+92%2C+Diva+Salon+%26+Academy+-+Gandhinagar%2C+orbit+Mall%2C+Gandhinagar+-+Kudasan+Rd%2C+Kudasan%2C+Ahmedabad%2C+Gandhinagar%2C+Gujarat+382421",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-012",
@@ -207,7 +219,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Pooja+Dental+Care%2C+Basement%2C+plot+no+718%2C+Pooja+Dental+Care%2C+Shopping+Centre%2C+Sector+22%2C+Gandhinagar%2C+Gujarat+382021"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Pooja+Dental+Care%2C+Basement%2C+plot+no+718%2C+Pooja+Dental+Care%2C+Shopping+Centre%2C+Sector+22%2C+Gandhinagar%2C+Gujarat+382021",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-013",
@@ -223,7 +236,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Yashdeep+Care+Hospital+I+Dental+Clinic+I+Dr.+Avadhi+Patel+B.D.S.%2C+Yashdeep+Care+Hospital+I+Dental+Clinic+I+Dr.+Avadhi+Patel+B.D.S.%2C+Plot+no.+191%2FB%2C+near+Sec+-29%2C+near+CH+-6%2C+Sector+29%2C+Gandhinagar%2C+Gujarat+382028"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Yashdeep+Care+Hospital+I+Dental+Clinic+I+Dr.+Avadhi+Patel+B.D.S.%2C+Yashdeep+Care+Hospital+I+Dental+Clinic+I+Dr.+Avadhi+Patel+B.D.S.%2C+Plot+no.+191%2FB%2C+near+Sec+-29%2C+near+CH+-6%2C+Sector+29%2C+Gandhinagar%2C+Gujarat+382028",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-014",
@@ -239,7 +253,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Atelier+The+Family+Salon%2C+Shop+No.+1%2C+Atelier+The+Family+Salon%2C+SUNSHINE+HEIGHTS-1%2C+nr.+Nanda+Hero+Showroom%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382426"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Atelier+The+Family+Salon%2C+Shop+No.+1%2C+Atelier+The+Family+Salon%2C+SUNSHINE+HEIGHTS-1%2C+nr.+Nanda+Hero+Showroom%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382426",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-015",
@@ -255,7 +270,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Mahi+Dental+Clinic%2C+Block+C%2C+Mahi+Dental+Clinic%2C+Block+C%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Mahi+Dental+Clinic%2C+Block+C%2C+Mahi+Dental+Clinic%2C+Block+C%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-016",
@@ -271,7 +287,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=GMDC+Dental+Clinic+-+GIFT+City+Gandhinagar%2C+E-1%2C+GMDC+Dental+Clinic+-+GIFT+City+Gandhinagar%2C+Radhe+Infinity%2C+E-506%2C+nr.+Raksha+Shakti+Circle%2C+GIFT+City%2C+Gandhinagar%2C+Gujarat+382426"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=GMDC+Dental+Clinic+-+GIFT+City+Gandhinagar%2C+E-1%2C+GMDC+Dental+Clinic+-+GIFT+City+Gandhinagar%2C+Radhe+Infinity%2C+E-506%2C+nr.+Raksha+Shakti+Circle%2C+GIFT+City%2C+Gandhinagar%2C+Gujarat+382426",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-017",
@@ -287,7 +304,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Yashdeep+Dental+Clinic+in+Gandhinagar%2C+Yashdeep+Dental+Clinic+in+Gandhinagar%2C+589%2F2%2C+Bside+Patel+Parlour.+Gh-2%2C+GH+Rd%2C+Sector+7%2FB%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382006"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Yashdeep+Dental+Clinic+in+Gandhinagar%2C+Yashdeep+Dental+Clinic+in+Gandhinagar%2C+589%2F2%2C+Bside+Patel+Parlour.+Gh-2%2C+GH+Rd%2C+Sector+7%2FB%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382006",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-018",
@@ -303,7 +321,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=CORDS+Dental+Clinic%2C+Shop+307%2C+CORDS+Dental+Clinic%2C+Sant+Vihar+3%2C+Happiness+Rd%2C+near+GNLU+Metro+station%2C+Koba%2C+Gandhinagar%2C+Gujarat+382426"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=CORDS+Dental+Clinic%2C+Shop+307%2C+CORDS+Dental+Clinic%2C+Sant+Vihar+3%2C+Happiness+Rd%2C+near+GNLU+Metro+station%2C+Koba%2C+Gandhinagar%2C+Gujarat+382426",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-019",
@@ -319,7 +338,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr.+Ajay+Patel+-+Absodent+Dental+Clinic+Gandhinagar+Branch%2C+GF-14%2C+Dr.+Ajay+Patel+-+Absodent+Dental+Clinic+Gandhinagar+Branch%2C+Samarth+Heaven+-+6%2C+K+Raheja+Rd%2C+Koba%2C+Gandhinagar%2C+Gujarat+382426"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr.+Ajay+Patel+-+Absodent+Dental+Clinic+Gandhinagar+Branch%2C+GF-14%2C+Dr.+Ajay+Patel+-+Absodent+Dental+Clinic+Gandhinagar+Branch%2C+Samarth+Heaven+-+6%2C+K+Raheja+Rd%2C+Koba%2C+Gandhinagar%2C+Gujarat+382426",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-020",
@@ -335,7 +355,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SJ+Unisex+Salon%2C+Shop+No%2C+SJ+Unisex+Salon%2C+1st+Floor%2C+Pramukh+Arcade%2C+B133+%26+B144%2C+nr.+Reliance+Circle%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SJ+Unisex+Salon%2C+Shop+No%2C+SJ+Unisex+Salon%2C+1st+Floor%2C+Pramukh+Arcade%2C+B133+%26+B144%2C+nr.+Reliance+Circle%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-021",
@@ -351,7 +372,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Fine+Feather+Dental+Clinic%2C+1st+floor%2C+Fine+Feather+Dental+Clinic%2C+Narayani+Hospital%2C+1008%2F2%2C+Rd+Number+3%2C+above+Narayani+Hospital%2C+opposite+S+T+Depot%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Fine+Feather+Dental+Clinic%2C+1st+floor%2C+Fine+Feather+Dental+Clinic%2C+Narayani+Hospital%2C+1008%2F2%2C+Rd+Number+3%2C+above+Narayani+Hospital%2C+opposite+S+T+Depot%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-022",
@@ -367,7 +389,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Top+In+Town+Hair+Salon%2C+Top+In+Town+Hair+Salon%2C+B-12+Radhe+Arcade%2C+nr.+SBI+Bank%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Top+In+Town+Hair+Salon%2C+Top+In+Town+Hair+Salon%2C+B-12+Radhe+Arcade%2C+nr.+SBI+Bank%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-023",
@@ -383,7 +406,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=sparkle+salon%2C+1ST+FLOOR%2C+sparkle+salon%2C+RADHE+SQUARE%2C+109%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=sparkle+salon%2C+1ST+FLOOR%2C+sparkle+salon%2C+RADHE+SQUARE%2C+109%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-024",
@@ -399,7 +423,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rudra+Dental+Clinic%2C+Rudra+Dental+Clinic%2C+opp.+Sant+Rohidas+Teple%2C+Plot+No+848%2F1%2C+Sector+6%2FC%2C+Sector+6%2C+Gandhinagar%2C+Gujarat+382006"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rudra+Dental+Clinic%2C+Rudra+Dental+Clinic%2C+opp.+Sant+Rohidas+Teple%2C+Plot+No+848%2F1%2C+Sector+6%2FC%2C+Sector+6%2C+Gandhinagar%2C+Gujarat+382006",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-025",
@@ -415,7 +440,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rajvi+Hair+Cut+Salon%2C+1st+Floor%2C+Rajvi+Hair+Cut+Salon%2C+Keshav+Aaradhyam%2C+110%2C+Gandhinagar+-+Kudasan+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rajvi+Hair+Cut+Salon%2C+1st+Floor%2C+Rajvi+Hair+Cut+Salon%2C+Keshav+Aaradhyam%2C+110%2C+Gandhinagar+-+Kudasan+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-026",
@@ -431,7 +457,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Susmit+Multispeciality+Dental+Clinic+%26+Oral+Implant+Centre%2C+Susmit+Multispeciality+Dental+Clinic+%26+Oral+Implant+Centre%2C+Plot+no+1225%2F1%2C+opposite+Chaudhary+school%2C+Sector+7D%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Susmit+Multispeciality+Dental+Clinic+%26+Oral+Implant+Centre%2C+Susmit+Multispeciality+Dental+Clinic+%26+Oral+Implant+Centre%2C+Plot+no+1225%2F1%2C+opposite+Chaudhary+school%2C+Sector+7D%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-027",
@@ -447,7 +474,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=RC+salon+%26+academy%2C+Second+floor%2C+RC+salon+%26+academy%2C+The+landmark%2C+A-219%2C+opp.+Kansar+restaurant%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=RC+salon+%26+academy%2C+Second+floor%2C+RC+salon+%26+academy%2C+The+landmark%2C+A-219%2C+opp.+Kansar+restaurant%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-028",
@@ -463,7 +491,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dhara+Dental+Clinic%2C+Dhara+Dental+Clinic%2C+Sector-7%27C%2C+Plot+925%2F2%2C+near+ST+Depot%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dhara+Dental+Clinic%2C+Dhara+Dental+Clinic%2C+Sector-7%27C%2C+Plot+925%2F2%2C+near+ST+Depot%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-029",
@@ -479,7 +508,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Blossom+Beauty+Salon%2C+168%2C+Blossom+Beauty+Salon%2C+Suyash+Solitaire%2C+Road%2C+opp.+Podar+Internation+School%2C+Kudasan%2C+Por%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Blossom+Beauty+Salon%2C+168%2C+Blossom+Beauty+Salon%2C+Suyash+Solitaire%2C+Road%2C+opp.+Podar+Internation+School%2C+Kudasan%2C+Por%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-030",
@@ -495,7 +525,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr+Dhara+Patel+%2F+Dr+Bhavin+Patel+%22+OraCare+-+Advance+dental+care+and+implant+centre%22%2C+Ground+Floor%2C+Dr+Dhara+Patel+%2F+Dr+Bhavin+Patel+%22+OraCare+-+Advance+dental+care+and+implant+centre%22%2C+Plot+No+-+31%2F1%2C+Sector-3%2FA%2C+Sector+3%2C+Gandhinagar%2C+Gujarat+382006"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr+Dhara+Patel+%2F+Dr+Bhavin+Patel+%22+OraCare+-+Advance+dental+care+and+implant+centre%22%2C+Ground+Floor%2C+Dr+Dhara+Patel+%2F+Dr+Bhavin+Patel+%22+OraCare+-+Advance+dental+care+and+implant+centre%22%2C+Plot+No+-+31%2F1%2C+Sector-3%2FA%2C+Sector+3%2C+Gandhinagar%2C+Gujarat+382006",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-031",
@@ -511,7 +542,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Siara+The+Salon%2C+Shop+No-106%2C+Kabirshilp%2C+Siara+The+Salon%2C+Kudasan-Por+Rd%2C+opp.+kansar+hotel%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Siara+The+Salon%2C+Shop+No-106%2C+Kabirshilp%2C+Siara+The+Salon%2C+Kudasan-Por+Rd%2C+opp.+kansar+hotel%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-032",
@@ -527,7 +559,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 1499,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shraddhadeep+Dental+Clinic%2C+Shraddhadeep+Dental+Clinic%2C+PLOT+NO.+259%2F2%2C+SECTOR+2%2FB%2C+NR.+GH-0+CROSS+ROAD%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shraddhadeep+Dental+Clinic%2C+Shraddhadeep+Dental+Clinic%2C+PLOT+NO.+259%2F2%2C+SECTOR+2%2FB%2C+NR.+GH-0+CROSS+ROAD%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-033",
@@ -543,7 +576,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Saloo+Hair+By+Chets%2C+Shop+no+w00-7%2C+Saloo+Hair+By+Chets%2C+Siddhraj+Z+Square%2C+near+by+union+bank+of+india%2C+opposite+The+Landmark%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Saloo+Hair+By+Chets%2C+Shop+no+w00-7%2C+Saloo+Hair+By+Chets%2C+Siddhraj+Z+Square%2C+near+by+union+bank+of+india%2C+opposite+The+Landmark%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-034",
@@ -559,7 +593,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=On+the+Rocks+Cafe%2C+Shop+No.6%2C+On+the+Rocks+Cafe%2C+Shopping+Centre%2C+Sector+9%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=On+the+Rocks+Cafe%2C+Shop+No.6%2C+On+the+Rocks+Cafe%2C+Shopping+Centre%2C+Sector+9%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-035",
@@ -575,7 +610,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Saheli+beauty+care%2C+FF-104%2C+Saheli+beauty+care%2C+RADHE+Times+Square%2C+cross+Road%2C+nr.+Hotel+Management+College%2C+Kudasan%2C+Bhaijipura%2C+Gujarat+382426"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Saheli+beauty+care%2C+FF-104%2C+Saheli+beauty+care%2C+RADHE+Times+Square%2C+cross+Road%2C+nr.+Hotel+Management+College%2C+Kudasan%2C+Bhaijipura%2C+Gujarat+382426",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-036",
@@ -591,7 +627,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Blush+The+Beauty+Point%2C+Blush+The+Beauty+Point%2C+Pramukh+Arcade%2C+A-122%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Blush+The+Beauty+Point%2C+Blush+The+Beauty+Point%2C+Pramukh+Arcade%2C+A-122%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-037",
@@ -607,7 +644,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rich+Salon+%26+Academy%2C+Rich+Salon+%26+Academy%2C+Suyash+Solitaire%2C+38%2C+Kudasan-Por+Rd%2C+opp.+PRATISTHA+ELEGANCE%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rich+Salon+%26+Academy%2C+Rich+Salon+%26+Academy%2C+Suyash+Solitaire%2C+38%2C+Kudasan-Por+Rd%2C+opp.+PRATISTHA+ELEGANCE%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-038",
@@ -623,7 +661,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=shree+Beauty+zone%2C+shop+no+36%2C+shree+Beauty+zone%2C+shivalaya+residency%2C+36%2C+Ground+floor%2C+Palm+Rd%2C+opposite+Vishal+Super+Market%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=shree+Beauty+zone%2C+shop+no+36%2C+shree+Beauty+zone%2C+shivalaya+residency%2C+36%2C+Ground+floor%2C+Palm+Rd%2C+opposite+Vishal+Super+Market%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-039",
@@ -639,7 +678,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rati+Beauty+salon%2C+Rati+Beauty+salon%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rati+Beauty+salon%2C+Rati+Beauty+salon%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-040",
@@ -655,7 +695,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Viyana+Dental+Care+%26+Implant+Center+-+Gandhinagar%2C+6J7H%2B4X6+Viyana+Dental+Care+%26+Implant+Center+-+Gandhinagar%2C+653%2C+Gayatri+Hospital%2C+G+Rd%2C+Sector+6-b%2C+Sector+6%2C+Gandhinagar%2C+Gujarat+382006"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Viyana+Dental+Care+%26+Implant+Center+-+Gandhinagar%2C+6J7H%2B4X6+Viyana+Dental+Care+%26+Implant+Center+-+Gandhinagar%2C+653%2C+Gayatri+Hospital%2C+G+Rd%2C+Sector+6-b%2C+Sector+6%2C+Gandhinagar%2C+Gujarat+382006",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-041",
@@ -671,7 +712,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tulip+the+beauty+lounge%2C+106%2C+1st+floor%2C+Tulip+the+beauty+lounge%2C+Pramukh+Mastana%2C+A-105%2C+near+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tulip+the+beauty+lounge%2C+106%2C+1st+floor%2C+Tulip+the+beauty+lounge%2C+Pramukh+Mastana%2C+A-105%2C+near+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-042",
@@ -687,7 +729,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Hair+Lab+Family+Salon%2C+Hair+Lab+Family+Salon%2C+Shop+no.+C-117+Swagata+Rainforest+2+Commercial+Complex-c%2C+opp.+Royal+Honda%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Hair+Lab+Family+Salon%2C+Hair+Lab+Family+Salon%2C+Shop+no.+C-117+Swagata+Rainforest+2+Commercial+Complex-c%2C+opp.+Royal+Honda%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-043",
@@ -703,7 +746,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Be+Rich+Luxury+Salon+Gandhinagar%2C+1st+floor%2C+Be+Rich+Luxury+Salon+Gandhinagar%2C+Siddharth+Z+Square%2C+E-102%2C+opp.+THE+MASALA+SECRETS%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Be+Rich+Luxury+Salon+Gandhinagar%2C+1st+floor%2C+Be+Rich+Luxury+Salon+Gandhinagar%2C+Siddharth+Z+Square%2C+E-102%2C+opp.+THE+MASALA+SECRETS%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-044",
@@ -719,7 +763,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shrrijee+Dental+Care+%28+Dr.Ankur+Parmar+%29%2C+6J8R%2B2R3+Shrrijee+Dental+Care+%28+Dr.Ankur+Parmar+%29%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shrrijee+Dental+Care+%28+Dr.Ankur+Parmar+%29%2C+6J8R%2B2R3+Shrrijee+Dental+Care+%28+Dr.Ankur+Parmar+%29%2C+Sector+7%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-045",
@@ -735,7 +780,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Miracle+Touch+Beauty+Salon%2C+Miracle+Touch+Beauty+Salon%2C+Manorath+Lifestyle%2C+7%2C+B%2Fh%2C+Panchdev+Temple+Rd%2C+Urjanagar+1%2C+Randesan%2C+Gandhinagar%2C+Gujarat+382426"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Miracle+Touch+Beauty+Salon%2C+Miracle+Touch+Beauty+Salon%2C+Manorath+Lifestyle%2C+7%2C+B%2Fh%2C+Panchdev+Temple+Rd%2C+Urjanagar+1%2C+Randesan%2C+Gandhinagar%2C+Gujarat+382426",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-046",
@@ -751,7 +797,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Beauty+Gallery+Salon%2C+Shop+-7%2C+The+Beauty+Gallery+Salon%2C+POORNAM+RESIDENCY%2C+Prominent+Hotel+Rd%2C+opp.+south+Indian+bank%2C+Urjanagar+1%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Beauty+Gallery+Salon%2C+Shop+-7%2C+The+Beauty+Gallery+Salon%2C+POORNAM+RESIDENCY%2C+Prominent+Hotel+Rd%2C+opp.+south+Indian+bank%2C+Urjanagar+1%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-047",
@@ -767,7 +814,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Horizon+dental+clinic+and+implant+center%2C+Horizon+dental+clinic+and+implant+center%2C+Pramukh+Horizon-2%2C+108%2C+PSY+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Horizon+dental+clinic+and+implant+center%2C+Horizon+dental+clinic+and+implant+center%2C+Pramukh+Horizon-2%2C+108%2C+PSY+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-048",
@@ -783,7 +831,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MBrace+Dental+Care-+MBrace+Dental+Clinic+in+Gandhinagar+%7C+Best+Dentist+%26+Orthodontist+Clinic+%7C+Teeth+Whitening+Clinic%2C+Shop+No-158%2C+MBrace+Dental+Care-+MBrace+Dental+Clinic+in+Gandhinagar+%7C+Best+Dentist+%26+Orthodontist+Clinic+%7C+Teeth+Whitening+Clinic%2C+Suyash+Solitaire%2C+Kudasan-Por+Rd%2C+nr.+Podar+International+School%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MBrace+Dental+Care-+MBrace+Dental+Clinic+in+Gandhinagar+%7C+Best+Dentist+%26+Orthodontist+Clinic+%7C+Teeth+Whitening+Clinic%2C+Shop+No-158%2C+MBrace+Dental+Care-+MBrace+Dental+Clinic+in+Gandhinagar+%7C+Best+Dentist+%26+Orthodontist+Clinic+%7C+Teeth+Whitening+Clinic%2C+Suyash+Solitaire%2C+Kudasan-Por+Rd%2C+nr.+Podar+International+School%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-049",
@@ -799,7 +848,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shubham+Dental+Care+%26+Implant+Center%2C+2+nd+floor%2C+Shubham+Dental+Care+%26+Implant+Center%2C+Shivalay+Arcade%2C+Shubham+Dental+Care%2C+above+GV+Books%2C+near+Apna+Bajar%2C+Sector+6%2FA%2C+Gandhinagar%2C+Gujarat+382006"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shubham+Dental+Care+%26+Implant+Center%2C+2+nd+floor%2C+Shubham+Dental+Care+%26+Implant+Center%2C+Shivalay+Arcade%2C+Shubham+Dental+Care%2C+above+GV+Books%2C+near+Apna+Bajar%2C+Sector+6%2FA%2C+Gandhinagar%2C+Gujarat+382006",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-050",
@@ -815,7 +865,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Care+about+Smile+%26+Skin+-+Dental+%26+Aesthetics+By+Dr+Crima%2C+Care+about+Smile+%26+Skin+-+Dental+%26+Aesthetics+By+Dr+Crima%2C+Pramukh+Anand+Orbit+Malls%2C+Urjanagar+1%2C+D+255+256%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Care+about+Smile+%26+Skin+-+Dental+%26+Aesthetics+By+Dr+Crima%2C+Care+about+Smile+%26+Skin+-+Dental+%26+Aesthetics+By+Dr+Crima%2C+Pramukh+Anand+Orbit+Malls%2C+Urjanagar+1%2C+D+255+256%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-051",
@@ -831,7 +882,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Janvi+Hair+and+Beauty+Studio%2C+Shop+No.114%2C+Janvi+Hair+and+Beauty+Studio%2C+The+Urbania+Complex%2C+Palm+Rd%2C+above+SBI+Bank%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382421"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Janvi+Hair+and+Beauty+Studio%2C+Shop+No.114%2C+Janvi+Hair+and+Beauty+Studio%2C+The+Urbania+Complex%2C+Palm+Rd%2C+above+SBI+Bank%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382421",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-052",
@@ -847,7 +899,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Clove+Dental+Clinic+-+Kudasan%2C+Gandhinagar%2C+Shop+No.+%3A-+25%2C+26%2C+Clove+Dental+Clinic+-+Kudasan%2C+Gandhinagar%2C+27%2C+Akshat+Heaven+Rd%2C+near+Sahajanand+City%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382421"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Clove+Dental+Clinic+-+Kudasan%2C+Gandhinagar%2C+Shop+No.+%3A-+25%2C+26%2C+Clove+Dental+Clinic+-+Kudasan%2C+Gandhinagar%2C+27%2C+Akshat+Heaven+Rd%2C+near+Sahajanand+City%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382421",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-053",
@@ -863,7 +916,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tiara+Beauty+Studio%2C+Tiara+Beauty+Studio%2C+112-A%2C+School%2C+opp.+Swaminarayan+Dham+International+School%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382426"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tiara+Beauty+Studio%2C+Tiara+Beauty+Studio%2C+112-A%2C+School%2C+opp.+Swaminarayan+Dham+International+School%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382426",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-054",
@@ -879,7 +933,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Royal+Dental+Care%2C+Royal+Dental+Care%2C+Plot+No+145%2C+2nd+Floor%2C+Royal+Honda+Showroom%2C+Sector+21%2C+Gandhinagar%2C+Gujarat+382021"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Royal+Dental+Care%2C+Royal+Dental+Care%2C+Plot+No+145%2C+2nd+Floor%2C+Royal+Honda+Showroom%2C+Sector+21%2C+Gandhinagar%2C+Gujarat+382021",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-055",
@@ -895,7 +950,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Black+queen+salon+%26+Academy%2C+Black+queen+salon+%26+Academy%2C+KANAM+RESIDENCY-2%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Black+queen+salon+%26+Academy%2C+Black+queen+salon+%26+Academy%2C+KANAM+RESIDENCY-2%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-056",
@@ -911,7 +967,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=32+Smile+Stone+Dental+Clinic+and+implant+center%2C+32+Smile+Stone+Dental+Clinic+and+implant+center%2C+Plot+No.148%2C+Near+R-world+theatre%2C+Nr.+Honda+Show+Room%2C+District+Shopping+Center%2C+CHH+Rd%2C+Sector+21%2C+Gandhinagar%2C+Gujarat+382021"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=32+Smile+Stone+Dental+Clinic+and+implant+center%2C+32+Smile+Stone+Dental+Clinic+and+implant+center%2C+Plot+No.148%2C+Near+R-world+theatre%2C+Nr.+Honda+Show+Room%2C+District+Shopping+Center%2C+CHH+Rd%2C+Sector+21%2C+Gandhinagar%2C+Gujarat+382021",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-057",
@@ -927,7 +984,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Ashirwad+Dental+hospital+and+Implant+center%2C+Ashirwad+Dental+hospital+and+Implant+center%2C+911%2F1%2C+sec+7+c%2C+behind+vadilal+ice+cream+parlor%2C+gandhinagar+St+bus+stop%2C%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Ashirwad+Dental+hospital+and+Implant+center%2C+Ashirwad+Dental+hospital+and+Implant+center%2C+911%2F1%2C+sec+7+c%2C+behind+vadilal+ice+cream+parlor%2C+gandhinagar+St+bus+stop%2C%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-058",
@@ -943,7 +1001,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr+Komal%27+s+Dental+Clinic%2C+Dr+Komal%27+s+Dental+Clinic%2C+Ground+floor+23%2C+Sarthak+Fortune+Mall+Opposite+City+Pulse+theatre%2C+near+Smvs+hospital%2C+Randesan%2C+Gandhinagar%2C+Gujarat+382426"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr+Komal%27+s+Dental+Clinic%2C+Dr+Komal%27+s+Dental+Clinic%2C+Ground+floor+23%2C+Sarthak+Fortune+Mall+Opposite+City+Pulse+theatre%2C+near+Smvs+hospital%2C+Randesan%2C+Gandhinagar%2C+Gujarat+382426",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-059",
@@ -959,7 +1018,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sure+Cure+Multispeciality+Dental+Clinic%2C+Sure+Cure+Multispeciality+Dental+Clinic%2C+Pramukh+Arcade%2C+A-220%2C+Reliance+Cross+Rd%2C+above+Furat+Restaurant%2C+opp.+NID%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sure+Cure+Multispeciality+Dental+Clinic%2C+Sure+Cure+Multispeciality+Dental+Clinic%2C+Pramukh+Arcade%2C+A-220%2C+Reliance+Cross+Rd%2C+above+Furat+Restaurant%2C+opp.+NID%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-060",
@@ -975,7 +1035,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Waves+The+Salon+%28+hair+and+beauty+%29%2C+Waves+The+Salon+%28+hair+and+beauty+%29%2C+Shop+no+110%2CPramukh+Arcade+2%2C+Near%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Waves+The+Salon+%28+hair+and+beauty+%29%2C+Waves+The+Salon+%28+hair+and+beauty+%29%2C+Shop+no+110%2CPramukh+Arcade+2%2C+Near%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-061",
@@ -991,7 +1052,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Smile+up+dental+clinic%2C+First+floor%2C+Smile+up+dental+clinic%2C+Pramukh+Arista%2C+Shreeji+Rd%2C+near+The+Emperial%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Smile+up+dental+clinic%2C+First+floor%2C+Smile+up+dental+clinic%2C+Pramukh+Arista%2C+Shreeji+Rd%2C+near+The+Emperial%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-062",
@@ -1007,7 +1069,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Vinayak+Orthopaedic%2C+Vinayak+Orthopaedic%2C+Bus+Stand%2C+958%2F2%2C+Sector+7%2FC%2C+GH+3+Cir%2C+opposite+S+T%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Vinayak+Orthopaedic%2C+Vinayak+Orthopaedic%2C+Bus+Stand%2C+958%2F2%2C+Sector+7%2FC%2C+GH+3+Cir%2C+opposite+S+T%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-063",
@@ -1023,7 +1086,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dk+unisex+salon%2C+%27%27+Shree+%27%27%2C+Dk+unisex+salon%2C+nr.+Nexa+Showroom%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dk+unisex+salon%2C+%27%27+Shree+%27%27%2C+Dk+unisex+salon%2C+nr.+Nexa+Showroom%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-064",
@@ -1039,7 +1103,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bharat+Dental+Hospital+-+A+Multispeciality+Cosmetic+-+Laser+%26+Implant+Clinic%2C+Bharat+Dental+Hospital+-+A+Multispeciality+Cosmetic+-+Laser+%26+Implant+Clinic%2C+Anand+Vatika+Society%2C+146%2F2%2C+Sector+22%2C+Gandhinagar%2C+Gujarat+382021"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bharat+Dental+Hospital+-+A+Multispeciality+Cosmetic+-+Laser+%26+Implant+Clinic%2C+Bharat+Dental+Hospital+-+A+Multispeciality+Cosmetic+-+Laser+%26+Implant+Clinic%2C+Anand+Vatika+Society%2C+146%2F2%2C+Sector+22%2C+Gandhinagar%2C+Gujarat+382021",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-065",
@@ -1055,7 +1120,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Spa+-+Gandhinagar%2C+Fourth+Floor%2C+The+Spa+-+Gandhinagar%2C+Pramukh+Mastana+Complex%2C+D-459%2C+Gandhinagar+-+Kudasan+Rd%2C+nr.+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Spa+-+Gandhinagar%2C+Fourth+Floor%2C+The+Spa+-+Gandhinagar%2C+Pramukh+Mastana+Complex%2C+D-459%2C+Gandhinagar+-+Kudasan+Rd%2C+nr.+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-066",
@@ -1071,7 +1137,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=AS+Signature+Unisex+Salon%2C+Ground+Floor%2C+AS+Signature+Unisex+Salon%2C+Pramukh+Anand+Orbit+Mall%2C+Block+B%2B+C%2C+Shop+No-25%2C+near+Starbucks%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=AS+Signature+Unisex+Salon%2C+Ground+Floor%2C+AS+Signature+Unisex+Salon%2C+Pramukh+Anand+Orbit+Mall%2C+Block+B%2B+C%2C+Shop+No-25%2C+near+Starbucks%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-067",
@@ -1087,7 +1154,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=HOMETOWNLUXE+Unisex+Hair+Salon%2C+Shop+No.+25%2C+HOMETOWNLUXE+Unisex+Hair+Salon%2C+The+Landmark%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=HOMETOWNLUXE+Unisex+Hair+Salon%2C+Shop+No.+25%2C+HOMETOWNLUXE+Unisex+Hair+Salon%2C+The+Landmark%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-068",
@@ -1103,14 +1171,15 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SHIVAM+DENTAL+CLINIC+%28CGHS+%26+ECHS+Empanelled+%29%2C+SHIVAM+DENTAL+CLINIC+%28CGHS+%26+ECHS+Empanelled+%29%2C+Shivam+Dental+Clinic%2C+Sector+22%2C+Gandhinagar%2C+Gujarat+382021"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SHIVAM+DENTAL+CLINIC+%28CGHS+%26+ECHS+Empanelled+%29%2C+SHIVAM+DENTAL+CLINIC+%28CGHS+%26+ECHS+Empanelled+%29%2C+Shivam+Dental+Clinic%2C+Sector+22%2C+Gandhinagar%2C+Gujarat+382021",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-069",
     "business_name": "Scissor Hand's Unisex Salon Kudasan",
     "phone": "076000 39991",
     "category": "Beauty Parlour",
-    "address": "Scissor Hand's Unisex Salon Kudasan, Swagat Rainforest 1, Ground Floor, A-6, Service Rd, near \u0938\u093f\u0902\u0921\u093f\u0915\u0947\u091f \u092c\u0948\u0902\u0915, Kudasan, Gandhinagar, Gujarat 382419",
+    "address": "Scissor Hand's Unisex Salon Kudasan, Swagat Rainforest 1, Ground Floor, A-6, Service Rd, near सिंडिकेट बैंक, Kudasan, Gandhinagar, Gujarat 382419",
     "area": "Kudasan",
     "review_count": 145,
     "review_rating": 4.2,
@@ -1119,14 +1188,15 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "",
     "deal_value": 999,
     "created_at": "2026-11-15T10:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Scissor+Hand%27s+Unisex+Salon+Kudasan%2C+Scissor+Hand%27s+Unisex+Salon+Kudasan%2C+Swagat+Rainforest+1%2C+Ground+Floor%2C+A-6%2C+Service+Rd%2C+near+%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%A1%E0%A4%BF%E0%A4%95%E0%A5%87%E0%A4%9F+%E0%A4%AC%E0%A5%88%E0%A4%82%E0%A4%95%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Scissor+Hand%27s+Unisex+Salon+Kudasan%2C+Scissor+Hand%27s+Unisex+Salon+Kudasan%2C+Swagat+Rainforest+1%2C+Ground+Floor%2C+A-6%2C+Service+Rd%2C+near+%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%A1%E0%A4%BF%E0%A4%95%E0%A5%87%E0%A4%9F+%E0%A4%AC%E0%A5%88%E0%A4%82%E0%A4%95%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-070",
-    "business_name": "Rajwadu Caf\u00e9",
+    "business_name": "Rajwadu Café",
     "phone": "097268 66320",
     "category": "Coffee shop",
-    "address": "Rajwadu Caf\u00e9, Pramukh Arcade, Reliance Cross Rd, Kudasan, Gandhinagar, Gujarat 382419",
+    "address": "Rajwadu Café, Pramukh Arcade, Reliance Cross Rd, Kudasan, Gandhinagar, Gujarat 382419",
     "area": "Kudasan",
     "review_count": 32,
     "review_rating": 5.0,
@@ -1135,7 +1205,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rajwadu+Caf%C3%A9%2C+Rajwadu+Caf%C3%A9%2C+Pramukh+Arcade%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rajwadu+Caf%C3%A9%2C+Rajwadu+Caf%C3%A9%2C+Pramukh+Arcade%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-071",
@@ -1151,7 +1222,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Melt+n+Fizz%2C+Shop+no.+27%2C+Ground+Floor%2C+Melt+n+Fizz%2C+Pramukh+Anand+Orbit+Mall%2C+near+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Melt+n+Fizz%2C+Shop+no.+27%2C+Ground+Floor%2C+Melt+n+Fizz%2C+Pramukh+Anand+Orbit+Mall%2C+near+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-072",
@@ -1167,7 +1239,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Lifafa+Cafe+%26+Restro%2C+Shop+No+15%2C+The+Lifafa+Cafe+%26+Restro%2C+Keshav+Aaradhyam%2C+Prominent+Hotel+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Lifafa+Cafe+%26+Restro%2C+Shop+No+15%2C+The+Lifafa+Cafe+%26+Restro%2C+Keshav+Aaradhyam%2C+Prominent+Hotel+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-073",
@@ -1183,7 +1256,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Barista+coffee%2C+Ground+Floor%2C+Barista+coffee%2C+Pramukh+Orbit+mall%2C+B14%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Barista+coffee%2C+Ground+Floor%2C+Barista+coffee%2C+Pramukh+Orbit+mall%2C+B14%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-074",
@@ -1199,14 +1273,15 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=TeaMax+Cafe+Gandhinagar+Gujarat%2C+GF-12%2C+TeaMax+Cafe+Gandhinagar+Gujarat%2C+SHREEDHAR+AURUM%2C+near+SHIVALAY+PARISAR%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=TeaMax+Cafe+Gandhinagar+Gujarat%2C+GF-12%2C+TeaMax+Cafe+Gandhinagar+Gujarat%2C+SHREEDHAR+AURUM%2C+near+SHIVALAY+PARISAR%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-075",
-    "business_name": "Chai Garam - Pocket Caf\u00e9",
+    "business_name": "Chai Garam - Pocket Café",
     "phone": "082000 37837",
     "category": "Cafe",
-    "address": "Chai Garam - Pocket Caf\u00e9, VRUNDAVAN TRADE CENTER, B13, nr. Reliance Cross Road, opposite Kanam Party Plot, Kudasan, Gandhinagar, Gujarat 382419",
+    "address": "Chai Garam - Pocket Café, VRUNDAVAN TRADE CENTER, B13, nr. Reliance Cross Road, opposite Kanam Party Plot, Kudasan, Gandhinagar, Gujarat 382419",
     "area": "Kudasan",
     "review_count": 111,
     "review_rating": 4.9,
@@ -1215,7 +1290,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chai+Garam+-+Pocket+Caf%C3%A9%2C+Chai+Garam+-+Pocket+Caf%C3%A9%2C+VRUNDAVAN+TRADE+CENTER%2C+B13%2C+nr.+Reliance+Cross+Road%2C+opposite+Kanam+Party+Plot%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chai+Garam+-+Pocket+Caf%C3%A9%2C+Chai+Garam+-+Pocket+Caf%C3%A9%2C+VRUNDAVAN+TRADE+CENTER%2C+B13%2C+nr.+Reliance+Cross+Road%2C+opposite+Kanam+Party+Plot%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-076",
@@ -1231,7 +1307,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Garden+Cafe+bites+%26+brilliance%2C+95%2C96%2C+The+Garden+Cafe+bites+%26+brilliance%2C+Pramukh+Mastana+Complex%2C+D-+94%2C+Reliance+Circle%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Garden+Cafe+bites+%26+brilliance%2C+95%2C96%2C+The+Garden+Cafe+bites+%26+brilliance%2C+Pramukh+Mastana+Complex%2C+D-+94%2C+Reliance+Circle%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-077",
@@ -1247,7 +1324,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Roller+Coaster+Cafe%2C+Shop+No.+40%2C+Ground+floor%2C+Roller+Coaster+Cafe%2C+Suyash+Solitaire%2C+Kudasan-Por+Rd%2C+near+Poddar+International+School%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Roller+Coaster+Cafe%2C+Shop+No.+40%2C+Ground+floor%2C+Roller+Coaster+Cafe%2C+Suyash+Solitaire%2C+Kudasan-Por+Rd%2C+near+Poddar+International+School%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-078",
@@ -1263,7 +1341,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Wokk+N+Soul+kitchen%2C+shop+no+10%2C+Wokk+N+Soul+kitchen%2C+Suyash+solitaire%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Wokk+N+Soul+kitchen%2C+shop+no+10%2C+Wokk+N+Soul+kitchen%2C+Suyash+solitaire%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-079",
@@ -1279,7 +1358,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dine+with+Didi%2C+Dine+with+Didi%2C+Suyash+Solitaire%2C+3%2C+nr.+Poddar+International+School%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dine+with+Didi%2C+Dine+with+Didi%2C+Suyash+Solitaire%2C+3%2C+nr.+Poddar+International+School%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-080",
@@ -1295,7 +1375,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Krazey+Arena+PlayStation+Gaming+Cafe+%28Game+Zone%29%2C+Krazey+Arena+PlayStation+Gaming+Cafe+%28Game+Zone%29%2C+The+Landmark%2C+C-208%2C+Pandit+Dindayal+Upadhyay+Marg%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Krazey+Arena+PlayStation+Gaming+Cafe+%28Game+Zone%29%2C+Krazey+Arena+PlayStation+Gaming+Cafe+%28Game+Zone%29%2C+The+Landmark%2C+C-208%2C+Pandit+Dindayal+Upadhyay+Marg%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-081",
@@ -1311,7 +1392,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=AS+Cafe%2C+1st+Floor%2C+AS+Cafe%2C+elixir+mall%2C+tales+cafe%2C+Raysan+Rd%2C+near+Taste+%26%2C+PDPU%2C+Gandhinagar%2C+Gujarat+382426"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=AS+Cafe%2C+1st+Floor%2C+AS+Cafe%2C+elixir+mall%2C+tales+cafe%2C+Raysan+Rd%2C+near+Taste+%26%2C+PDPU%2C+Gandhinagar%2C+Gujarat+382426",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-082",
@@ -1327,7 +1409,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe+Offbeat+-+Gandhinagar%2C+Cafe+Offbeat+-+Gandhinagar%2C+Elixir+%2C+PDPU%2C+Raysan+Rd%2C+Gujarat+International+Finance+Tec-City%2C+Gujarat+382426"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe+Offbeat+-+Gandhinagar%2C+Cafe+Offbeat+-+Gandhinagar%2C+Elixir+%2C+PDPU%2C+Raysan+Rd%2C+Gujarat+International+Finance+Tec-City%2C+Gujarat+382426",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-083",
@@ -1343,7 +1426,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=karma+Cafe+Gandhinagar%2C+karma+Cafe+Gandhinagar%2C+Five+11%2C+J-ROAD%2C+beside+sarita+udhyan%2C+Indroda%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=karma+Cafe+Gandhinagar%2C+karma+Cafe+Gandhinagar%2C+Five+11%2C+J-ROAD%2C+beside+sarita+udhyan%2C+Indroda%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-084",
@@ -1359,7 +1443,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=No+Space+by+KAER%2C+GF+6%2C+No+Space+by+KAER%2C+Shivansh+15%2C+No+Space+By+KAER%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=No+Space+by+KAER%2C+GF+6%2C+No+Space+by+KAER%2C+Shivansh+15%2C+No+Space+By+KAER%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-085",
@@ -1375,7 +1460,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=KanChi%27s+Cake+%26+Coffee+Culture%2C+2+floor%2C+208%2C+KanChi%27s+Cake+%26+Coffee+Culture%2C+Vinayak+Courtyard%2C+PDPU+University+Road%2C+opp.+GUJARAT+NATIONAL+LAW+UNIVERSITY%2C+University%2C+Raysan%2C+Gandhinagar%2C+Gujarat+382426"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=KanChi%27s+Cake+%26+Coffee+Culture%2C+2+floor%2C+208%2C+KanChi%27s+Cake+%26+Coffee+Culture%2C+Vinayak+Courtyard%2C+PDPU+University+Road%2C+opp.+GUJARAT+NATIONAL+LAW+UNIVERSITY%2C+University%2C+Raysan%2C+Gandhinagar%2C+Gujarat+382426",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-086",
@@ -1391,14 +1477,15 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shiva%27s+coffee+bar%2C+Shop+no.+5%2C+Shiva%27s+coffee+bar%2C+Shree+status%2C+SWAMINARAYAN+MANDIR+VASNA+SANSTHA%2C+road%2C+near+Ground+floor%2C+kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shiva%27s+coffee+bar%2C+Shop+no.+5%2C+Shiva%27s+coffee+bar%2C+Shree+status%2C+SWAMINARAYAN+MANDIR+VASNA+SANSTHA%2C+road%2C+near+Ground+floor%2C+kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-087",
-    "business_name": "COFFEE STAND \u00ae- PDPU",
+    "business_name": "COFFEE STAND ®- PDPU",
     "phone": "091068 63604",
     "category": "Cafe",
-    "address": "COFFEE STAND \u00ae- PDPU, Coffee Stand Happiness Circle, PDPU Rd, Raysan, Gandhinagar, Gujarat 382426",
+    "address": "COFFEE STAND ®- PDPU, Coffee Stand Happiness Circle, PDPU Rd, Raysan, Gandhinagar, Gujarat 382426",
     "area": "Gandhinagar",
     "review_count": 134,
     "review_rating": 4.1,
@@ -1407,7 +1494,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=COFFEE+STAND+%C2%AE-+PDPU%2C+COFFEE+STAND+%C2%AE-+PDPU%2C+Coffee+Stand+Happiness+Circle%2C+PDPU+Rd%2C+Raysan%2C+Gandhinagar%2C+Gujarat+382426"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=COFFEE+STAND+%C2%AE-+PDPU%2C+COFFEE+STAND+%C2%AE-+PDPU%2C+Coffee+Stand+Happiness+Circle%2C+PDPU+Rd%2C+Raysan%2C+Gandhinagar%2C+Gujarat+382426",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-088",
@@ -1423,7 +1511,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shelter+cafe%2FPickleball+club%2C+Shelter+cafe%2FPickleball+club%2C+Shelter+cafe+Shree+Square%2C+PDPU+Hostel+Rd%2C+opp.+Meera+Skyvue%2C+Nr.PDEU%2C+Raysan%2C+Gujarat+382426"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shelter+cafe%2FPickleball+club%2C+Shelter+cafe%2FPickleball+club%2C+Shelter+cafe+Shree+Square%2C+PDPU+Hostel+Rd%2C+opp.+Meera+Skyvue%2C+Nr.PDEU%2C+Raysan%2C+Gujarat+382426",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-089",
@@ -1439,7 +1528,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rider+Coffee+Bar%2C+Rider+Coffee+Bar%2C+Gandhinagar+-+Kudasan+Rd%2C+opposite+side+tata+consultancy+services%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rider+Coffee+Bar%2C+Rider+Coffee+Bar%2C+Gandhinagar+-+Kudasan+Rd%2C+opposite+side+tata+consultancy+services%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-090",
@@ -1455,14 +1545,15 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bhukhhad+Cafe+%26+Restaurant%2C+Stall+No.+1+%26+2%2C+Bhukhhad+Cafe+%26+Restaurant%2C+The+Spicy+Street%2C+opp.+Landmark%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bhukhhad+Cafe+%26+Restaurant%2C+Stall+No.+1+%26+2%2C+Bhukhhad+Cafe+%26+Restaurant%2C+The+Spicy+Street%2C+opp.+Landmark%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-091",
-    "business_name": "Jadeja\u2019s Restaurant and cafe",
+    "business_name": "Jadeja’s Restaurant and cafe",
     "phone": "097246 55750",
     "category": "Cafe",
-    "address": "Jadeja\u2019s Restaurant and cafe, PDPU collage road, near Imperial sky, next to Shahi sigdi restaurant, Raysan, Gandhinagar, Gujarat 382426",
+    "address": "Jadeja’s Restaurant and cafe, PDPU collage road, near Imperial sky, next to Shahi sigdi restaurant, Raysan, Gandhinagar, Gujarat 382426",
     "area": "Gandhinagar",
     "review_count": 53,
     "review_rating": 4.3,
@@ -1471,7 +1562,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Jadeja%E2%80%99s+Restaurant+and+cafe%2C+Jadeja%E2%80%99s+Restaurant+and+cafe%2C+PDPU+collage+road%2C+near+Imperial+sky%2C+next+to+Shahi+sigdi+restaurant%2C+Raysan%2C+Gandhinagar%2C+Gujarat+382426"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Jadeja%E2%80%99s+Restaurant+and+cafe%2C+Jadeja%E2%80%99s+Restaurant+and+cafe%2C+PDPU+collage+road%2C+near+Imperial+sky%2C+next+to+Shahi+sigdi+restaurant%2C+Raysan%2C+Gandhinagar%2C+Gujarat+382426",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-092",
@@ -1487,7 +1579,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe%2C+ground+floor%2C+Cafe%2C+C+74%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe%2C+ground+floor%2C+Cafe%2C+C+74%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-093",
@@ -1503,7 +1596,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Karan+Go+Insta+Cafe%2C+Karan+Go+Insta+Cafe%2C+103%2C+1st+Floor%2C+Anexi+mall+GH-0%2C+Circle%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Karan+Go+Insta+Cafe%2C+Karan+Go+Insta+Cafe%2C+103%2C+1st+Floor%2C+Anexi+mall+GH-0%2C+Circle%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-094",
@@ -1519,7 +1613,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=AUG+-+Arena+of+Undefeated+Gamers%2C+survey+no%2C60%2C+AUG+-+Arena+of+Undefeated+Gamers%2C+Pramukh+Anand+Orbit+Mall%2C+E-143%2C+near+Reliance+Cross+Road%2C+opp.+NID+college%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=AUG+-+Arena+of+Undefeated+Gamers%2C+survey+no%2C60%2C+AUG+-+Arena+of+Undefeated+Gamers%2C+Pramukh+Anand+Orbit+Mall%2C+E-143%2C+near+Reliance+Cross+Road%2C+opp.+NID+college%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-095",
@@ -1535,7 +1630,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chahgram%2C+A5%2C+Chahgram%2C+Madhuram+Greens%2C+Chowk%2C+near+Sargasan%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chahgram%2C+A5%2C+Chahgram%2C+Madhuram+Greens%2C+Chowk%2C+near+Sargasan%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-096",
@@ -1551,7 +1647,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Madhuli+Kathiyawadi+Restaurant+%28Porbandar-wala%29+Gujarati+Thali%2C+Madhuli+Kathiyawadi+Restaurant+%28Porbandar-wala%29+Gujarati+Thali%2C+Pramukh+Arcade%2C+Reliance+Cross+Rd%2C+above+The+Shake+Maker%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Madhuli+Kathiyawadi+Restaurant+%28Porbandar-wala%29+Gujarati+Thali%2C+Madhuli+Kathiyawadi+Restaurant+%28Porbandar-wala%29+Gujarati+Thali%2C+Pramukh+Arcade%2C+Reliance+Cross+Rd%2C+above+The+Shake+Maker%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-097",
@@ -1567,7 +1664,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bhookh+Lagi+Hai%3F%2C+Block+B%2C+Bhookh+Lagi+Hai%3F%2C+Pramukh+Mastana%2C+Shop+No%2C+118-122%2C+nearby+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bhookh+Lagi+Hai%3F%2C+Block+B%2C+Bhookh+Lagi+Hai%3F%2C+Pramukh+Mastana%2C+Shop+No%2C+118-122%2C+nearby+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-098",
@@ -1583,7 +1681,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Citrus+Junction%2C+Citrus+Junction%2C+Ahmedabad+State+Highway%2C+nearby+MMCEC%2C+above+Railway+Station%2C+Sector+14%2C+Gandhinagar%2C+Gujarat+382016"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Citrus+Junction%2C+Citrus+Junction%2C+Ahmedabad+State+Highway%2C+nearby+MMCEC%2C+above+Railway+Station%2C+Sector+14%2C+Gandhinagar%2C+Gujarat+382016",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-099",
@@ -1599,7 +1698,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe+Pride%2C+Cafe+Pride%2C+The+Plutus%2C+opp.+Ashka+Hospital%2C+above+Pantaloons+and+Croma%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe+Pride%2C+Cafe+Pride%2C+The+Plutus%2C+opp.+Ashka+Hospital%2C+above+Pantaloons+and+Croma%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-100",
@@ -1615,7 +1715,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=RRASOI+GADH%2C+Shop+A+39%2C+RRASOI+GADH%2C+Pramukh+Anand+Orbit+Mall%2C+behind+Star+Bux%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=RRASOI+GADH%2C+Shop+A+39%2C+RRASOI+GADH%2C+Pramukh+Anand+Orbit+Mall%2C+behind+Star+Bux%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-101",
@@ -1631,7 +1732,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Hella+Good+Pizzeria+%28Kudasan%29%2C+Ground+Floor%2C+Hella+Good+Pizzeria+%28Kudasan%29%2C+Pramukh+Anand+Orbit+Mall%2C+B-16%2C+near+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Hella+Good+Pizzeria+%28Kudasan%29%2C+Ground+Floor%2C+Hella+Good+Pizzeria+%28Kudasan%29%2C+Pramukh+Anand+Orbit+Mall%2C+B-16%2C+near+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-102",
@@ -1647,7 +1749,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Punjabi+Virsa+-+Kudasan%2C+Ground+Floor%2C+The+Punjabi+Virsa+-+Kudasan%2C+Pramukh+Anand+Orbit+Mall%2C+Shop+No%2C+66-C%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Punjabi+Virsa+-+Kudasan%2C+Ground+Floor%2C+The+Punjabi+Virsa+-+Kudasan%2C+Pramukh+Anand+Orbit+Mall%2C+Shop+No%2C+66-C%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-103",
@@ -1663,7 +1766,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=3+Idiots+surti+egg+restaurant%2C+shop-49%2C+3+Idiots+surti+egg+restaurant%2C+Pramukh+Mastana+Complex%2C+Block-B%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=3+Idiots+surti+egg+restaurant%2C+shop-49%2C+3+Idiots+surti+egg+restaurant%2C+Pramukh+Mastana+Complex%2C+Block-B%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-104",
@@ -1679,7 +1783,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Gir+Kathiyavadi+Nehdo%2C+Gir+Kathiyavadi+Nehdo%2C+Pramukh+Mastana+Complex%2C+B-50%2C+Reliance+Cross+Rd%2C+near+Navdurga+Pavbhaji%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Gir+Kathiyavadi+Nehdo%2C+Gir+Kathiyavadi+Nehdo%2C+Pramukh+Mastana+Complex%2C+B-50%2C+Reliance+Cross+Rd%2C+near+Navdurga+Pavbhaji%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-105",
@@ -1695,7 +1800,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Blue+Broccoli+%26+Olives%2C+Blue+Broccoli+%26+Olives%2C+Pramukh+Arcade%2C+GF-11%2C+nr.+rajdhani+society%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Blue+Broccoli+%26+Olives%2C+Blue+Broccoli+%26+Olives%2C+Pramukh+Arcade%2C+GF-11%2C+nr.+rajdhani+society%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-106",
@@ -1711,7 +1817,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=P+R+CAFE%2C+Shop+no.20%2C+P+R+CAFE%2C+Shivanjali+Imperia%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=P+R+CAFE%2C+Shop+no.20%2C+P+R+CAFE%2C+Shivanjali+Imperia%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-107",
@@ -1727,7 +1834,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Munching+Moments%2C+Shop+no+4%2C+3rd+floor%2C+Munching+Moments%2C+Swagat+Holiday+Mall+Rd%2C+opposite+Swagat+Flamingo%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Munching+Moments%2C+Shop+no+4%2C+3rd+floor%2C+Munching+Moments%2C+Swagat+Holiday+Mall+Rd%2C+opposite+Swagat+Flamingo%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-108",
@@ -1743,7 +1851,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=IndieGenie+Cafe+Sargasan%2C+Shop+No.+6%2C+IndieGenie+Cafe+Sargasan%2C+Callisto+Sapphire%2C+The%2C+Palm+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=IndieGenie+Cafe+Sargasan%2C+Shop+No.+6%2C+IndieGenie+Cafe+Sargasan%2C+Callisto+Sapphire%2C+The%2C+Palm+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-109",
@@ -1759,7 +1868,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MS+Fast+Food+%26+Cafe%2C+gf+32%2C+MS+Fast+Food+%26+Cafe%2C+Samved+Dreams%2C+Palm+Rd%2C+opp.+Atishay+Shivalay+3%2C+Sargasan%2C+Ahmedabad%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MS+Fast+Food+%26+Cafe%2C+gf+32%2C+MS+Fast+Food+%26+Cafe%2C+Samved+Dreams%2C+Palm+Rd%2C+opp.+Atishay+Shivalay+3%2C+Sargasan%2C+Ahmedabad%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-110",
@@ -1775,7 +1885,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=THE+OVEN+CAFE+AND+FAST+FOOD%2C+THE+OVEN+CAFE+AND+FAST+FOOD%2C+shreeji+swastik+road%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=THE+OVEN+CAFE+AND+FAST+FOOD%2C+THE+OVEN+CAFE+AND+FAST+FOOD%2C+shreeji+swastik+road%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-111",
@@ -1791,7 +1902,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kanji+Kathiyawadi%2C+Kanji+Kathiyawadi%2C+Atria+Business+Hub%2C+A-120+%26+121%2C+KH+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kanji+Kathiyawadi%2C+Kanji+Kathiyawadi%2C+Atria+Business+Hub%2C+A-120+%26+121%2C+KH+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-112",
@@ -1807,7 +1919,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Radhe+Restaurant%2C+Shop+no.+27%2C+Radhe+Restaurant%2C+Pramukh+Tangent%2C+Sargasan+Cross+Rd%2C+near+macdonald%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Radhe+Restaurant%2C+Shop+no.+27%2C+Radhe+Restaurant%2C+Pramukh+Tangent%2C+Sargasan+Cross+Rd%2C+near+macdonald%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-113",
@@ -1823,7 +1936,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=KAILASH+FOOD+CORNER%2C+Shop+8%2C+KAILASH+FOOD+CORNER%2C+avani+prasth%2C+nr.+maruti+amrakunj+3%2C+TP+9%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=KAILASH+FOOD+CORNER%2C+Shop+8%2C+KAILASH+FOOD+CORNER%2C+avani+prasth%2C+nr.+maruti+amrakunj+3%2C+TP+9%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-114",
@@ -1839,7 +1953,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dwarkesh+dining+hall%2C+Shop+no.+8%2C+g-1%2C+Dwarkesh+dining+hall%2C+sangeet+Circle%2C+shalin+galleria%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382006"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dwarkesh+dining+hall%2C+Shop+no.+8%2C+g-1%2C+Dwarkesh+dining+hall%2C+sangeet+Circle%2C+shalin+galleria%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382006",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-115",
@@ -1855,7 +1970,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Namaste+Nagher+%7C+The+Kathiyawadi+Taste%2C+Namaste+Nagher+%7C+The+Kathiyawadi+Taste%2C+Namste+Nagher%2C+Shalin+Galleria+Complex+G+-+37%2C+RTO+Road%2C+G-1+sangit+circle%2C+Gandhinagar%2C+Gujarat+-+382002%2C+Gandhinagar%2C+Gujarat+382006"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Namaste+Nagher+%7C+The+Kathiyawadi+Taste%2C+Namaste+Nagher+%7C+The+Kathiyawadi+Taste%2C+Namste+Nagher%2C+Shalin+Galleria+Complex+G+-+37%2C+RTO+Road%2C+G-1+sangit+circle%2C+Gandhinagar%2C+Gujarat+-+382002%2C+Gandhinagar%2C+Gujarat+382006",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-116",
@@ -1871,7 +1987,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MA+KATHIYAWADI+DHABA%2C+Shop+Number+41%2C+MA+KATHIYAWADI+DHABA%2C+Shalin+Galleria%2C+Sangeet+Cir+G1%2C+near+G.1%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382006"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MA+KATHIYAWADI+DHABA%2C+Shop+Number+41%2C+MA+KATHIYAWADI+DHABA%2C+Shalin+Galleria%2C+Sangeet+Cir+G1%2C+near+G.1%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382006",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-117",
@@ -1887,7 +2004,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Zorko+Sargasan+%26+UK+Waffles+%7Ba+unit+of+veer+ventures%7D%2C+Near%3A%2C+Zorko+Sargasan+%26+UK+Waffles+%7Ba+unit+of+veer+ventures%7D%2C+Shreeji+Swastik%2C+14%2Corigin+heights%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Zorko+Sargasan+%26+UK+Waffles+%7Ba+unit+of+veer+ventures%7D%2C+Near%3A%2C+Zorko+Sargasan+%26+UK+Waffles+%7Ba+unit+of+veer+ventures%7D%2C+Shreeji+Swastik%2C+14%2Corigin+heights%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-118",
@@ -1903,7 +2021,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=HETVI+FOOD%2C+TP+9%2C+HETVI+FOOD%2C+SHARAN+RESIDENCY%2C+E+401%2C+Shreeji+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=HETVI+FOOD%2C+TP+9%2C+HETVI+FOOD%2C+SHARAN+RESIDENCY%2C+E+401%2C+Shreeji+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-119",
@@ -1919,7 +2038,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Vaishnodevi+Ganthiya%2C+Ground+floor%2C+Vaishnodevi+Ganthiya%2C+Atria-b%2C+Shop+B19%2C+20%2C21%2C23%2C+KH0%2C+Sargasan+Cross+Rd%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Vaishnodevi+Ganthiya%2C+Ground+floor%2C+Vaishnodevi+Ganthiya%2C+Atria-b%2C+Shop+B19%2C+20%2C21%2C23%2C+KH0%2C+Sargasan+Cross+Rd%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-120",
@@ -1935,7 +2055,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bombay+bliss%2C+Bombay+bliss%2C+Bhagat+Singh+Marg%2C+opposite+Aashka+Multi-Speciality+Hospital%2C+near+kameshwar+international+school%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bombay+bliss%2C+Bombay+bliss%2C+Bhagat+Singh+Marg%2C+opposite+Aashka+Multi-Speciality+Hospital%2C+near+kameshwar+international+school%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-121",
@@ -1951,7 +2072,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Talod+Instaserrve%2C+Shop+No-+K%2C+Talod+Instaserrve%2C+11%2C+Swagat+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Talod+Instaserrve%2C+Shop+No-+K%2C+Talod+Instaserrve%2C+11%2C+Swagat+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-122",
@@ -1967,7 +2089,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kathiyawadi+Village+restaurant%2C+Kathiyawadi+Village+restaurant%2C+103%2C+KH+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kathiyawadi+Village+restaurant%2C+Kathiyawadi+Village+restaurant%2C+103%2C+KH+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-123",
@@ -1983,7 +2106,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tirupati+khiru+sargasan%2C+Tirupati+khiru+sargasan%2C+Shop+5+pramukh+pacific%2C+opposite+Landmark+Harmony%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tirupati+khiru+sargasan%2C+Tirupati+khiru+sargasan%2C+Shop+5+pramukh+pacific%2C+opposite+Landmark+Harmony%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-124",
@@ -1999,7 +2123,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=GorillazZz%2C+GorillazZz%2C+Surya+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=GorillazZz%2C+GorillazZz%2C+Surya+Rd%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-125",
@@ -2015,14 +2140,15 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Nadiad+Puffwala+Gandhinagar+SARGASAN%2C+Nadiad+Puffwala+Gandhinagar+SARGASAN%2C+ATRIA+-B%2C+nr.+BANK+OF+BARODA%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Nadiad+Puffwala+Gandhinagar+SARGASAN%2C+Nadiad+Puffwala+Gandhinagar+SARGASAN%2C+ATRIA+-B%2C+nr.+BANK+OF+BARODA%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-126",
-    "business_name": "Ajay\u2019s Caf\u00e9 Infocity, Gandhinagar",
+    "business_name": "Ajay’s Café Infocity, Gandhinagar",
     "phone": "098983 82267",
     "category": "Fast food restaurant",
-    "address": "SHOP NO, Ajay\u2019s Caf\u00e9 Infocity, Gandhinagar, SUPER MALL-2, 42, GH-0 CIRCLE, Infocity, Gandhinagar, Gujarat 382007",
+    "address": "SHOP NO, Ajay’s Café Infocity, Gandhinagar, SUPER MALL-2, 42, GH-0 CIRCLE, Infocity, Gandhinagar, Gujarat 382007",
     "area": "Infocity",
     "review_count": 143,
     "review_rating": 4.4,
@@ -2031,7 +2157,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Ajay%E2%80%99s+Caf%C3%A9+Infocity%2C+Gandhinagar%2C+SHOP+NO%2C+Ajay%E2%80%99s+Caf%C3%A9+Infocity%2C+Gandhinagar%2C+SUPER+MALL-2%2C+42%2C+GH-0+CIRCLE%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Ajay%E2%80%99s+Caf%C3%A9+Infocity%2C+Gandhinagar%2C+SHOP+NO%2C+Ajay%E2%80%99s+Caf%C3%A9+Infocity%2C+Gandhinagar%2C+SUPER+MALL-2%2C+42%2C+GH-0+CIRCLE%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-127",
@@ -2047,14 +2174,15 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Crave+Corner+Cafe%2C+6J3F%2B7FW+The+Crave+Corner+Cafe%2C+Sangeet+Cir+G1%2C+Sector+3B%2C+Sector+4%2C+Gandhinagar%2C+Gujarat+382006"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Crave+Corner+Cafe%2C+6J3F%2B7FW+The+Crave+Corner+Cafe%2C+Sangeet+Cir+G1%2C+Sector+3B%2C+Sector+4%2C+Gandhinagar%2C+Gujarat+382006",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-128",
-    "business_name": "Tomato\u2019s Gandhinagar",
+    "business_name": "Tomato’s Gandhinagar",
     "phone": "099099 21022",
     "category": "Restaurant",
-    "address": "FF101, 1st Floor, Tomato\u2019s Gandhinagar, SUPER MALL-2, 0, Circle, near GH Road, Infocity, Gandhinagar, Gujarat 382007",
+    "address": "FF101, 1st Floor, Tomato’s Gandhinagar, SUPER MALL-2, 0, Circle, near GH Road, Infocity, Gandhinagar, Gujarat 382007",
     "area": "Infocity",
     "review_count": 104,
     "review_rating": 4.1,
@@ -2063,7 +2191,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tomato%E2%80%99s+Gandhinagar%2C+FF101%2C+1st+Floor%2C+Tomato%E2%80%99s+Gandhinagar%2C+SUPER+MALL-2%2C+0%2C+Circle%2C+near+GH+Road%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tomato%E2%80%99s+Gandhinagar%2C+FF101%2C+1st+Floor%2C+Tomato%E2%80%99s+Gandhinagar%2C+SUPER+MALL-2%2C+0%2C+Circle%2C+near+GH+Road%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-129",
@@ -2079,7 +2208,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Urban+Delights%2C+Shop+6%2F7%2C+Urban+Delights%2C+Tower+2%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Urban+Delights%2C+Shop+6%2F7%2C+Urban+Delights%2C+Tower+2%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-130",
@@ -2095,7 +2225,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Khetlaaapa+Gujarati+Thali%2C+108%2C+first+floor%2C+Khetlaaapa+Gujarati+Thali%2C+super+mall+1%2C+107%2C+Infocity+Rd%2C+near+sbi%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Khetlaaapa+Gujarati+Thali%2C+108%2C+first+floor%2C+Khetlaaapa+Gujarati+Thali%2C+super+mall+1%2C+107%2C+Infocity+Rd%2C+near+sbi%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-131",
@@ -2111,7 +2242,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Harikrushna+Dining+Hall%2C+Harikrushna+Dining+Hall%2C+super+mall+1%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Harikrushna+Dining+Hall%2C+Harikrushna+Dining+Hall%2C+super+mall+1%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-132",
@@ -2127,7 +2259,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=ShriNivas+Bhojan+shala%2C+ShriNivas+Bhojan+shala%2C+1%2C+Infocity+Service+Rd%2C+G+Block%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=ShriNivas+Bhojan+shala%2C+ShriNivas+Bhojan+shala%2C+1%2C+Infocity+Service+Rd%2C+G+Block%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-133",
@@ -2143,7 +2276,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shreeji+Bhojnalay%2C+Shop+No+15%2C+Shreeji+Bhojnalay%2C+super+mall+1%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shreeji+Bhojnalay%2C+Shop+No+15%2C+Shreeji+Bhojnalay%2C+super+mall+1%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-134",
@@ -2159,7 +2293,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Eat+Entry+Restaurant+%26+cafe%2C+Shop+No.+14-15%2C+Eat+Entry+Restaurant+%26+cafe%2C+SUPER+MALL-2%2C+behind+HDFC+Bank%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Eat+Entry+Restaurant+%26+cafe%2C+Shop+No.+14-15%2C+Eat+Entry+Restaurant+%26+cafe%2C+SUPER+MALL-2%2C+behind+HDFC+Bank%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-135",
@@ -2175,7 +2310,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SB+DOSA%2C+SB+DOSA%2C+148%2C+Infocity+Rd%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SB+DOSA%2C+SB+DOSA%2C+148%2C+Infocity+Rd%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-136",
@@ -2191,7 +2327,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Engineer%27s+food%2C+The+Engineer%27s+food%2C+Infocity%2C+Gandhinagar+-+Kudasan+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Engineer%27s+food%2C+The+Engineer%27s+food%2C+Infocity%2C+Gandhinagar+-+Kudasan+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-137",
@@ -2207,7 +2344,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Barbeque+Bois%2C+Barbeque+Bois%2C+Dhirubhai+Ambani+Institute+Of+Information+And+Communication+Technology+Lab%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Barbeque+Bois%2C+Barbeque+Bois%2C+Dhirubhai+Ambani+Institute+Of+Information+And+Communication+Technology+Lab%2C+Infocity%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-138",
@@ -2223,7 +2361,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Pizza+Central+Gift+City%2C+Stall+No+16%2C+Pizza+Central+Gift+City%2C+Maple+99%2C+Food+County%2C+near+GIFT+Tower+2%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382050"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Pizza+Central+Gift+City%2C+Stall+No+16%2C+Pizza+Central+Gift+City%2C+Maple+99%2C+Food+County%2C+near+GIFT+Tower+2%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382050",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-139",
@@ -2239,7 +2378,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dev+Cafe+%26+Refreshment+Pure+Veg%2C+Dev+Cafe+%26+Refreshment+Pure+Veg%2C+SEZ%2C+Ground+Floor%2C+Hiranandani+Signature+Building%2C+Block%2C+21B%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382050"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dev+Cafe+%26+Refreshment+Pure+Veg%2C+Dev+Cafe+%26+Refreshment+Pure+Veg%2C+SEZ%2C+Ground+Floor%2C+Hiranandani+Signature+Building%2C+Block%2C+21B%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382050",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-140",
@@ -2255,7 +2395,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sangam+%3A+All+Day+Dining%2C+Sangam+%3A+All+Day+Dining%2C+Grand+Mercure%2C+Gujarat+International+Finance+Tec-City%2C+Techcity%2C+Gujarat+382355"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sangam+%3A+All+Day+Dining%2C+Sangam+%3A+All+Day+Dining%2C+Grand+Mercure%2C+Gujarat+International+Finance+Tec-City%2C+Techcity%2C+Gujarat+382355",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-141",
@@ -2271,7 +2412,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MADRAS+Cafe%2C+Gift+City%2C+MADRAS+Cafe%2C+Gift+City%2C+Mapple+99%2C+food+county%2C+Gujarat+International+Finance+Tec-City%2C+Gujarat+382050"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MADRAS+Cafe%2C+Gift+City%2C+MADRAS+Cafe%2C+Gift+City%2C+Mapple+99%2C+food+county%2C+Gujarat+International+Finance+Tec-City%2C+Gujarat+382050",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-142",
@@ -2287,7 +2429,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Indrani+Parlour%2C+Indrani+Parlour%2C+Sector+9%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Indrani+Parlour%2C+Indrani+Parlour%2C+Sector+9%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-143",
@@ -2303,7 +2446,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chai+G+Gift+city%2C+Chai+G+Gift+city%2C+360+Matrix+club%2C+gift+city+circle%2C+Shahpur+cross+road%2C+nr.+nayara+petrol+pump%2C+Gandhinagar%2C+Gujarat+382355"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chai+G+Gift+city%2C+Chai+G+Gift+city%2C+360+Matrix+club%2C+gift+city+circle%2C+Shahpur+cross+road%2C+nr.+nayara+petrol+pump%2C+Gandhinagar%2C+Gujarat+382355",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-144",
@@ -2319,7 +2463,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sankalp+express%2C+Sankalp+express%2C+Non+SEZ+Zone%2C+opp.+Gift+Tower-2%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382050"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sankalp+express%2C+Sankalp+express%2C+Non+SEZ+Zone%2C+opp.+Gift+Tower-2%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382050",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-145",
@@ -2335,7 +2480,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Aao+haveli+pe%2C+Aao+haveli+pe%2C+Near%2Cbasan+before+IIT+Diversion+Rd%2C+Gandhinagar%2C+Palaj%2C+Giftcity%2C+Basan%2C+Gandhinagar%2C+Gujarat+382055"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Aao+haveli+pe%2C+Aao+haveli+pe%2C+Near%2Cbasan+before+IIT+Diversion+Rd%2C+Gandhinagar%2C+Palaj%2C+Giftcity%2C+Basan%2C+Gandhinagar%2C+Gujarat+382055",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-146",
@@ -2351,7 +2497,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=LA+MILANO+PIZZERIA%2C+LA+MILANO+PIZZERIA%2C+12%2C+ELIXIR%2C+OPP+SHREE+RANG+UPVAN+PDPU%2C+TO%2C+Raysan+Rd%2C+GIFT+CITY%2C+Gandhinagar%2C+Gujarat+382426"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=LA+MILANO+PIZZERIA%2C+LA+MILANO+PIZZERIA%2C+12%2C+ELIXIR%2C+OPP+SHREE+RANG+UPVAN+PDPU%2C+TO%2C+Raysan+Rd%2C+GIFT+CITY%2C+Gandhinagar%2C+Gujarat+382426",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-147",
@@ -2367,7 +2514,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 999,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Saurashtra+Nasta+House%2C+Saurashtra+Nasta+House%2C+Sector+3B%2C+Sector+3%2C+Gandhinagar%2C+Gujarat+382006"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Saurashtra+Nasta+House%2C+Saurashtra+Nasta+House%2C+Sector+3B%2C+Sector+3%2C+Gandhinagar%2C+Gujarat+382006",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-148",
@@ -2383,7 +2531,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SHAHI+FRY+CENTRE%2C+SHAHI+FRY+CENTRE%2C+1%2C+opp.+Pragati+Medan%2C+Sector+6%2C+Gandhinagar%2C+Gujarat+382006"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SHAHI+FRY+CENTRE%2C+SHAHI+FRY+CENTRE%2C+1%2C+opp.+Pragati+Medan%2C+Sector+6%2C+Gandhinagar%2C+Gujarat+382006",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-149",
@@ -2399,7 +2548,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=RAJVEE+EATERY+GIFT+CITY%2C+SHOP+NO+-+06%2C+RAJVEE+EATERY+GIFT+CITY%2C+JANAADHAR+MANGLA%2C+near+GIFT+CITY%2C+East+Gate%2C+Gujarat+International+Finance+Tec-City%2C+Pirojpur%2C+Gandhinagar%2C+Gujarat+382050"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=RAJVEE+EATERY+GIFT+CITY%2C+SHOP+NO+-+06%2C+RAJVEE+EATERY+GIFT+CITY%2C+JANAADHAR+MANGLA%2C+near+GIFT+CITY%2C+East+Gate%2C+Gujarat+International+Finance+Tec-City%2C+Pirojpur%2C+Gandhinagar%2C+Gujarat+382050",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-150",
@@ -2415,7 +2565,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rajendra+Egg+Centar%2C+Rajendra+Egg+Centar%2C+Shopping+Centre%2C+Sector+9%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rajendra+Egg+Centar%2C+Rajendra+Egg+Centar%2C+Shopping+Centre%2C+Sector+9%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-151",
@@ -2431,7 +2582,8 @@ export const INITIAL_LEADS: Lead[] = [
     "notes": "Verified food & dining venue (sit-down/dine-in). High counter tap potential.",
     "deal_value": 1499,
     "created_at": "2026-11-16T08:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=VIVA+MEXICO+ITALIA%2C+VIVA+MEXICO+ITALIA%2C+Maple+99%2C+Food+County+Garba+Ground%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382050"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=VIVA+MEXICO+ITALIA%2C+VIVA+MEXICO+ITALIA%2C+Maple+99%2C+Food+County+Garba+Ground%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382050",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-152",
@@ -2444,10 +2596,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.9,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Herb+%26+Crust%2C+shop+no+06%2C+Herb+%26+Crust%2C+Rworld+Complex%2C+Side+to+Zudio%2C+Sector+16%2C+Gandhinagar%2C+Gujarat+382016"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Herb+%26+Crust%2C+shop+no+06%2C+Herb+%26+Crust%2C+Rworld+Complex%2C+Side+to+Zudio%2C+Sector+16%2C+Gandhinagar%2C+Gujarat+382016",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-153",
@@ -2460,10 +2613,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.4,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Ramchandra+Cafe%2C+The+Ramchandra+Cafe%2C+Ramchandra+Niwas%2C+Plot+No.%3A192%2FA%2C+Gandhinagar%2C+Gujarat+382028"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Ramchandra+Cafe%2C+The+Ramchandra+Cafe%2C+Ramchandra+Niwas%2C+Plot+No.%3A192%2FA%2C+Gandhinagar%2C+Gujarat+382028",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-154",
@@ -2476,10 +2630,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.8,
     "stage": "new",
     "website": "https://tbrcafe.com/",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Bean+Room%2C+5JGH%2BJQX+The+Bean+Room%2C+The+Landmark%2C+B+-+20%2C+Kudasan-Por+Rd%2C+Urjanagar+1%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Bean+Room%2C+5JGH%2BJQX+The+Bean+Room%2C+The+Landmark%2C+B+-+20%2C+Kudasan-Por+Rd%2C+Urjanagar+1%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-155",
@@ -2492,10 +2647,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.8,
     "stage": "new",
     "website": "https://www.shivascoffeebar.com/",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shiva%27s+Coffee+Bar+%28Gandhinagar%29%2C+Shop+No.+02%2C+Shiva%27s+Coffee+Bar+%28Gandhinagar%29%2C+Sharan+Business%2C+near+D-Mart%2C+Green+City%2C+Sector+26%2C+Gandhinagar%2C+Gujarat+382028"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shiva%27s+Coffee+Bar+%28Gandhinagar%29%2C+Shop+No.+02%2C+Shiva%27s+Coffee+Bar+%28Gandhinagar%29%2C+Sharan+Business%2C+near+D-Mart%2C+Green+City%2C+Sector+26%2C+Gandhinagar%2C+Gujarat+382028",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-156",
@@ -2508,10 +2664,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.4,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sandwich+Wale+coffee+bar+%26+snacks%2C+Sandwich+Wale+coffee+bar+%26+snacks%2C+Plot+385%2C+GH+Rd%2C+Sector+16%2C+Gandhinagar%2C+Gujarat+382016"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sandwich+Wale+coffee+bar+%26+snacks%2C+Sandwich+Wale+coffee+bar+%26+snacks%2C+Plot+385%2C+GH+Rd%2C+Sector+16%2C+Gandhinagar%2C+Gujarat+382016",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-157",
@@ -2524,10 +2681,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.2,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe+Cawfee+Tawk%2C+Cafe+Cawfee+Tawk%2C+Road%2C+near+Shahpur+Road%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382355"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe+Cawfee+Tawk%2C+Cafe+Cawfee+Tawk%2C+Road%2C+near+Shahpur+Road%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382355",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-158",
@@ -2540,10 +2698,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.9,
     "stage": "new",
     "website": "https://theindoriartistcafe.lovable.app/",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+indori+artist+cafe%2C+The+indori+artist+cafe%2C+Atria%2C+Sargasan+Cross+Rd%2C+Vasana+Hadmatia%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+indori+artist+cafe%2C+The+indori+artist+cafe%2C+Atria%2C+Sargasan+Cross+Rd%2C+Vasana+Hadmatia%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-159",
@@ -2556,10 +2715,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.1,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Great+Indian+Waffle%2C+Shop+no+A+34%2C+Great+Indian+Waffle%2C+orbit+mall%2C+near+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Great+Indian+Waffle%2C+Shop+no+A+34%2C+Great+Indian+Waffle%2C+orbit+mall%2C+near+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-160",
@@ -2572,10 +2732,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.0,
     "stage": "new",
     "website": "https://order.theobroma.in/store-locator/Gandhinagar/theobroma-orbit-mall-gandhinagar",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Theobroma+Bakery+and+Cake+Shop+-+Orbit+Mall%2C+Gandhinagar%2C+Ground+Floor+Unit+no.+17%2C+Theobroma+Bakery+and+Cake+Shop+-+Orbit+Mall%2C+Gandhinagar%2C+Block+B%2BC%29%2C+Orbit+Mall%2C+near+Taco+Bell%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Theobroma+Bakery+and+Cake+Shop+-+Orbit+Mall%2C+Gandhinagar%2C+Ground+Floor+Unit+no.+17%2C+Theobroma+Bakery+and+Cake+Shop+-+Orbit+Mall%2C+Gandhinagar%2C+Block+B%2BC%29%2C+Orbit+Mall%2C+near+Taco+Bell%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-161",
@@ -2588,10 +2749,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.9,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shiv+Cold+Cafe+%26+Har+Har+Bhole+Lassi%2C+Shiv+Cold+Cafe+%26+Har+Har+Bhole+Lassi%2C+Abhishek+Complex%2C+opp.+Hotel+Hawally%2C+Sector+11%2C+Gandhinagar%2C+Gujarat+382010"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shiv+Cold+Cafe+%26+Har+Har+Bhole+Lassi%2C+Shiv+Cold+Cafe+%26+Har+Har+Bhole+Lassi%2C+Abhishek+Complex%2C+opp.+Hotel+Hawally%2C+Sector+11%2C+Gandhinagar%2C+Gujarat+382010",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-162",
@@ -2604,10 +2766,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.9,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Retro+90%27s+cafe%2C+Retro+90%27s+cafe%2C+Elixir+complex%2C+PDPU+Rd%2C+Raysan%2C+Gujarat+382426"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Retro+90%27s+cafe%2C+Retro+90%27s+cafe%2C+Elixir+complex%2C+PDPU+Rd%2C+Raysan%2C+Gujarat+382426",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-163",
@@ -2620,10 +2783,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.5,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chai+Pilo+Kudasan%2C+A19%2C+Chai+Pilo+Kudasan%2C+Ground%2C+Pramukh+Arcade%2C+1%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chai+Pilo+Kudasan%2C+A19%2C+Chai+Pilo+Kudasan%2C+Ground%2C+Pramukh+Arcade%2C+1%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-164",
@@ -2636,10 +2800,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.4,
     "stage": "new",
     "website": "https://www.chaig.in/",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chai+G+Sector-9%2C+Shop+no+3%2C+Chai+G+Sector-9%2C+Shopping+Center%2C+nr.+NFSU+Campus%2C+Sector+9%2C+Gandhinagar%2C+Gujarat+382007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chai+G+Sector-9%2C+Shop+no+3%2C+Chai+G+Sector-9%2C+Shopping+Center%2C+nr.+NFSU+Campus%2C+Sector+9%2C+Gandhinagar%2C+Gujarat+382007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-165",
@@ -2652,10 +2817,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.3,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=THE+GLASS+DOOR+CAFE+%26+RESTRO%2C+THE+GLASS+DOOR+CAFE+%26+RESTRO%2C+opp.+VEGETABLE+MARKET%2C+SACHIVALAYA+GYMKHANA%2C+Sector+21%2C+Gandhinagar%2C+Gujarat+382021"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=THE+GLASS+DOOR+CAFE+%26+RESTRO%2C+THE+GLASS+DOOR+CAFE+%26+RESTRO%2C+opp.+VEGETABLE+MARKET%2C+SACHIVALAYA+GYMKHANA%2C+Sector+21%2C+Gandhinagar%2C+Gujarat+382021",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-166",
@@ -2668,10 +2834,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.9,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Har+Har+Bhole+Lassi+Wala%2C+Haveli+Arcade%2C+Har+Har+Bhole+Lassi+Wala%2C+har+har+bohle+lassiwala%2C+opp.+hotal%2C+Sector+11%2C+Gandhinagar%2C+Gujarat+382010"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Har+Har+Bhole+Lassi+Wala%2C+Haveli+Arcade%2C+Har+Har+Bhole+Lassi+Wala%2C+har+har+bohle+lassiwala%2C+opp.+hotal%2C+Sector+11%2C+Gandhinagar%2C+Gujarat+382010",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-167",
@@ -2684,10 +2851,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 5.0,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Waffle+and+Wings+Gandhinagar%2C+Waffle+and+Wings+Gandhinagar%2C+SHREEJI+CHAIWALAE%2C+Sector+16%2C+Gandhinagar%2C+Gujarat+382016"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Waffle+and+Wings+Gandhinagar%2C+Waffle+and+Wings+Gandhinagar%2C+SHREEJI+CHAIWALAE%2C+Sector+16%2C+Gandhinagar%2C+Gujarat+382016",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-168",
@@ -2700,10 +2868,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.6,
     "stage": "new",
     "website": "https://stores.starbucks.in/store-pages/starbucks-ahmedabad-8/",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Starbucks+-+Hansol%2C+Unit+No.+27%2C+Lower+Ground+Floor%2C+Starbucks+-+Hansol%2C+Cargo+Terminal+T3%2C+Sardar+Vallabhbhai+Patel+International+Airport%2C+Hansol%2C+Ahmedabad%2C+Gujarat+380004"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Starbucks+-+Hansol%2C+Unit+No.+27%2C+Lower+Ground+Floor%2C+Starbucks+-+Hansol%2C+Cargo+Terminal+T3%2C+Sardar+Vallabhbhai+Patel+International+Airport%2C+Hansol%2C+Ahmedabad%2C+Gujarat+380004",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-169",
@@ -2716,10 +2885,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 5.0,
     "stage": "new",
     "website": "http://www.goldencoffee.in/",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Golden+Coffee+Mfg+Co.%2C+92%2C+Golden+Coffee+Mfg+Co.%2C+Alkapuri+Rowhouse%2C+near+super+School%2C+Ghatlodiya%2C+Ahmedabad%2C+Gujarat+380061"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Golden+Coffee+Mfg+Co.%2C+92%2C+Golden+Coffee+Mfg+Co.%2C+Alkapuri+Rowhouse%2C+near+super+School%2C+Ghatlodiya%2C+Ahmedabad%2C+Gujarat+380061",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-170",
@@ -2732,10 +2902,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.9,
     "stage": "new",
     "website": "https://coffeeverse.in/",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Coffeeverse+Experience+Centre%2C+Coffeeverse+Experience+Centre%2C+Premchandnagar+Row+House%2C+Spring+Field%2C+40%2C+Judges+Bunglow+Rd%2C+near+Amul+Auda+Garden%2C+Bodakdev%2C+Ahmedabad%2C+Gujarat+380054"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Coffeeverse+Experience+Centre%2C+Coffeeverse+Experience+Centre%2C+Premchandnagar+Row+House%2C+Spring+Field%2C+40%2C+Judges+Bunglow+Rd%2C+near+Amul+Auda+Garden%2C+Bodakdev%2C+Ahmedabad%2C+Gujarat+380054",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-171",
@@ -2748,10 +2919,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.8,
     "stage": "new",
     "website": "https://breww47.com/",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Breww+47%2C+G.F.+-+01%2C+Breww+47%2C+Shilp+paradise%2C+Block+-+A%2C+opp.+Times+Square+2%2C+nr.+Maple+County+Road%2C+Bodakdev%2C+Ahmedabad%2C+Gujarat+380059"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Breww+47%2C+G.F.+-+01%2C+Breww+47%2C+Shilp+paradise%2C+Block+-+A%2C+opp.+Times+Square+2%2C+nr.+Maple+County+Road%2C+Bodakdev%2C+Ahmedabad%2C+Gujarat+380059",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-172",
@@ -2764,10 +2936,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.5,
     "stage": "new",
     "website": "http://coffeestand.in/",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Coffee+Stand-+Vijay+Cross+Road%2C+11%2C+Coffee+Stand-+Vijay+Cross+Road%2C+Supath+Complex%2C+Vijay+Cross+Rd%2C+Sarvottam+Nagar+Society%2C+Navrangpura%2C+Ahmedabad%2C+Gujarat+380009"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Coffee+Stand-+Vijay+Cross+Road%2C+11%2C+Coffee+Stand-+Vijay+Cross+Road%2C+Supath+Complex%2C+Vijay+Cross+Rd%2C+Sarvottam+Nagar+Society%2C+Navrangpura%2C+Ahmedabad%2C+Gujarat+380009",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-173",
@@ -2780,10 +2953,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.1,
     "stage": "new",
     "website": "https://korebi.coffee/",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Korebi+Gourmet+HQ%2C+Korebi+Gourmet+HQ%2C+A+501%2C+Mondeal+Heights%2C+Sarkhej+-+Gandhinagar+Hwy%2C+near+Novotel+Hotel%2C+Ahmedabad%2C+Gujarat+380015"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Korebi+Gourmet+HQ%2C+Korebi+Gourmet+HQ%2C+A+501%2C+Mondeal+Heights%2C+Sarkhej+-+Gandhinagar+Hwy%2C+near+Novotel+Hotel%2C+Ahmedabad%2C+Gujarat+380015",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-174",
@@ -2796,10 +2970,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.8,
     "stage": "new",
     "website": "https://dailygrind.in/",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Daily+Grind%2C+2nd+Floor%2C+Daily+Grind%2C+Navneet+Plaza%2C+nr.+Municipal+Market%2C+Mithakhali%2C+Navrangpura%2C+Ahmedabad%2C+Gujarat+380009"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Daily+Grind%2C+2nd+Floor%2C+Daily+Grind%2C+Navneet+Plaza%2C+nr.+Municipal+Market%2C+Mithakhali%2C+Navrangpura%2C+Ahmedabad%2C+Gujarat+380009",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-175",
@@ -2812,10 +2987,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.7,
     "stage": "new",
     "website": "http://www.lithosphereuc.com/",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Core+The+Coffee+Shop%2C+Core+The+Coffee+Shop%2C+Rajpath+Rangoli+Rd%2C+behind+Rajpath+Club%2C+Bodakdev%2C+Ahmedabad%2C+Gujarat+380059"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Core+The+Coffee+Shop%2C+Core+The+Coffee+Shop%2C+Rajpath+Rangoli+Rd%2C+behind+Rajpath+Club%2C+Bodakdev%2C+Ahmedabad%2C+Gujarat+380059",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-176",
@@ -2828,10 +3004,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.8,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Mainline+Coffee%2C+GF-001%2C+Mainline+Coffee%2C+Aeon+Complex%2C+Vijay+Cross+Rd%2C+near+HDFC+Bank%2C+Roads%2C+Navrangpura%2C+Ahmedabad%2C+Gujarat+380009"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Mainline+Coffee%2C+GF-001%2C+Mainline+Coffee%2C+Aeon+Complex%2C+Vijay+Cross+Rd%2C+near+HDFC+Bank%2C+Roads%2C+Navrangpura%2C+Ahmedabad%2C+Gujarat+380009",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-177",
@@ -2844,10 +3021,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 5.0,
     "stage": "new",
     "website": "https://sites.google.com/view/coffee1-coffee-house/home",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Coffee1+SPECIALITY+COFFEE%2C+Coffee1+SPECIALITY+COFFEE%2C+Char+Rasta%2C+near+NID%2C+Rajnagar+Society%2C+Paldi%2C+Ahmedabad%2C+Gujarat+380007"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Coffee1+SPECIALITY+COFFEE%2C+Coffee1+SPECIALITY+COFFEE%2C+Char+Rasta%2C+near+NID%2C+Rajnagar+Society%2C+Paldi%2C+Ahmedabad%2C+Gujarat+380007",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-178",
@@ -2860,10 +3038,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.1,
     "stage": "new",
     "website": "https://brewgarten.in/menu.html",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Brewgarten%2C+Brewgarten%2C+Besides+Havmor+Ice+Cream+Parlour%2C+Plot+340%2C+Vijay+Cross+Rd%2C+nr.+Nilima+Park+Society%2C+Navrangpura%2C+Ahmedabad%2C+Gujarat+380009"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Brewgarten%2C+Brewgarten%2C+Besides+Havmor+Ice+Cream+Parlour%2C+Plot+340%2C+Vijay+Cross+Rd%2C+nr.+Nilima+Park+Society%2C+Navrangpura%2C+Ahmedabad%2C+Gujarat+380009",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-179",
@@ -2876,10 +3055,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.6,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Night+out+cold+coffee+bar%2C+Night+out+cold+coffee+bar%2C+Sarkhej+-+Gandhinagar+Hwy%2C+Satellite%2C+Ahmedabad%2C+Gujarat+380015"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Night+out+cold+coffee+bar%2C+Night+out+cold+coffee+bar%2C+Sarkhej+-+Gandhinagar+Hwy%2C+Satellite%2C+Ahmedabad%2C+Gujarat+380015",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-180",
@@ -2892,10 +3072,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.1,
     "stage": "new",
     "website": "http://soulbrewcoffee.in/",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Soul+Brew+Coffee%2C+Soul+Brew+Coffee%2C+Bodakdev+36+Rajpath+Rowhouse%2C+opposite+Ahmedabad+International+School%2C+Bodakdev%2C+Ahmedabad%2C+Gujarat+380015"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Soul+Brew+Coffee%2C+Soul+Brew+Coffee%2C+Bodakdev+36+Rajpath+Rowhouse%2C+opposite+Ahmedabad+International+School%2C+Bodakdev%2C+Ahmedabad%2C+Gujarat+380015",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-181",
@@ -2908,10 +3089,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 5.0,
     "stage": "new",
     "website": "https://viahventures.com/",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Viah+Ventures%2C+Suite+%231289%2C+Viah+Ventures%2C+Shapath+1%2C+501%2C+Ahmedabad%2C+Gujarat+380054"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Viah+Ventures%2C+Suite+%231289%2C+Viah+Ventures%2C+Shapath+1%2C+501%2C+Ahmedabad%2C+Gujarat+380054",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-182",
@@ -2924,10 +3106,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.8,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=IndieGenie+Cafe+Randesan%2C+Shop+No+2%2C+IndieGenie+Cafe+Randesan%2C+Hill+Town+Luxuria%2C+Panchdev+Temple+Rd%2C+Randesan%2C+Gandhinagar%2C+Gujarat+382426"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=IndieGenie+Cafe+Randesan%2C+Shop+No+2%2C+IndieGenie+Cafe+Randesan%2C+Hill+Town+Luxuria%2C+Panchdev+Temple+Rd%2C+Randesan%2C+Gandhinagar%2C+Gujarat+382426",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-183",
@@ -2940,10 +3123,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.8,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Kerla+Kitchen+Cafe+-+PDPU%2C+The+Kerla+Kitchen+Cafe+-+PDPU%2C+PDPU+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382426"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Kerla+Kitchen+Cafe+-+PDPU%2C+The+Kerla+Kitchen+Cafe+-+PDPU%2C+PDPU+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382426",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-184",
@@ -2956,10 +3140,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.7,
     "stage": "new",
     "website": "http://gag.coffee/",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=GAG+Coffee+-+Gift+City%2C+S-1%2C+GAG+Coffee+-+Gift+City%2C+Sangath+smart+life%2C+Shram+Marg%2C+opposite+Jamnabai+Narsee+School%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382050"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=GAG+Coffee+-+Gift+City%2C+S-1%2C+GAG+Coffee+-+Gift+City%2C+Sangath+smart+life%2C+Shram+Marg%2C+opposite+Jamnabai+Narsee+School%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382050",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-185",
@@ -2972,10 +3157,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.3,
     "stage": "new",
     "website": "https://www.theleela.com/the-leela-gandhinagar/restaurants/moksha-lounge",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Moksha+Lounge%2C+Moksha+Lounge%2C+The+Leela%2C+Ahmedabad+State+Highway%2C+nearby+MMCEC%2C+above+Railway+Station%2C+Sector+14%2C+Gandhinagar%2C+Gujarat+382016"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Moksha+Lounge%2C+Moksha+Lounge%2C+The+Leela%2C+Ahmedabad+State+Highway%2C+nearby+MMCEC%2C+above+Railway+Station%2C+Sector+14%2C+Gandhinagar%2C+Gujarat+382016",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-186",
@@ -2988,10 +3174,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.7,
     "stage": "new",
     "website": "https://giftcityclub.com/",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=GIFT+City+Club%2C+5M6Q%2B5X3+GIFT+City+Club%2C+Shram+Marg%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382050"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=GIFT+City+Club%2C+5M6Q%2B5X3+GIFT+City+Club%2C+Shram+Marg%2C+Gujarat+International+Finance+Tec-City%2C+Gandhinagar%2C+Gujarat+382050",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-187",
@@ -3004,42 +3191,45 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.4,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Venus+Rooftop+Restro+%26+Cafe%2C+Venus+Rooftop+Restro+%26+Cafe%2C+Terrace+%40%2C+The+Emporio%2C+GJ+SH+41%2C+above+Croma%2C+opp.+PVR+4D+Square+Mall%2C+Harikurpa+Society%2C+Chandkheda%2C+Gandhinagar%2C+Ahmedabad%2C+Gujarat+382424"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Venus+Rooftop+Restro+%26+Cafe%2C+Venus+Rooftop+Restro+%26+Cafe%2C+Terrace+%40%2C+The+Emporio%2C+GJ+SH+41%2C+above+Croma%2C+opp.+PVR+4D+Square+Mall%2C+Harikurpa+Society%2C+Chandkheda%2C+Gandhinagar%2C+Ahmedabad%2C+Gujarat+382424",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-188",
-    "business_name": "SHIVAYA CAFE & 360\u00b0 BOXCRICKET",
+    "business_name": "SHIVAYA CAFE & 360° BOXCRICKET",
     "phone": "099042 00383",
     "category": "High-End Cafe",
-    "address": "SHIVAYA CAFE & 360\u00b0 BOXCRICKET, Tarapur Service Road, opp. Swagat Holiday Mall Road, Sargasan, Gandhinagar, Gujarat 382421",
+    "address": "SHIVAYA CAFE & 360° BOXCRICKET, Tarapur Service Road, opp. Swagat Holiday Mall Road, Sargasan, Gandhinagar, Gujarat 382421",
     "area": "Sargasan",
     "review_count": 144,
     "review_rating": 4.7,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SHIVAYA+CAFE+%26+360%C2%B0+BOXCRICKET%2C+SHIVAYA+CAFE+%26+360%C2%B0+BOXCRICKET%2C+Tarapur+Service+Road%2C+opp.+Swagat+Holiday+Mall+Road%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382421"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SHIVAYA+CAFE+%26+360%C2%B0+BOXCRICKET%2C+SHIVAYA+CAFE+%26+360%C2%B0+BOXCRICKET%2C+Tarapur+Service+Road%2C+opp.+Swagat+Holiday+Mall+Road%2C+Sargasan%2C+Gandhinagar%2C+Gujarat+382421",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-189",
     "business_name": "At20-Ahemdabads Highest Rooftop Cafe",
     "phone": "092278 59534",
     "category": "High-End Cafe",
-    "address": "At20-Ahemdabads Highest Rooftop Cafe, Praveg\u2019s Grand Eulogia, Sindhu Bhavan Road, Sardar Patel Ring Rd, near Sarkhej - Gandhinagar Highway, Thaltej, Ahmedabad, Gujarat 380058",
+    "address": "At20-Ahemdabads Highest Rooftop Cafe, Praveg’s Grand Eulogia, Sindhu Bhavan Road, Sardar Patel Ring Rd, near Sarkhej - Gandhinagar Highway, Thaltej, Ahmedabad, Gujarat 380058",
     "area": "Gandhinagar",
     "review_count": 135,
     "review_rating": 4.2,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=At20-Ahemdabads+Highest+Rooftop+Cafe%2C+At20-Ahemdabads+Highest+Rooftop+Cafe%2C+Praveg%E2%80%99s+Grand+Eulogia%2C+Sindhu+Bhavan+Road%2C+Sardar+Patel+Ring+Rd%2C+near+Sarkhej+-+Gandhinagar+Highway%2C+Thaltej%2C+Ahmedabad%2C+Gujarat+380058"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=At20-Ahemdabads+Highest+Rooftop+Cafe%2C+At20-Ahemdabads+Highest+Rooftop+Cafe%2C+Praveg%E2%80%99s+Grand+Eulogia%2C+Sindhu+Bhavan+Road%2C+Sardar+Patel+Ring+Rd%2C+near+Sarkhej+-+Gandhinagar+Highway%2C+Thaltej%2C+Ahmedabad%2C+Gujarat+380058",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-190",
@@ -3052,26 +3242,28 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.4,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Car+War+Cafe%2C+Car+War+Cafe%2C+Shahpur+Rd%2C+Gujarat+International+Finance+Tec-City%2C+Shahpur%2C+Gujarat+382355"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Car+War+Cafe%2C+Car+War+Cafe%2C+Shahpur+Rd%2C+Gujarat+International+Finance+Tec-City%2C+Shahpur%2C+Gujarat+382355",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-191",
-    "business_name": "Shiva\u2019s coffee bar (Uvarsad)",
+    "business_name": "Shiva’s coffee bar (Uvarsad)",
     "phone": "077779 59764",
     "category": "High-End Cafe",
-    "address": "5HXP+X2V Shiva\u2019s coffee bar (Uvarsad), Shivas Coffee Bar, Uvarsad-Vavol Rd, Gandhinagar, Gujarat 382422",
+    "address": "5HXP+X2V Shiva’s coffee bar (Uvarsad), Shivas Coffee Bar, Uvarsad-Vavol Rd, Gandhinagar, Gujarat 382422",
     "area": "Gandhinagar",
     "review_count": 93,
     "review_rating": 4.8,
     "stage": "new",
     "website": "https://www.instagram.com/shivasuvarsad?igshid=OGQ5ZDc2ODk2ZA==",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shiva%E2%80%99s+coffee+bar+%28Uvarsad%29%2C+5HXP%2BX2V+Shiva%E2%80%99s+coffee+bar+%28Uvarsad%29%2C+Shivas+Coffee+Bar%2C+Uvarsad-Vavol+Rd%2C+Gandhinagar%2C+Gujarat+382422"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shiva%E2%80%99s+coffee+bar+%28Uvarsad%29%2C+5HXP%2BX2V+Shiva%E2%80%99s+coffee+bar+%28Uvarsad%29%2C+Shivas+Coffee+Bar%2C+Uvarsad-Vavol+Rd%2C+Gandhinagar%2C+Gujarat+382422",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-192",
@@ -3084,10 +3276,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.3,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Seven+Cafe-rooftop+cafe%2C+Seven+Cafe-rooftop+cafe%2C+New+Judges+Bungalow+Road%2C+Sarkhej+-+Gandhinagar+Hwy%2C+opp.+High+Court+of+Gujarat%2C+Ahmedabad%2C+Gujarat+380059"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Seven+Cafe-rooftop+cafe%2C+Seven+Cafe-rooftop+cafe%2C+New+Judges+Bungalow+Road%2C+Sarkhej+-+Gandhinagar+Hwy%2C+opp.+High+Court+of+Gujarat%2C+Ahmedabad%2C+Gujarat+380059",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-193",
@@ -3100,10 +3293,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 5.0,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Indie+Spice%2C+Indie+Spice%2C+Hotel+Empyrean%2C+30352%2C+Gandhinagar%2C+Gujarat+382016"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Indie+Spice%2C+Indie+Spice%2C+Hotel+Empyrean%2C+30352%2C+Gandhinagar%2C+Gujarat+382016",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-194",
@@ -3116,10 +3310,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.2,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shri+PATIDAR+RAJWADI+CHAI+KUDASAN%2C+Shri+PATIDAR+RAJWADI+CHAI+KUDASAN%2C+A%2F25%2C+Pramukh+Arcade%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shri+PATIDAR+RAJWADI+CHAI+KUDASAN%2C+Shri+PATIDAR+RAJWADI+CHAI+KUDASAN%2C+A%2F25%2C+Pramukh+Arcade%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-195",
@@ -3132,10 +3327,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.6,
     "stage": "new",
     "website": "http://www.wafflecastle.in/",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1499,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Waffle+Castle%2C+Gandhinagar%2C+Shop+Number+58%2C+Waffle+Castle%2C+Gandhinagar%2C+Pramukh+Anand+Orbit+Mall%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Waffle+Castle%2C+Gandhinagar%2C+Shop+Number+58%2C+Waffle+Castle%2C+Gandhinagar%2C+Pramukh+Anand+Orbit+Mall%2C+Reliance+Cross+Rd%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-196",
@@ -3148,10 +3344,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.1,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Brown+Butter+Gandhinagar%2C+Brown+Butter+Gandhinagar%2C+Pramukh+Mastana%2C+C65%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Brown+Butter+Gandhinagar%2C+Brown+Butter+Gandhinagar%2C+Pramukh+Mastana%2C+C65%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-197",
@@ -3164,10 +3361,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 5.0,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Jaggery+Ice+Gola+-+Kudasan%2C+Shop+No.+19%2C+Jaggery+Ice+Gola+-+Kudasan%2C+POORNAM+RESIDENCY%2C+opp.+Radhe+111%2C+near+The+Lifafa+Cafe+%26+Restro%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Jaggery+Ice+Gola+-+Kudasan%2C+Shop+No.+19%2C+Jaggery+Ice+Gola+-+Kudasan%2C+POORNAM+RESIDENCY%2C+opp.+Radhe+111%2C+near+The+Lifafa+Cafe+%26+Restro%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-198",
@@ -3180,10 +3378,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 3.9,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=UpSarpanch+Chai%2C+UpSarpanch+Chai%2C+pramukh+mastana%2C+C-65%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=UpSarpanch+Chai%2C+UpSarpanch+Chai%2C+pramukh+mastana%2C+C-65%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-199",
@@ -3196,10 +3395,11 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.6,
     "stage": "new",
     "website": "",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MADRAS+DOSA+CAFE%2C+MADRAS+DOSA+CAFE%2C+nr.+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MADRAS+DOSA+CAFE%2C+MADRAS+DOSA+CAFE%2C+nr.+Reliance+Cross+Road%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
   },
   {
     "id": "gn-lead-200",
@@ -3212,9 +3412,3427 @@ export const INITIAL_LEADS: Lead[] = [
     "review_rating": 4.5,
     "stage": "new",
     "website": "https://fizzbub-dx3ykky.gamma.site/",
-    "notes": "High-End / Aesthetic Cafe \u2022 Higher AOV (\u20b9500-\u20b91500) \u2022 Prime Premium NFC Card candidate.",
+    "notes": "High-End / Aesthetic Cafe • Higher AOV (₹500-₹1500) • Prime Premium NFC Card candidate.",
     "deal_value": 1999,
     "created_at": "2026-11-17T02:00:00Z",
-    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Fizzbub+the+boba+bar%2C+Shop+no+13%2C+Fizzbub+the+boba+bar%2C+The+spicy+street%2C+opposite+landmark%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419"
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Fizzbub+the+boba+bar%2C+Shop+no+13%2C+Fizzbub+the+boba+bar%2C+The+spicy+street%2C+opposite+landmark%2C+Kudasan%2C+Gandhinagar%2C+Gujarat+382419",
+    "city": "Gandhinagar"
+  },
+  {
+    "id": "bh-lead-001",
+    "business_name": "Batchelor's Cafe | Best Cafe In Bharuch",
+    "phone": "099980 75322",
+    "category": "High-End Cafe",
+    "address": "Ground Floor , Shop No.8, Batchelor's Cafe | Best Cafe In Bharuch, Millennium Arcade, College Rd, opp. M.k. College of Commerce, Friends Colony, Bholav, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 40,
+    "review_rating": 4.6,
+    "stage": "new",
+    "website": "https://batchelors-cafe-best.grexa.site/",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Batchelor%27s+Cafe+%7C+Best+Cafe+In+Bharuch%2C+Ground+Floor+%2C+Shop+No.8%2C+Batchelor%27s+Cafe+%7C+Best+Cafe+In+Bharuch%2C+Millennium+Arcade%2C+College+Rd%2C+opp.+M.k.+College+of+Commerce%2C+Friends+Colony%2C+Bholav%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-002",
+    "business_name": "Pickle Rage Cafe - Global Cuisines & Pickleball",
+    "phone": "076981 20027",
+    "category": "High-End Cafe",
+    "address": "Pickle Rage Cafe - Global Cuisines & Pickleball, nr Shravan Chowkdi, Link Rd, opp. Ganesh Township, PickleRage, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Link Road",
+    "review_count": 133,
+    "review_rating": 4.1,
+    "stage": "new",
+    "website": "https://pickle-rage-website.vercel.app/",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Pickle+Rage+Cafe+-+Global+Cuisines+%26+Pickleball%2C+Pickle+Rage+Cafe+-+Global+Cuisines+%26+Pickleball%2C+nr+Shravan+Chowkdi%2C+Link+Rd%2C+opp.+Ganesh+Township%2C+PickleRage%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-003",
+    "business_name": "Chaibugs Cafe & Restro",
+    "phone": "094088 65712",
+    "category": "High-End Cafe",
+    "address": "Second Floor, Chaibugs Cafe & Restro, Golden Square, S-35, College Rd, Bholav, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 78,
+    "review_rating": 4.2,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chaibugs+Cafe+%26+Restro%2C+Second+Floor%2C+Chaibugs+Cafe+%26+Restro%2C+Golden+Square%2C+S-35%2C+College+Rd%2C+Bholav%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-004",
+    "business_name": "NUKKAD GAMING CAFE",
+    "phone": "090161 33038",
+    "category": "High-End Cafe",
+    "address": "SHOP NO. 105, FIRST FLOOR, NUKKAD GAMING CAFE, AL KARIM HEIGHTS, opp. BANK OF BARODA, Mohammedpura, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 27,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=NUKKAD+GAMING+CAFE%2C+SHOP+NO.+105%2C+FIRST+FLOOR%2C+NUKKAD+GAMING+CAFE%2C+AL+KARIM+HEIGHTS%2C+opp.+BANK+OF+BARODA%2C+Mohammedpura%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-005",
+    "business_name": "Palm island cafe🏝",
+    "phone": "093131 73191",
+    "category": "High-End Cafe",
+    "address": "T-21, 3rd floor, Palm island cafe🏝, golden square, over pantaloons, beside D-mart, Bholav, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 87,
+    "review_rating": 3.7,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Palm+island+cafe%F0%9F%8F%9D%2C+T-21%2C+3rd+floor%2C+Palm+island+cafe%F0%9F%8F%9D%2C+golden+square%2C+over+pantaloons%2C+beside+D-mart%2C+Bholav%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-006",
+    "business_name": "Nature Caafe",
+    "phone": "091677 94730",
+    "category": "High-End Cafe",
+    "address": "Shop 6, 1st floor, Nature Caafe, Shree Mangalam Complex, near Patel Society, Kasak Circle, Bholav, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 17,
+    "review_rating": 4.6,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Nature+Caafe%2C+Shop+6%2C+1st+floor%2C+Nature+Caafe%2C+Shree+Mangalam+Complex%2C+near+Patel+Society%2C+Kasak+Circle%2C+Bholav%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-007",
+    "business_name": "Cresto Cafe",
+    "phone": "084604 60046",
+    "category": "High-End Cafe",
+    "address": "G-27, Cresto Cafe, Golden Square, Chowkdi, ABC Cir, beside DMart - Bharuch, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 57,
+    "review_rating": 4.5,
+    "stage": "new",
+    "website": "http://cresto.co.in/",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Cresto+Cafe%2C+G-27%2C+Cresto+Cafe%2C+Golden+Square%2C+Chowkdi%2C+ABC+Cir%2C+beside+DMart+-+Bharuch%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-008",
+    "business_name": "Dieta Cafe",
+    "phone": "088669 31260",
+    "category": "High-End Cafe",
+    "address": "G- 10, Dieta Cafe, GOLDEN SQUARE, G- 09, near DMART, Bholav, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 29,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "https://www.instagram.com/dietacafe?igsh=MXFnbXc2Z2dhdGtsZQ==",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dieta+Cafe%2C+G-+10%2C+Dieta+Cafe%2C+GOLDEN+SQUARE%2C+G-+09%2C+near+DMART%2C+Bholav%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-009",
+    "business_name": "“Bhuukkad.Baba Cafe Bharuch”",
+    "phone": "095379 02203",
+    "category": "High-End Cafe",
+    "address": "“Bhuukkad.Baba Cafe Bharuch”, GF 2 Millanium Arcred road, Millenium arcred, College Rd, opposite Svmit college, Bholav, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 31,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "https://bhuukkadbaba-best-fast.grexa.site/",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=%E2%80%9CBhuukkad.Baba+Cafe+Bharuch%E2%80%9D%2C+%E2%80%9CBhuukkad.Baba+Cafe+Bharuch%E2%80%9D%2C+GF+2+Millanium+Arcred+road%2C+Millenium+arcred%2C+College+Rd%2C+opposite+Svmit+college%2C+Bholav%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-010",
+    "business_name": "InfiniTEA Cafe",
+    "phone": "075672 21455",
+    "category": "High-End Cafe",
+    "address": "InfiniTEA Cafe, Tulsidham Rd, Pramukh Swami Maharaj Marg, Pushpakunj Society, Zadeshwar, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 13,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=InfiniTEA+Cafe%2C+InfiniTEA+Cafe%2C+Tulsidham+Rd%2C+Pramukh+Swami+Maharaj+Marg%2C+Pushpakunj+Society%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-011",
+    "business_name": "Tea Post",
+    "phone": "098982 36116",
+    "category": "High-End Cafe",
+    "address": "Gf shop no 1, Tea Post, Semani House, nr. Sundaram flate, Jyoti Nagar, Bholav, Maktampur, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 79,
+    "review_rating": 4.1,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tea+Post%2C+Gf+shop+no+1%2C+Tea+Post%2C+Semani+House%2C+nr.+Sundaram+flate%2C+Jyoti+Nagar%2C+Bholav%2C+Maktampur%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-012",
+    "business_name": "Friends & Fries Café – Bharuch",
+    "phone": "088667 76226",
+    "category": "High-End Cafe",
+    "address": "First floor, Friends & Fries Café – Bharuch, golden square, FF shop no 1,2,3, above jockey showroom, near DMart, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 42,
+    "review_rating": 3.7,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Friends+%26+Fries+Caf%C3%A9+%E2%80%93+Bharuch%2C+First+floor%2C+Friends+%26+Fries+Caf%C3%A9+%E2%80%93+Bharuch%2C+golden+square%2C+FF+shop+no+1%2C2%2C3%2C+above+jockey+showroom%2C+near+DMart%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-013",
+    "business_name": "BK LITTLES",
+    "phone": "070436 87168",
+    "category": "Restaurant",
+    "address": "BK LITTLES, Golden Square nr, G-6, ABC Cir, Bholav, Bholav Part, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 31,
+    "review_rating": 4.6,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=BK+LITTLES%2C+BK+LITTLES%2C+Golden+Square+nr%2C+G-6%2C+ABC+Cir%2C+Bholav%2C+Bholav+Part%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-014",
+    "business_name": "The Smokey Ice Cafe",
+    "phone": "06355 188 147",
+    "category": "High-End Cafe",
+    "address": "The Smokey Ice Cafe, Janakpuri Society, 2, Pramukh Swami Maharaj Marg, near Social Food Court, near HP petrol pump, Zadeshwar, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 33,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "https://the-smokey-ice.grexa.site/",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Smokey+Ice+Cafe%2C+The+Smokey+Ice+Cafe%2C+Janakpuri+Society%2C+2%2C+Pramukh+Swami+Maharaj+Marg%2C+near+Social+Food+Court%2C+near+HP+petrol+pump%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-015",
+    "business_name": "TeaMax Cafe Bharuch Gujarat",
+    "phone": "084602 79593",
+    "category": "High-End Cafe",
+    "address": "Shop No.03, TeaMax Cafe Bharuch Gujarat, The Maple Skydeck, Tavra Rd, near by Croma, Bharuch, Gujarat 392011",
+    "city": "Bharuch",
+    "area": "Tavra",
+    "review_count": 76,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "https://www.teamaxcafe.in/",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=TeaMax+Cafe+Bharuch+Gujarat%2C+Shop+No.03%2C+TeaMax+Cafe+Bharuch+Gujarat%2C+The+Maple+Skydeck%2C+Tavra+Rd%2C+near+by+Croma%2C+Bharuch%2C+Gujarat+392011"
+  },
+  {
+    "id": "bh-lead-016",
+    "business_name": "Cafe fresh",
+    "phone": "076006 66179",
+    "category": "High-End Cafe",
+    "address": "G-3, Cafe fresh, Yash Complex, Zadeshwar Rd, opp. inox cinema, Santkrupa Society, Ramvatika Society, Zadeshwar, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 3,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe+fresh%2C+G-3%2C+Cafe+fresh%2C+Yash+Complex%2C+Zadeshwar+Rd%2C+opp.+inox+cinema%2C+Santkrupa+Society%2C+Ramvatika+Society%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-017",
+    "business_name": "Zoop Cafe",
+    "phone": "098241 87530",
+    "category": "High-End Cafe",
+    "address": "Zoop Cafe, Shyam Villa, Complex, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 3,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Zoop+Cafe%2C+Zoop+Cafe%2C+Shyam+Villa%2C+Complex%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-018",
+    "business_name": "Smocktail lounge & restaurant",
+    "phone": "098985 95786",
+    "category": "Restaurant",
+    "address": "Smocktail lounge & restaurant, 122 shilpi square, opp. Nagori dairy, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 28,
+    "review_rating": 4.3,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Smocktail+lounge+%26+restaurant%2C+Smocktail+lounge+%26+restaurant%2C+122+shilpi+square%2C+opp.+Nagori+dairy%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-019",
+    "business_name": "HARE KRUSHNA FOODS || TOP FOOD RESTAURANT IN BHARUCH",
+    "phone": "099783 31081",
+    "category": "Restaurant",
+    "address": "HARE KRUSHNA FOODS || TOP FOOD RESTAURANT IN BHARUCH, Gail Townships road, Sravan chowkdi, Aakansha Nagri, Sherpura, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Sherpura",
+    "review_count": 118,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "http://harekrushnafoods.com/",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=HARE+KRUSHNA+FOODS+%7C%7C+TOP+FOOD+RESTAURANT+IN+BHARUCH%2C+HARE+KRUSHNA+FOODS+%7C%7C+TOP+FOOD+RESTAURANT+IN+BHARUCH%2C+Gail+Townships+road%2C+Sravan+chowkdi%2C+Aakansha+Nagri%2C+Sherpura%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-020",
+    "business_name": "Tadap tandoori chai bharuch",
+    "phone": "096303 74630",
+    "category": "High-End Cafe",
+    "address": "Tadap tandoori chai bharuch, Sai Dham Complex, GJ SH 64, Near Rohini Nagar, Bholav, Bholav Part, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 18,
+    "review_rating": 4.5,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tadap+tandoori+chai+bharuch%2C+Tadap+tandoori+chai+bharuch%2C+Sai+Dham+Complex%2C+GJ+SH+64%2C+Near+Rohini+Nagar%2C+Bholav%2C+Bholav+Part%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-021",
+    "business_name": "Chai sutta cafe",
+    "phone": "094266 38897",
+    "category": "High-End Cafe",
+    "address": "PX2V+V5M Chai sutta cafe, Opp. Patel Super Market, Moficer Jin Compound, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 11,
+    "review_rating": 4.3,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chai+sutta+cafe%2C+PX2V%2BV5M+Chai+sutta+cafe%2C+Opp.+Patel+Super+Market%2C+Moficer+Jin+Compound%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-022",
+    "business_name": "ARAN GAMING CAFE",
+    "phone": "094096 57249",
+    "category": "High-End Cafe",
+    "address": "1st Floor, ARAN GAMING CAFE, City Center, B1 wing, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 3,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "https://www.instagram.com/aran_coming_soon?igsh=MTY2Z2pnMTY4dHVoMA==",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=ARAN+GAMING+CAFE%2C+1st+Floor%2C+ARAN+GAMING+CAFE%2C+City+Center%2C+B1+wing%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-023",
+    "business_name": "NC’s Cafe",
+    "phone": "076008 40207",
+    "category": "High-End Cafe",
+    "address": "G-22, NC’s Cafe, Harihar Complex, Near Tulsidham, Aalekh Society, Bholav, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 2,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=NC%E2%80%99s+Cafe%2C+G-22%2C+NC%E2%80%99s+Cafe%2C+Harihar+Complex%2C+Near+Tulsidham%2C+Aalekh+Society%2C+Bholav%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-024",
+    "business_name": "Shab's cafe",
+    "phone": "099796 40016",
+    "category": "High-End Cafe",
+    "address": "Shab's cafe, behind jhulelal hospital, Old Town, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Old Town",
+    "review_count": 0,
+    "review_rating": 4.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shab%27s+cafe%2C+Shab%27s+cafe%2C+behind+jhulelal+hospital%2C+Old+Town%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-025",
+    "business_name": "Kausar Cafe",
+    "phone": "099041 72285",
+    "category": "High-End Cafe",
+    "address": "Kausar Cafe, E-2743, Bajar, Darwaja, Old Town, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Old Town",
+    "review_count": 6,
+    "review_rating": 3.7,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Cafe / Bistro • Table and billing counter NFC card • High footfall.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kausar+Cafe%2C+Kausar+Cafe%2C+E-2743%2C+Bajar%2C+Darwaja%2C+Old+Town%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-026",
+    "business_name": "Ajay's City Center, Bharuch",
+    "phone": "06355 439 922",
+    "category": "Restaurant",
+    "address": "Shop No. 104, Ajay's City Center, Bharuch, City Center, Central Bus DeportBharuch, West, Railway Station Rd, near Railway station, Moficer Jin Compound, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 38,
+    "review_rating": 4.6,
+    "stage": "new",
+    "website": "https://ajays.co.in/",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Ajay%27s+City+Center%2C+Bharuch%2C+Shop+No.+104%2C+Ajay%27s+City+Center%2C+Bharuch%2C+City+Center%2C+Central+Bus+DeportBharuch%2C+West%2C+Railway+Station+Rd%2C+near+Railway+station%2C+Moficer+Jin+Compound%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-027",
+    "business_name": "Saladific Bharuch",
+    "phone": "099744 18344",
+    "category": "Restaurant",
+    "address": "Saladific Bharuch, Patel Shopping Center, nr. Sheetal Circle, Bholav, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 49,
+    "review_rating": 4.1,
+    "stage": "new",
+    "website": "https://saladific.com/",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Saladific+Bharuch%2C+Saladific+Bharuch%2C+Patel+Shopping+Center%2C+nr.+Sheetal+Circle%2C+Bholav%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-028",
+    "business_name": "Blue Coriander The Restaurant",
+    "phone": "075740 00363",
+    "category": "Restaurant",
+    "address": "Blue Coriander The Restaurant, ABC Chokdi, Over Bridge, R S 79 A, Nandelav Rd, near Hotel Rang Lords inn, Bholav, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 50,
+    "review_rating": 4.5,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Blue+Coriander+The+Restaurant%2C+Blue+Coriander+The+Restaurant%2C+ABC+Chokdi%2C+Over+Bridge%2C+R+S+79+A%2C+Nandelav+Rd%2C+near+Hotel+Rang+Lords+inn%2C+Bholav%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-029",
+    "business_name": "SHREE RUSHI CHETTINADU RESTAURANT",
+    "phone": "092271 52070",
+    "category": "Restaurant",
+    "address": "1 ST FLOOR, SHREE RUSHI CHETTINADU RESTAURANT, MAYURI SQUARE, Dahej Bypass Rd, Aakansha Nagri, Sherpura, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Dahej Bypass",
+    "review_count": 147,
+    "review_rating": 4.5,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SHREE+RUSHI+CHETTINADU+RESTAURANT%2C+1+ST+FLOOR%2C+SHREE+RUSHI+CHETTINADU+RESTAURANT%2C+MAYURI+SQUARE%2C+Dahej+Bypass+Rd%2C+Aakansha+Nagri%2C+Sherpura%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-030",
+    "business_name": "Jay Restaurant",
+    "phone": "090998 26566",
+    "category": "Restaurant",
+    "address": "Jay Restaurant, Zadeshwar Chowkdi, Sanskar Bunglows, Zadeshwar, Bharuch, Gujarat 392011",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 48,
+    "review_rating": 4.7,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Jay+Restaurant%2C+Jay+Restaurant%2C+Zadeshwar+Chowkdi%2C+Sanskar+Bunglows%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392011"
+  },
+  {
+    "id": "bh-lead-031",
+    "business_name": "ROYAL RAJ FOOD COURT",
+    "phone": "074340 44045",
+    "category": "Restaurant",
+    "address": "ROYAL RAJ FOOD COURT, Shaktinath Cir, Near Shaktinath Circle, Railway Colony, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 38,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=ROYAL+RAJ+FOOD+COURT%2C+ROYAL+RAJ+FOOD+COURT%2C+Shaktinath+Cir%2C+Near+Shaktinath+Circle%2C+Railway+Colony%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-032",
+    "business_name": "Aadijay's Biryani and Kebab - Mangal Bazaar",
+    "phone": "095372 24343",
+    "category": "Restaurant",
+    "address": "Aadijay's Biryani and Kebab - Mangal Bazaar, 𝘼𝙖𝙙𝙞𝙟𝙖𝙮® 𝘽𝙞𝙧𝙮𝙖𝙣𝙞 𝙖𝙣𝙙 𝙆𝙚𝙗𝙖𝙗, Mangal Bazaar, At: The Flamboyant Natraj 1206, beside District Central Co.op. Bank, near Bharuch Railway Station Clock Tower, Moficer Jin Compound, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 96,
+    "review_rating": 4.4,
+    "stage": "new",
+    "website": "https://www.biryaniandkebabs.com/",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Aadijay%27s+Biryani+and+Kebab+-+Mangal+Bazaar%2C+Aadijay%27s+Biryani+and+Kebab+-+Mangal+Bazaar%2C+%F0%9D%98%BC%F0%9D%99%96%F0%9D%99%99%F0%9D%99%9E%F0%9D%99%9F%F0%9D%99%96%F0%9D%99%AE%C2%AE+%F0%9D%98%BD%F0%9D%99%9E%F0%9D%99%A7%F0%9D%99%AE%F0%9D%99%96%F0%9D%99%A3%F0%9D%99%9E+%F0%9D%99%96%F0%9D%99%A3%F0%9D%99%99+%F0%9D%99%86%F0%9D%99%9A%F0%9D%99%97%F0%9D%99%96%F0%9D%99%97%2C+Mangal+Bazaar%2C+At%3A+The+Flamboyant+Natraj+1206%2C+beside+District+Central+Co.op.+Bank%2C+near+Bharuch+Railway+Station+Clock+Tower%2C+Moficer+Jin+Compound%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-033",
+    "business_name": "BITE WALA",
+    "phone": "093680 58084",
+    "category": "Restaurant",
+    "address": "BITE WALA, Dahej Bypass Rd, Navjivan Society, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Dahej Bypass",
+    "review_count": 4,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=BITE+WALA%2C+BITE+WALA%2C+Dahej+Bypass+Rd%2C+Navjivan+Society%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-034",
+    "business_name": "Mama Matki masala And Chinese",
+    "phone": "087807 31833",
+    "category": "Restaurant",
+    "address": "Mama Matki masala And Chinese, Mohammedpura Rd, near Santoshi, bhajjuwala society, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 42,
+    "review_rating": 4.7,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Mama+Matki+masala+And+Chinese%2C+Mama+Matki+masala+And+Chinese%2C+Mohammedpura+Rd%2C+near+Santoshi%2C+bhajjuwala+society%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-035",
+    "business_name": "Royal Biryani's",
+    "phone": "098987 11578",
+    "category": "Restaurant",
+    "address": "Shop no 5, Royal Biryani's, Under hotel crown palace building, Railway Station Rd, Falshruti Nagar, Moficer Jin Compound, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 104,
+    "review_rating": 4.3,
+    "stage": "new",
+    "website": "https://royalbiryanis.lovable.app/",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Royal+Biryani%27s%2C+Shop+no+5%2C+Royal+Biryani%27s%2C+Under+hotel+crown+palace+building%2C+Railway+Station+Rd%2C+Falshruti+Nagar%2C+Moficer+Jin+Compound%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-036",
+    "business_name": "Mumbai frankie",
+    "phone": "079776 36698",
+    "category": "Restaurant",
+    "address": "Mumbai frankie, Shaktinath Cir, Shaktinath, Railway Colony, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 90,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Mumbai+frankie%2C+Mumbai+frankie%2C+Shaktinath+Cir%2C+Shaktinath%2C+Railway+Colony%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-037",
+    "business_name": "Mother's Kitchen",
+    "phone": "098206 92858",
+    "category": "Restaurant",
+    "address": "Shop No 18, Mother's Kitchen, Samrajya Complex, next to Rajwadi ChaiShravan, Chowkdi, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 35,
+    "review_rating": 4.2,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Mother%27s+Kitchen%2C+Shop+No+18%2C+Mother%27s+Kitchen%2C+Samrajya+Complex%2C+next+to+Rajwadi+ChaiShravan%2C+Chowkdi%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-038",
+    "business_name": "Shital Palace",
+    "phone": "094281 76467",
+    "category": "Restaurant",
+    "address": "Shital Palace, Pritam-1 Society, 3-4, Panna Shopping Centre, Pramukh Swami Maharaj Marg, Kasak Circle, Maktampur, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Kasak",
+    "review_count": 91,
+    "review_rating": 4.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shital+Palace%2C+Shital+Palace%2C+Pritam-1+Society%2C+3-4%2C+Panna+Shopping+Centre%2C+Pramukh+Swami+Maharaj+Marg%2C+Kasak+Circle%2C+Maktampur%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-039",
+    "business_name": "Hotel rasraj",
+    "phone": "098250 15306",
+    "category": "Restaurant",
+    "address": "Hotel rasraj, 17, Railway Station Rd, Bhurgu Manzil, Old Town, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 35,
+    "review_rating": 4.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Hotel+rasraj%2C+Hotel+rasraj%2C+17%2C+Railway+Station+Rd%2C+Bhurgu+Manzil%2C+Old+Town%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-040",
+    "business_name": "92 Hotel",
+    "phone": "078780 88006",
+    "category": "Hotel",
+    "address": "92 Hotel, 8,1st Floor Mahalaxmi Shopping, Railway Station Rd, Mangal Bazar, Moficer Jin Compound, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 15,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=92+Hotel%2C+92+Hotel%2C+8%2C1st+Floor+Mahalaxmi+Shopping%2C+Railway+Station+Rd%2C+Mangal+Bazar%2C+Moficer+Jin+Compound%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-041",
+    "business_name": "HIDDN Kitchen - Bharuch",
+    "phone": "092746 82720",
+    "category": "Restaurant",
+    "address": "Shop No 13, HIDDN Kitchen - Bharuch, Shilpi Square, Near, Dahej Bypass Rd, near Sherpura, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Dahej Bypass",
+    "review_count": 2,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "https://www.kathiyawadidhaba.in/",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=HIDDN+Kitchen+-+Bharuch%2C+Shop+No+13%2C+HIDDN+Kitchen+-+Bharuch%2C+Shilpi+Square%2C+Near%2C+Dahej+Bypass+Rd%2C+near+Sherpura%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-042",
+    "business_name": "DON Surati Green Gravy Egg",
+    "phone": "097146 01299",
+    "category": "Restaurant",
+    "address": "Shop No 14, DON Surati Green Gravy Egg, Saamrajya shoping, 15, beside narmada deariy, Jyoti Nagar Turing, Jyoti Nagar, Zadeshwar, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 129,
+    "review_rating": 4.2,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=DON+Surati+Green+Gravy+Egg%2C+Shop+No+14%2C+DON+Surati+Green+Gravy+Egg%2C+Saamrajya+shoping%2C+15%2C+beside+narmada+deariy%2C+Jyoti+Nagar+Turing%2C+Jyoti+Nagar%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-043",
+    "business_name": "atithi restaurant",
+    "phone": "099793 29143",
+    "category": "Restaurant",
+    "address": "atithi restaurant, Shalimar Complex, Railway Station Rd, Old Town, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 43,
+    "review_rating": 4.2,
+    "stage": "new",
+    "website": "http://www.appleinn.co.in/Default.aspx",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=atithi+restaurant%2C+atithi+restaurant%2C+Shalimar+Complex%2C+Railway+Station+Rd%2C+Old+Town%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-044",
+    "business_name": "M P Dabeli",
+    "phone": "094278 74450",
+    "category": "Restaurant",
+    "address": "M P Dabeli, Link Rd, Near Shaktinath Circle, Government Colony, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Link Road",
+    "review_count": 29,
+    "review_rating": 4.1,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=M+P+Dabeli%2C+M+P+Dabeli%2C+Link+Rd%2C+Near+Shaktinath+Circle%2C+Government+Colony%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-045",
+    "business_name": "Mahadev Chinese And Momos - By Pankaj Paul",
+    "phone": "074056 73930",
+    "category": "Restaurant",
+    "address": "First Floor Shop No: 194, Mahadev Chinese And Momos - By Pankaj Paul, City Center, bus depot, Old, Railway Station Rd, Moficer Jin Compound, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 105,
+    "review_rating": 4.7,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Mahadev+Chinese+And+Momos+-+By+Pankaj+Paul%2C+First+Floor+Shop+No%3A+194%2C+Mahadev+Chinese+And+Momos+-+By+Pankaj+Paul%2C+City+Center%2C+bus+depot%2C+Old%2C+Railway+Station+Rd%2C+Moficer+Jin+Compound%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-046",
+    "business_name": "Iqbal's Garden hotel",
+    "phone": "098247 32382",
+    "category": "Restaurant",
+    "address": "Iqbal's Garden hotel, Nr.garden MASJID, Panch Batti Cir, Old Town, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Panchbatti",
+    "review_count": 16,
+    "review_rating": 4.7,
+    "stage": "new",
+    "website": "",
+    "notes": "Sit-Down Restaurant • Cash counter & bill folder NFC card placement.",
+    "deal_value": 1999,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Iqbal%27s+Garden+hotel%2C+Iqbal%27s+Garden+hotel%2C+Nr.garden+MASJID%2C+Panch+Batti+Cir%2C+Old+Town%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-047",
+    "business_name": "Dr Sindha Dental Clinic - Dentist Bharuch",
+    "phone": "094294 58558",
+    "category": "Dental clinic",
+    "address": "120/121, FIRST FLOOR, Dr Sindha Dental Clinic - Dentist Bharuch, Rk casta, B-TOWER, Railway Station Rd, Moficer Jin Compound, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 160,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "https://drsindhadental.com/",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr+Sindha+Dental+Clinic+-+Dentist+Bharuch%2C+120%2F121%2C+FIRST+FLOOR%2C+Dr+Sindha+Dental+Clinic+-+Dentist+Bharuch%2C+Rk+casta%2C+B-TOWER%2C+Railway+Station+Rd%2C+Moficer+Jin+Compound%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-048",
+    "business_name": "Dr Jain's Dental & Implant Clinic l Teeth Whitening Clinic in Bharuch | Best Dentist in Bharuch",
+    "phone": "074900 40985",
+    "category": "Dental clinic",
+    "address": "Dr Jain's Dental & Implant Clinic l Teeth Whitening Clinic in Bharuch | Best Dentist in Bharuch, Samrajya Complex, 116-118, Dahej by Pass Road, Shravan Chokdi, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Shravan Chokdi",
+    "review_count": 157,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "http://drjaindentalclinics.com/",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr+Jain%27s+Dental+%26+Implant+Clinic+l+Teeth+Whitening+Clinic+in+Bharuch+%7C+Best+Dentist+in+Bharuch%2C+Dr+Jain%27s+Dental+%26+Implant+Clinic+l+Teeth+Whitening+Clinic+in+Bharuch+%7C+Best+Dentist+in+Bharuch%2C+Samrajya+Complex%2C+116-118%2C+Dahej+by+Pass+Road%2C+Shravan+Chokdi%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-049",
+    "business_name": "Zeal Dental Care and Implant Centre",
+    "phone": "096620 02894",
+    "category": "Dental clinic",
+    "address": "Shop no 5, 1st floor, Zeal Dental Care and Implant Centre, Adarsh Heart Hospital, opp. BATA Showroom, Telephone Exchange, Panchbatti, Moti Doongri, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Panchbatti",
+    "review_count": 108,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Zeal+Dental+Care+and+Implant+Centre%2C+Shop+no+5%2C+1st+floor%2C+Zeal+Dental+Care+and+Implant+Centre%2C+Adarsh+Heart+Hospital%2C+opp.+BATA+Showroom%2C+Telephone+Exchange%2C+Panchbatti%2C+Moti+Doongri%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-050",
+    "business_name": "Divine Dental Care, Bharuch",
+    "phone": "091571 23677",
+    "category": "Dental clinic",
+    "address": "FF-103, Divine Dental Care, Bharuch, Sundaram Residency, Pramukh Swami Maharaj Marg, near Water Tank, near Jyoti Nagar, Pushpakunj Society, Ramvatika Society, Bholav, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 70,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "https://instagram.com/divine.dental.care",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Divine+Dental+Care%2C+Bharuch%2C+FF-103%2C+Divine+Dental+Care%2C+Bharuch%2C+Sundaram+Residency%2C+Pramukh+Swami+Maharaj+Marg%2C+near+Water+Tank%2C+near+Jyoti+Nagar%2C+Pushpakunj+Society%2C+Ramvatika+Society%2C+Bholav%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-051",
+    "business_name": "Bhakti Dental Care",
+    "phone": "096380 66410",
+    "category": "Dental clinic",
+    "address": "Bhakti Dental Care, Orion Arcade, 214, Pramukh Swami Maharaj Marg, near Inox Cinema, Near Tulsidham, Aalekh Society, Bholav, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 108,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bhakti+Dental+Care%2C+Bhakti+Dental+Care%2C+Orion+Arcade%2C+214%2C+Pramukh+Swami+Maharaj+Marg%2C+near+Inox+Cinema%2C+Near+Tulsidham%2C+Aalekh+Society%2C+Bholav%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-052",
+    "business_name": "The Gandhi's Dental Clinic",
+    "phone": "02642 262 722",
+    "category": "Dental clinic",
+    "address": "The Gandhi's Dental Clinic, Daudi Shopping Centre, Station Road, Panch Batti,, above Kamal Bakery Bharuch, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 74,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "https://thegandhidentalclinic.com/",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Gandhi%27s+Dental+Clinic%2C+The+Gandhi%27s+Dental+Clinic%2C+Daudi+Shopping+Centre%2C+Station+Road%2C+Panch+Batti%2C%2C+above+Kamal+Bakery+Bharuch%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-053",
+    "business_name": "AL-Shifa Dental Clinic",
+    "phone": "097140 80826",
+    "category": "Dental clinic",
+    "address": "Shop No. U-2, AL-Shifa Dental Clinic, Narmada Complex, beside central Bank, near apex Hospital, Telephone Exchange, Panchbatti, Moti Doongri, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Panchbatti",
+    "review_count": 54,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=AL-Shifa+Dental+Clinic%2C+Shop+No.+U-2%2C+AL-Shifa+Dental+Clinic%2C+Narmada+Complex%2C+beside+central+Bank%2C+near+apex+Hospital%2C+Telephone+Exchange%2C+Panchbatti%2C+Moti+Doongri%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-054",
+    "business_name": "DR UPASANA CHAUHAN’s WE CARE MULTISPECIALITY DENTAL CLINIC|DENTIST",
+    "phone": "099747 08174",
+    "category": "Dental clinic",
+    "address": "DR UPASANA CHAUHAN’s WE CARE MULTISPECIALITY DENTAL CLINIC|DENTIST, 113 B tower , RK CASTA, Railway Station Rd, near healing touch hospital, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 99,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=DR+UPASANA+CHAUHAN%E2%80%99s+WE+CARE+MULTISPECIALITY+DENTAL+CLINIC%7CDENTIST%2C+DR+UPASANA+CHAUHAN%E2%80%99s+WE+CARE+MULTISPECIALITY+DENTAL+CLINIC%7CDENTIST%2C+113+B+tower+%2C+RK+CASTA%2C+Railway+Station+Rd%2C+near+healing+touch+hospital%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-055",
+    "business_name": "Pure Smile Dental Care",
+    "phone": "070969 54517",
+    "category": "Dental clinic",
+    "address": "SHOP NO.102, 103, Pure Smile Dental Care, Sld Essenza, COMPLEX, Zadeshwar Rd, beside AVADHPURI SOCIETY, Tulshidham Shak Market, Aalekh Society, Bholav, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 26,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "http://puresmiledental.co.in/",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Pure+Smile+Dental+Care%2C+SHOP+NO.102%2C+103%2C+Pure+Smile+Dental+Care%2C+Sld+Essenza%2C+COMPLEX%2C+Zadeshwar+Rd%2C+beside+AVADHPURI+SOCIETY%2C+Tulshidham+Shak+Market%2C+Aalekh+Society%2C+Bholav%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-056",
+    "business_name": "Dental Avenue",
+    "phone": "089992 57082",
+    "category": "Dental clinic",
+    "address": "Shop No -104, Dental Avenue, Rang Platinum Complex, Dahej Bypass Rd, Arbuda Nagar, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Dahej Bypass",
+    "review_count": 102,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dental+Avenue%2C+Shop+No+-104%2C+Dental+Avenue%2C+Rang+Platinum+Complex%2C+Dahej+Bypass+Rd%2C+Arbuda+Nagar%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-057",
+    "business_name": "SDC Shaikh Dental Clinic",
+    "phone": "085300 62611",
+    "category": "Dental clinic",
+    "address": "14, SDC Shaikh Dental Clinic, Capital Business Centre, Panch Batti Cir, beside Baroda Heart Hospital, Telephone Exchange, Old Town, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Panchbatti",
+    "review_count": 13,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SDC+Shaikh+Dental+Clinic%2C+14%2C+SDC+Shaikh+Dental+Clinic%2C+Capital+Business+Centre%2C+Panch+Batti+Cir%2C+beside+Baroda+Heart+Hospital%2C+Telephone+Exchange%2C+Old+Town%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-058",
+    "business_name": "Aum Sai Dental Clinic",
+    "phone": "070965 18011",
+    "category": "Dental clinic",
+    "address": "FF/74, Aum Sai Dental Clinic, Shree Rang Palace Complex, Pramukh Swami Maharaj Marg, near Inox Multiplex, near Vatsalya Studio, Rangkutir Bungalows, Bholav, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 37,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "https://aumsaidental.com/",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Aum+Sai+Dental+Clinic%2C+FF%2F74%2C+Aum+Sai+Dental+Clinic%2C+Shree+Rang+Palace+Complex%2C+Pramukh+Swami+Maharaj+Marg%2C+near+Inox+Multiplex%2C+near+Vatsalya+Studio%2C+Rangkutir+Bungalows%2C+Bholav%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-059",
+    "business_name": "Dr Jalpa Patel[ANAYA DENTAL CLINIC]",
+    "phone": "094092 91191",
+    "category": "Dental clinic",
+    "address": "3rd floor, Dr Jalpa Patel[ANAYA DENTAL CLINIC], J.K.Complex, Pramukh Swami Maharaj Marg, near Inox Cinema, above Bank Of Baroda, Jyoti Nagar, Bholav, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 76,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr+Jalpa+Patel%5BANAYA+DENTAL+CLINIC%5D%2C+3rd+floor%2C+Dr+Jalpa+Patel%5BANAYA+DENTAL+CLINIC%5D%2C+J.K.Complex%2C+Pramukh+Swami+Maharaj+Marg%2C+near+Inox+Cinema%2C+above+Bank+Of+Baroda%2C+Jyoti+Nagar%2C+Bholav%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-060",
+    "business_name": "MY DENTAL CLINIC &IMPLANT CENTRE",
+    "phone": "091661 19786",
+    "category": "Dental clinic",
+    "address": "16, MY DENTAL CLINIC &IMPLANT CENTRE, Narmada commercial complex, below central bank of India, nr. Panch Batti Circle, Telephone Exchange, Moti Doongri, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Panchbatti",
+    "review_count": 11,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MY+DENTAL+CLINIC+%26IMPLANT+CENTRE%2C+16%2C+MY+DENTAL+CLINIC+%26IMPLANT+CENTRE%2C+Narmada+commercial+complex%2C+below+central+bank+of+India%2C+nr.+Panch+Batti+Circle%2C+Telephone+Exchange%2C+Moti+Doongri%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-061",
+    "business_name": "Krishna Dental Clinic And Implant Centre",
+    "phone": "096013 85571",
+    "category": "Dental clinic",
+    "address": "106,107 1st floor, Krishna Dental Clinic And Implant Centre, Annapurna Complex, 105, Kasak Main Rd, beside Bank Of maharashtra, Kasak, Bholav, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 34,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "http://krishna.dental-clinic.in/",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Krishna+Dental+Clinic+And+Implant+Centre%2C+106%2C107+1st+floor%2C+Krishna+Dental+Clinic+And+Implant+Centre%2C+Annapurna+Complex%2C+105%2C+Kasak+Main+Rd%2C+beside+Bank+Of+maharashtra%2C+Kasak%2C+Bholav%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-062",
+    "business_name": "Sai Dental Implant Centre | Dr. Amit Sethi - Dentist, Root Canal, Dentures, Tooth Crown, Teeth Whitening | Bharuch, Gujarat",
+    "phone": "092276 67114",
+    "category": "Dental clinic",
+    "address": "115 /116 first floor, Sai Dental Implant Centre | Dr. Amit Sethi - Dentist, Root Canal, Dentures, Tooth Crown, Teeth Whitening | Bharuch, Gujarat, Ashirwad Complex, Panch Batti Cir, Telephone Exchange, Moti Doongri, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Panchbatti",
+    "review_count": 60,
+    "review_rating": 4.7,
+    "stage": "new",
+    "website": "https://dramitsethi.com/",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sai+Dental+Implant+Centre+%7C+Dr.+Amit+Sethi+-+Dentist%2C+Root+Canal%2C+Dentures%2C+Tooth+Crown%2C+Teeth+Whitening+%7C+Bharuch%2C+Gujarat%2C+115+%2F116+first+floor%2C+Sai+Dental+Implant+Centre+%7C+Dr.+Amit+Sethi+-+Dentist%2C+Root+Canal%2C+Dentures%2C+Tooth+Crown%2C+Teeth+Whitening+%7C+Bharuch%2C+Gujarat%2C+Ashirwad+Complex%2C+Panch+Batti+Cir%2C+Telephone+Exchange%2C+Moti+Doongri%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-063",
+    "business_name": "Desai Dental Clinic ( Dr. Dhwani Desai)",
+    "phone": "083207 14531",
+    "category": "Dental clinic",
+    "address": "1st floor, Desai Dental Clinic ( Dr. Dhwani Desai), Kunj Resi Plaza Shopping Center, Zadeshwar Rd, opposite inox multiplex, Pushpakunj Society, Ramvatika Society, Zadeshwar, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 75,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Desai+Dental+Clinic+%28+Dr.+Dhwani+Desai%29%2C+1st+floor%2C+Desai+Dental+Clinic+%28+Dr.+Dhwani+Desai%29%2C+Kunj+Resi+Plaza+Shopping+Center%2C+Zadeshwar+Rd%2C+opposite+inox+multiplex%2C+Pushpakunj+Society%2C+Ramvatika+Society%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-064",
+    "business_name": "Little Angels Kids Dental Care",
+    "phone": "099240 56983",
+    "category": "Dental clinic",
+    "address": "Parle Point A, Little Angels Kids Dental Care, Shravan Chowkdi, 201-202, Link Rd, opposite Ganesh township, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Link Road",
+    "review_count": 21,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "https://littleangleskidsdentalcare.in/",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Little+Angels+Kids+Dental+Care%2C+Parle+Point+A%2C+Little+Angels+Kids+Dental+Care%2C+Shravan+Chowkdi%2C+201-202%2C+Link+Rd%2C+opposite+Ganesh+township%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-065",
+    "business_name": "Raj Dental Clinic",
+    "phone": "098247 87039",
+    "category": "Dental clinic",
+    "address": "Raj Dental Clinic, RK Cinemas (Shree Rang Palace), 1st Floor, 30/31, Zadeshwar Rd, Aalekh Society, Zadeshwar, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 32,
+    "review_rating": 4.4,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Raj+Dental+Clinic%2C+Raj+Dental+Clinic%2C+RK+Cinemas+%28Shree+Rang+Palace%29%2C+1st+Floor%2C+30%2F31%2C+Zadeshwar+Rd%2C+Aalekh+Society%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-066",
+    "business_name": "Shraddha Orthodontics & Dental Clinic – Bharuch & Ankleshwar",
+    "phone": "094262 16263",
+    "category": "Dental clinic",
+    "address": "House, R, Shraddha Orthodontics & Dental Clinic – Bharuch & Ankleshwar, K Casta, Vatsalya Hospital, 103,104; Doctor's, Besides, below Healing Touch Hospital, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 33,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "https://shraddhadentistry.com/",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shraddha+Orthodontics+%26+Dental+Clinic+%E2%80%93+Bharuch+%26+Ankleshwar%2C+House%2C+R%2C+Shraddha+Orthodontics+%26+Dental+Clinic+%E2%80%93+Bharuch+%26+Ankleshwar%2C+K+Casta%2C+Vatsalya+Hospital%2C+103%2C104%3B+Doctor%27s%2C+Besides%2C+below+Healing+Touch+Hospital%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-067",
+    "business_name": "Hayat Dental Care",
+    "phone": "095580 36514",
+    "category": "Dental clinic",
+    "address": "Hayat Dental Care, Near ST Depot, Moficer Jin Compound, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 7,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "http://hayat.dentalclinic.net.in/",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Hayat+Dental+Care%2C+Hayat+Dental+Care%2C+Near+ST+Depot%2C+Moficer+Jin+Compound%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-068",
+    "business_name": "HRIM Dental Clinic",
+    "phone": "094271 84844",
+    "category": "Dental clinic",
+    "address": "111, HRIM Dental Clinic, Abhyuday Arcade, Dahej Bypass Rd, opp. Mayuri Square, GACL Colony, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Dahej Bypass",
+    "review_count": 20,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=HRIM+Dental+Clinic%2C+111%2C+HRIM+Dental+Clinic%2C+Abhyuday+Arcade%2C+Dahej+Bypass+Rd%2C+opp.+Mayuri+Square%2C+GACL+Colony%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-069",
+    "business_name": "DR M ILYAS MITHA BHAI - Cure N Care, Best Dental clinic in Bharuch, Dental Implant Centre",
+    "phone": "097223 35240",
+    "category": "Dental clinic",
+    "address": "DR M ILYAS MITHA BHAI - Cure N Care, Best Dental clinic in Bharuch, Dental Implant Centre, 122, City Center, 1st Floor, Mahatma Gandhi Rd, near BSNL Exchange, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 12,
+    "review_rating": 4.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=DR+M+ILYAS+MITHA+BHAI+-+Cure+N+Care%2C+Best+Dental+clinic+in+Bharuch%2C+Dental+Implant+Centre%2C+DR+M+ILYAS+MITHA+BHAI+-+Cure+N+Care%2C+Best+Dental+clinic+in+Bharuch%2C+Dental+Implant+Centre%2C+122%2C+City+Center%2C+1st+Floor%2C+Mahatma+Gandhi+Rd%2C+near+BSNL+Exchange%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-070",
+    "business_name": "Chens Dental Clinic",
+    "phone": "02642 262 418",
+    "category": "Dental clinic",
+    "address": "PX2Q+327 Chens Dental Clinic, Railway Station Rd, beside BOI, Panchbatti, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 24,
+    "review_rating": 4.2,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Chens+Dental+Clinic%2C+PX2Q%2B327+Chens+Dental+Clinic%2C+Railway+Station+Rd%2C+beside+BOI%2C+Panchbatti%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-071",
+    "business_name": "Nirvana Dental Clinic",
+    "phone": "099093 39666",
+    "category": "Dental clinic",
+    "address": "FF-105, Nirvana Dental Clinic, Sai Square, Pramukh Swami Maharaj Marg, Sanskar Bunglows, Zadeshwar, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 105,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Nirvana+Dental+Clinic%2C+FF-105%2C+Nirvana+Dental+Clinic%2C+Sai+Square%2C+Pramukh+Swami+Maharaj+Marg%2C+Sanskar+Bunglows%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-072",
+    "business_name": "32 Ivories Dental Clinic & Implant Center",
+    "phone": "096620 14179",
+    "category": "Dental clinic",
+    "address": "First floor, 32 Ivories Dental Clinic & Implant Center, 123-124, Link Rd, near Sravan Chokdi, Opposite HDFC Bank, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Link Road",
+    "review_count": 16,
+    "review_rating": 4.4,
+    "stage": "new",
+    "website": "https://32ivories.com/",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=32+Ivories+Dental+Clinic+%26+Implant+Center%2C+First+floor%2C+32+Ivories+Dental+Clinic+%26+Implant+Center%2C+123-124%2C+Link+Rd%2C+near+Sravan+Chokdi%2C+Opposite+HDFC+Bank%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-073",
+    "business_name": "Fiza Orthodontic Clinic & Dental Care - Dr. Wasim Patel(Orthodontist), Dr. Arwa Patel(General Dentist)",
+    "phone": "076238 89520",
+    "category": "Dental clinic",
+    "address": "101, Fiza Orthodontic Clinic & Dental Care - Dr. Wasim Patel(Orthodontist), Dr. Arwa Patel(General Dentist), Status Hub Complex, above Ami Laboratory, Falshruti Nagar, Moficer Jin Compound, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 87,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "http://www.fizaorthodontics.com/",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Fiza+Orthodontic+Clinic+%26+Dental+Care+-+Dr.+Wasim+Patel%28Orthodontist%29%2C+Dr.+Arwa+Patel%28General+Dentist%29%2C+101%2C+Fiza+Orthodontic+Clinic+%26+Dental+Care+-+Dr.+Wasim+Patel%28Orthodontist%29%2C+Dr.+Arwa+Patel%28General+Dentist%29%2C+Status+Hub+Complex%2C+above+Ami+Laboratory%2C+Falshruti+Nagar%2C+Moficer+Jin+Compound%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-074",
+    "business_name": "Dr. Inamdar's Orthodontic & Dental Care Center",
+    "phone": "095372 68288",
+    "category": "Dental clinic",
+    "address": "Dr. Inamdar's Orthodontic & Dental Care Center, Shiv Shakti Complex, Shop. 6,7,8 Ground Floor, Modi Compound, Panchbatti, Soneri Mahal, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Panchbatti",
+    "review_count": 9,
+    "review_rating": 4.7,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr.+Inamdar%27s+Orthodontic+%26+Dental+Care+Center%2C+Dr.+Inamdar%27s+Orthodontic+%26+Dental+Care+Center%2C+Shiv+Shakti+Complex%2C+Shop.+6%2C7%2C8+Ground+Floor%2C+Modi+Compound%2C+Panchbatti%2C+Soneri+Mahal%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-075",
+    "business_name": "𝗣𝗮𝗰𝗶𝗳𝗶𝗰 𝗗𝗲𝗻𝘁𝗮𝗹 𝗜𝗺𝗽𝗹𝗮𝗻𝘁 𝗖𝗲𝗻𝘁𝗲𝗿 Bharuch",
+    "phone": "098700 17268",
+    "category": "Dental clinic",
+    "address": "𝗣𝗮𝗰𝗶𝗳𝗶𝗰 𝗗𝗲𝗻𝘁𝗮𝗹 𝗜𝗺𝗽𝗹𝗮𝗻𝘁 𝗖𝗲𝗻𝘁𝗲𝗿 Bharuch, Doctor house, opposite Faiyaz nagar, near welfare hospital, Huseniya society-1, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 45,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=%F0%9D%97%A3%F0%9D%97%AE%F0%9D%97%B0%F0%9D%97%B6%F0%9D%97%B3%F0%9D%97%B6%F0%9D%97%B0+%F0%9D%97%97%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81%F0%9D%97%AE%F0%9D%97%B9+%F0%9D%97%9C%F0%9D%97%BA%F0%9D%97%BD%F0%9D%97%B9%F0%9D%97%AE%F0%9D%97%BB%F0%9D%98%81+%F0%9D%97%96%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81%F0%9D%97%B2%F0%9D%97%BF+Bharuch%2C+%F0%9D%97%A3%F0%9D%97%AE%F0%9D%97%B0%F0%9D%97%B6%F0%9D%97%B3%F0%9D%97%B6%F0%9D%97%B0+%F0%9D%97%97%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81%F0%9D%97%AE%F0%9D%97%B9+%F0%9D%97%9C%F0%9D%97%BA%F0%9D%97%BD%F0%9D%97%B9%F0%9D%97%AE%F0%9D%97%BB%F0%9D%98%81+%F0%9D%97%96%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81%F0%9D%97%B2%F0%9D%97%BF+Bharuch%2C+Doctor+house%2C+opposite+Faiyaz+nagar%2C+near+welfare+hospital%2C+Huseniya+society-1%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-076",
+    "business_name": "Ameen Dental Clinic (Orthodontics and Implant Center)",
+    "phone": "093282 93315",
+    "category": "Dental clinic",
+    "address": "Shop No 1, Ameen Dental Clinic (Orthodontics and Implant Center), Zam Zam Complex, Mohammedpura Rd, Muhammadpura circle, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 5,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Ameen+Dental+Clinic+%28Orthodontics+and+Implant+Center%29%2C+Shop+No+1%2C+Ameen+Dental+Clinic+%28Orthodontics+and+Implant+Center%29%2C+Zam+Zam+Complex%2C+Mohammedpura+Rd%2C+Muhammadpura+circle%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-077",
+    "business_name": "Dr. Jain's Dental Clinic",
+    "phone": "075748 40985",
+    "category": "Dental clinic",
+    "address": "Dr. Jain's Dental Clinic, 15-16, FALSHRUTI NAGAR, STATION ROAD, NEAR S T DEPO, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 21,
+    "review_rating": 3.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr.+Jain%27s+Dental+Clinic%2C+Dr.+Jain%27s+Dental+Clinic%2C+15-16%2C+FALSHRUTI+NAGAR%2C+STATION+ROAD%2C+NEAR+S+T+DEPO%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-078",
+    "business_name": "Ora Max Hospital And Dental Clinic",
+    "phone": "099988 02364",
+    "category": "Dental clinic",
+    "address": "Ora Max Hospital And Dental Clinic, Capital shopping centre, Panch Batti Cir, near Baroda heart hospital, Telephone Exchange, Old Town, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Panchbatti",
+    "review_count": 8,
+    "review_rating": 4.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Ora+Max+Hospital+And+Dental+Clinic%2C+Ora+Max+Hospital+And+Dental+Clinic%2C+Capital+shopping+centre%2C+Panch+Batti+Cir%2C+near+Baroda+heart+hospital%2C+Telephone+Exchange%2C+Old+Town%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-079",
+    "business_name": "Het Dental Clinic",
+    "phone": "073595 31020",
+    "category": "Dental clinic",
+    "address": "Het Dental Clinic, Mahalaxmi Park, Bus Stand, Pramukh Swami Maharaj Marg, near Zadeshwar Road, opp. KGM School, Divya Vasundhara Society, Sanskar Bunglows, Zadeshwar, Bharuch, Gujarat 392011",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 85,
+    "review_rating": 4.7,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Het+Dental+Clinic%2C+Het+Dental+Clinic%2C+Mahalaxmi+Park%2C+Bus+Stand%2C+Pramukh+Swami+Maharaj+Marg%2C+near+Zadeshwar+Road%2C+opp.+KGM+School%2C+Divya+Vasundhara+Society%2C+Sanskar+Bunglows%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392011"
+  },
+  {
+    "id": "bh-lead-080",
+    "business_name": "Diya Dental Clinic (Dr. Mrugal Rana)",
+    "phone": "094289 78793",
+    "category": "Dental clinic",
+    "address": "Diya Dental Clinic (Dr. Mrugal Rana), Shop no 7, Rang heights complex, Zadeshwar Rd, Bholav, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 4,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Diya+Dental+Clinic+%28Dr.+Mrugal+Rana%29%2C+Diya+Dental+Clinic+%28Dr.+Mrugal+Rana%29%2C+Shop+no+7%2C+Rang+heights+complex%2C+Zadeshwar+Rd%2C+Bholav%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-081",
+    "business_name": "Dr. Mahek's Dental Clinic",
+    "phone": "094290 95387",
+    "category": "Dental clinic",
+    "address": "Dr. Mahek's Dental Clinic, Akshardham Apartment, 7, Zadeshwar Rd, opposite Sai Mandir, Ramvatika Society, Zadeshwar, Bharuch, Gujarat 392011",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 12,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr.+Mahek%27s+Dental+Clinic%2C+Dr.+Mahek%27s+Dental+Clinic%2C+Akshardham+Apartment%2C+7%2C+Zadeshwar+Rd%2C+opposite+Sai+Mandir%2C+Ramvatika+Society%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392011"
+  },
+  {
+    "id": "bh-lead-082",
+    "business_name": "Parth Dental Care",
+    "phone": "094299 84621",
+    "category": "Dental clinic",
+    "address": "Parth Dental Care, Ground Floor 3-4, Baa Aalay Complex Opp Shambu Dudh Dairy, Link Road, Shaktinath Cir, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Link Road",
+    "review_count": 7,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "https://parthdentalcare.in/",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Parth+Dental+Care%2C+Parth+Dental+Care%2C+Ground+Floor+3-4%2C+Baa+Aalay+Complex+Opp+Shambu+Dudh+Dairy%2C+Link+Road%2C+Shaktinath+Cir%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-083",
+    "business_name": "Dr. Pooja Nathwani",
+    "phone": "091064 34314",
+    "category": "Hospital",
+    "address": "Dr. Pooja Nathwani, First floor, Samrajya complex, shravan cross roads, Link Rd, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Link Road",
+    "review_count": 15,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr.+Pooja+Nathwani%2C+Dr.+Pooja+Nathwani%2C+First+floor%2C+Samrajya+complex%2C+shravan+cross+roads%2C+Link+Rd%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-084",
+    "business_name": "Muskaan Dental Clinic",
+    "phone": "092276 67115",
+    "category": "Dental clinic",
+    "address": "1st Floor, Muskaan Dental Clinic, Abhyuday Arcade, GACL Colony, 102, Dahej Bypass Rd, GACL Colony, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Dahej Bypass",
+    "review_count": 2,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Muskaan+Dental+Clinic%2C+1st+Floor%2C+Muskaan+Dental+Clinic%2C+Abhyuday+Arcade%2C+GACL+Colony%2C+102%2C+Dahej+Bypass+Rd%2C+GACL+Colony%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-085",
+    "business_name": "A City Dental Clinic",
+    "phone": "084694 12376",
+    "category": "Dental clinic",
+    "address": "1ST Floor, A City Dental Clinic, Abhinav Avenue, F-27, Shukaltirth Road, Chokdi, Zadeshwar, Bharuch, Gujarat 392011",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 122,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=A+City+Dental+Clinic%2C+1ST+Floor%2C+A+City+Dental+Clinic%2C+Abhinav+Avenue%2C+F-27%2C+Shukaltirth+Road%2C+Chokdi%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392011"
+  },
+  {
+    "id": "bh-lead-086",
+    "business_name": "Identzz Multispeciality Dental Clinic & Implant Center",
+    "phone": "096620 25963",
+    "category": "Dental clinic",
+    "address": "Identzz Multispeciality Dental Clinic & Implant Center, Besides Chamunda Mata Temple, Kunjal Complex, 106 -108, Zadeshwar Rd, Ganeshpuri Society, Zadeshwar, Bharuch, Gujarat 392011",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 64,
+    "review_rating": 4.6,
+    "stage": "new",
+    "website": "http://www.identzz.com/",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Identzz+Multispeciality+Dental+Clinic+%26+Implant+Center%2C+Identzz+Multispeciality+Dental+Clinic+%26+Implant+Center%2C+Besides+Chamunda+Mata+Temple%2C+Kunjal+Complex%2C+106+-108%2C+Zadeshwar+Rd%2C+Ganeshpuri+Society%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392011"
+  },
+  {
+    "id": "bh-lead-087",
+    "business_name": "Family Dental Care",
+    "phone": "072658 47656",
+    "category": "Dental clinic",
+    "address": "Family Dental Care, Shaktinagar, above Society Medical, Near Shaktinath Circle, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 3,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Family+Dental+Care%2C+Family+Dental+Care%2C+Shaktinagar%2C+above+Society+Medical%2C+Near+Shaktinath+Circle%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-088",
+    "business_name": "Yashfin Cosmetic Dental Clinic",
+    "phone": "099092 46558",
+    "category": "Dental clinic",
+    "address": "First Floor, Yashfin Cosmetic Dental Clinic, Dreamland Plaza Shopping Centre, Civil Hospital Rd, opposite Nagar Palika, Moficer Jin Compound, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 4,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Yashfin+Cosmetic+Dental+Clinic%2C+First+Floor%2C+Yashfin+Cosmetic+Dental+Clinic%2C+Dreamland+Plaza+Shopping+Centre%2C+Civil+Hospital+Rd%2C+opposite+Nagar+Palika%2C+Moficer+Jin+Compound%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-089",
+    "business_name": "Yash dental care Dr. Margi solanki",
+    "phone": "094092 05869",
+    "category": "Dental clinic",
+    "address": "TULSIDHAM SOCIETY, Yash dental care Dr. Margi solanki, shak market, Shop no 1,Essenza complex, Zadeshwar Rd, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 2,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Yash+dental+care+Dr.+Margi+solanki%2C+TULSIDHAM+SOCIETY%2C+Yash+dental+care+Dr.+Margi+solanki%2C+shak+market%2C+Shop+no+1%2CEssenza+complex%2C+Zadeshwar+Rd%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-090",
+    "business_name": "Kapadiya Dental Clinic",
+    "phone": "088667 81838",
+    "category": "Dental clinic",
+    "address": "Shop No, Kapadiya Dental Clinic, BG Trade Centre, 6, Railway Station Rd, beside Mewawala, Near Panchbatti, Soneri Mahal, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 4,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kapadiya+Dental+Clinic%2C+Shop+No%2C+Kapadiya+Dental+Clinic%2C+BG+Trade+Centre%2C+6%2C+Railway+Station+Rd%2C+beside+Mewawala%2C+Near+Panchbatti%2C+Soneri+Mahal%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-091",
+    "business_name": "Smileveda dental clinic & implant center",
+    "phone": "096623 16378",
+    "category": "Dental clinic",
+    "address": "Smileveda dental clinic & implant center, Tulsidham Road, FF-8, RK Tulsidham, Near Vishwanath Township, GNFC, Pramukh Swami Maharaj Marg, Zadeshwar, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 18,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "https://www.facebook.com/profile.php?id=100050734165676&mibextid=ZbWKwL",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Smileveda+dental+clinic+%26+implant+center%2C+Smileveda+dental+clinic+%26+implant+center%2C+Tulsidham+Road%2C+FF-8%2C+RK+Tulsidham%2C+Near+Vishwanath+Township%2C+GNFC%2C+Pramukh+Swami+Maharaj+Marg%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-092",
+    "business_name": "Kamaldeep Dental Clinic || Best Dental Clinic In Bharuch | Best Dentist In zadeshwar Bharuch | Good Dental & Implants Centre",
+    "phone": "091095 56588",
+    "category": "Dental clinic",
+    "address": "103,1st floor, Kamaldeep Dental Clinic || Best Dental Clinic In Bharuch | Best Dentist In zadeshwar Bharuch | Good Dental & Implants Centre, shriji sahaj business hub, Tavra Rd, opposite Narmada college, Ganesh Shrishti, Bharuch, Gujarat 392011",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 36,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "https://www.instagram.com/kamal_deepdentalclinic?igsh=MW1rYTNvdGc4dHJrZg%3D%3D",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kamaldeep+Dental+Clinic+%7C%7C+Best+Dental+Clinic+In+Bharuch+%7C+Best+Dentist+In+zadeshwar+Bharuch+%7C+Good+Dental+%26+Implants+Centre%2C+103%2C1st+floor%2C+Kamaldeep+Dental+Clinic+%7C%7C+Best+Dental+Clinic+In+Bharuch+%7C+Best+Dentist+In+zadeshwar+Bharuch+%7C+Good+Dental+%26+Implants+Centre%2C+shriji+sahaj+business+hub%2C+Tavra+Rd%2C+opposite+Narmada+college%2C+Ganesh+Shrishti%2C+Bharuch%2C+Gujarat+392011"
+  },
+  {
+    "id": "bh-lead-093",
+    "business_name": "ANIL DENTAL CLINIC",
+    "phone": "097120 84732",
+    "category": "Dental clinic",
+    "address": "ANIL DENTAL CLINIC, Mangal Bazar, Old Town, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Old Town",
+    "review_count": 2,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=ANIL+DENTAL+CLINIC%2C+ANIL+DENTAL+CLINIC%2C+Mangal+Bazar%2C+Old+Town%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-094",
+    "business_name": "Modern Dental Clinic & Implant Centre",
+    "phone": "075674 33666",
+    "category": "Dental clinic",
+    "address": "First floor, Modern Dental Clinic & Implant Centre, Panam Plaza, 103, Panch Batti Cir, Opp. Relief Cinema, Moficer Jin Compound, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Panchbatti",
+    "review_count": 5,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Modern+Dental+Clinic+%26+Implant+Centre%2C+First+floor%2C+Modern+Dental+Clinic+%26+Implant+Centre%2C+Panam+Plaza%2C+103%2C+Panch+Batti+Cir%2C+Opp.+Relief+Cinema%2C+Moficer+Jin+Compound%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-095",
+    "business_name": "Sukriti Hospital",
+    "phone": "098791 39561",
+    "category": "Oral And Maxillofacial Surgeon",
+    "address": "Ground floor, G, Sukriti Hospital, wing R K Casta, Behind Patel Super Market, Moficer Jin Compound, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 85,
+    "review_rating": 4.7,
+    "stage": "new",
+    "website": "http://www.sukritihospital.com/",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sukriti+Hospital%2C+Ground+floor%2C+G%2C+Sukriti+Hospital%2C+wing+R+K+Casta%2C+Behind+Patel+Super+Market%2C+Moficer+Jin+Compound%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-096",
+    "business_name": "PATEL DENTAL CLINIC",
+    "phone": "074055 93784",
+    "category": "Dental clinic",
+    "address": "PATEL DENTAL CLINIC, G-9, Muhammedi city corner, Bambakhana Rd, Muhammad pura, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 2,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=PATEL+DENTAL+CLINIC%2C+PATEL+DENTAL+CLINIC%2C+G-9%2C+Muhammedi+city+corner%2C+Bambakhana+Rd%2C+Muhammad+pura%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-097",
+    "business_name": "Nature Care Ayurvedic Clinic",
+    "phone": "088660 02908",
+    "category": "Dental clinic",
+    "address": "Nature Care Ayurvedic Clinic, Shop 8,9 Indraprasth complex, Zadeshwar road, Bharuch, opp. Radhakrishna busstand, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 14,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Nature+Care+Ayurvedic+Clinic%2C+Nature+Care+Ayurvedic+Clinic%2C+Shop+8%2C9+Indraprasth+complex%2C+Zadeshwar+road%2C+Bharuch%2C+opp.+Radhakrishna+busstand%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-098",
+    "business_name": "RAMI'S DENTAL CARE",
+    "phone": "097276 09996",
+    "category": "Dental clinic",
+    "address": "RAMI'S DENTAL CARE, Shop no:1, Sumanpark, Beside Modheshwari Temple,Yogeshwar agar, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 5,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=RAMI%27S+DENTAL+CARE%2C+RAMI%27S+DENTAL+CARE%2C+Shop+no%3A1%2C+Sumanpark%2C+Beside+Modheshwari+Temple%2CYogeshwar+agar%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-099",
+    "business_name": "Anurang Dental Clinic & Impant Centre",
+    "phone": "096012 98662",
+    "category": "Dental clinic",
+    "address": "Anurang Dental Clinic & Impant Centre, इंडियन ऑयल पेट्रोल पम्प एंड सीएनजी स्टेशन, Shivam Chambers, Shivam Chambers Railway Station Road Nr, B2, Railway Station Rd, Acharaji Chawl, Old Town, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 3,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Anurang+Dental+Clinic+%26+Impant+Centre%2C+Anurang+Dental+Clinic+%26+Impant+Centre%2C+%E0%A4%87%E0%A4%82%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%A8+%E0%A4%91%E0%A4%AF%E0%A4%B2+%E0%A4%AA%E0%A5%87%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%B2+%E0%A4%AA%E0%A4%AE%E0%A5%8D%E0%A4%AA+%E0%A4%8F%E0%A4%82%E0%A4%A1+%E0%A4%B8%E0%A5%80%E0%A4%8F%E0%A4%A8%E0%A4%9C%E0%A5%80+%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A5%87%E0%A4%B6%E0%A4%A8%2C+Shivam+Chambers%2C+Shivam+Chambers+Railway+Station+Road+Nr%2C+B2%2C+Railway+Station+Rd%2C+Acharaji+Chawl%2C+Old+Town%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-100",
+    "business_name": "Akshar Dental Clinic",
+    "phone": "094290 72004",
+    "category": "Dental clinic",
+    "address": "first floor, Akshar Dental Clinic, Samrajya Complex, 114-115, sharavan chowkdi, haruch, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 9,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Akshar+Dental+Clinic%2C+first+floor%2C+Akshar+Dental+Clinic%2C+Samrajya+Complex%2C+114-115%2C+sharavan+chowkdi%2C+haruch%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-101",
+    "business_name": "Zain Dental & Implant Clinic",
+    "phone": "098985 34459",
+    "category": "Dental clinic",
+    "address": "Zain Dental & Implant Clinic, Adarsh Shoping Center Railway Station Road Telephone Exchange, Near Panchbatti, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 6,
+    "review_rating": 4.3,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Zain+Dental+%26+Implant+Clinic%2C+Zain+Dental+%26+Implant+Clinic%2C+Adarsh+Shoping+Center+Railway+Station+Road+Telephone+Exchange%2C+Near+Panchbatti%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-102",
+    "business_name": "Dev Dental Clinic",
+    "phone": "095746 36111",
+    "category": "Dental clinic",
+    "address": "Shop No 2, Dev Dental Clinic, near Society Medical, Shaktinath, Government Colony, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 5,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dev+Dental+Clinic%2C+Shop+No+2%2C+Dev+Dental+Clinic%2C+near+Society+Medical%2C+Shaktinath%2C+Government+Colony%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-103",
+    "business_name": "Raja Dental Clinic",
+    "phone": "097372 35511",
+    "category": "Dental clinic",
+    "address": "Raja Dental Clinic, 1st floor, Chameli Chamber, near -apsara apt Kasak kabrastan road, Kasak Main Rd, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Kasak",
+    "review_count": 3,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Raja+Dental+Clinic%2C+Raja+Dental+Clinic%2C+1st+floor%2C+Chameli+Chamber%2C+near+-apsara+apt+Kasak+kabrastan+road%2C+Kasak+Main+Rd%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-104",
+    "business_name": "Haya's Max-Face Hospital, Advanced Dento-Facial Unit",
+    "phone": "079904 64453",
+    "category": "Oral And Maxillofacial Surgeon",
+    "address": "PX2V+V5M Haya's Max-Face Hospital, Advanced Dento-Facial Unit, Opp. Patel Super Market, Moficer Jin Compound, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 20,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Haya%27s+Max-Face+Hospital%2C+Advanced+Dento-Facial+Unit%2C+PX2V%2BV5M+Haya%27s+Max-Face+Hospital%2C+Advanced+Dento-Facial+Unit%2C+Opp.+Patel+Super+Market%2C+Moficer+Jin+Compound%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-105",
+    "business_name": "Dr Sindha Dental Clinic - Tavra Road Branch",
+    "phone": "095860 53483",
+    "category": "Dental clinic",
+    "address": "217/218, 2nd Floor, Dr Sindha Dental Clinic - Tavra Road Branch, 7X EMPIRE, Tavra Rd, near Narmada College, Ganesh Shrishti, Vadadla, Bharuch, Gujarat 392011",
+    "city": "Bharuch",
+    "area": "Tavra",
+    "review_count": 54,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "https://drsindhadental.com/",
+    "notes": "Dental Clinic • High patient lifetime value • Excellent candidate for reception NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dr+Sindha+Dental+Clinic+-+Tavra+Road+Branch%2C+217%2F218%2C+2nd+Floor%2C+Dr+Sindha+Dental+Clinic+-+Tavra+Road+Branch%2C+7X+EMPIRE%2C+Tavra+Rd%2C+near+Narmada+College%2C+Ganesh+Shrishti%2C+Vadadla%2C+Bharuch%2C+Gujarat+392011"
+  },
+  {
+    "id": "bh-lead-106",
+    "business_name": "Posh unisex salon Shop -1 Rang platinum complex, opposite. Croma Store, Dahej Bypass road, Bharuch 392015",
+    "phone": "093282 55997",
+    "category": "Salon & Spa",
+    "address": "Shop-1, Posh unisex salon Shop -1 Rang platinum complex, opposite. Croma Store, Dahej Bypass road, Bharuch 392015, Rang Platinum Complex, Dahej Bypass Rd, opp. Croma Store, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Dahej Bypass",
+    "review_count": 81,
+    "review_rating": 4.5,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Posh+unisex+salon+Shop+-1+Rang+platinum+complex%2C+opposite.+Croma+Store%2C+Dahej+Bypass+road%2C+Bharuch+392015%2C+Shop-1%2C+Posh+unisex+salon+Shop+-1+Rang+platinum+complex%2C+opposite.+Croma+Store%2C+Dahej+Bypass+road%2C+Bharuch+392015%2C+Rang+Platinum+Complex%2C+Dahej+Bypass+Rd%2C+opp.+Croma+Store%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-107",
+    "business_name": "Glam Hub Beauty Studio",
+    "phone": "087583 89098",
+    "category": "Beautician",
+    "address": "Glam Hub Beauty Studio, 101,First Floor,Patel Point A Shopping Centre, Link Rd, opp. Ganesh Township, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Link Road",
+    "review_count": 52,
+    "review_rating": 4.6,
+    "stage": "new",
+    "website": "",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Glam+Hub+Beauty+Studio%2C+Glam+Hub+Beauty+Studio%2C+101%2CFirst+Floor%2CPatel+Point+A+Shopping+Centre%2C+Link+Rd%2C+opp.+Ganesh+Township%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-108",
+    "business_name": "Deep's Unisex Salon",
+    "phone": "090992 89566",
+    "category": "Salon & Spa",
+    "address": "Deep's Unisex Salon, FF 104 ,sakaar complex,nr saktinath underpass, Panchbatti Rd, opp. Narmada dairy, Shaktinath, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Panchbatti",
+    "review_count": 153,
+    "review_rating": 4.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Deep%27s+Unisex+Salon%2C+Deep%27s+Unisex+Salon%2C+FF+104+%2Csakaar+complex%2Cnr+saktinath+underpass%2C+Panchbatti+Rd%2C+opp.+Narmada+dairy%2C+Shaktinath%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-109",
+    "business_name": "Dream Look Family Salon & Academy",
+    "phone": "095377 00808",
+    "category": "Salon & Spa",
+    "address": "S-8, Dream Look Family Salon & Academy, Vishwanath Complex, GNFC Bypass Rd, Tulshidham Shak Market, Zadeshwar, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 41,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "https://www.dreamlookfamilysalon.com/",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:16Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dream+Look+Family+Salon+%26+Academy%2C+S-8%2C+Dream+Look+Family+Salon+%26+Academy%2C+Vishwanath+Complex%2C+GNFC+Bypass+Rd%2C+Tulshidham+Shak+Market%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-110",
+    "business_name": "Ballu's Hair Expert",
+    "phone": "087802 44652",
+    "category": "Salon & Spa",
+    "address": "Ballu's Hair Expert, Silver Shrushti, Fr 115, Link Rd, Opposite HDFC Bank, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Link Road",
+    "review_count": 65,
+    "review_rating": 4.6,
+    "stage": "new",
+    "website": "https://www.instagram.com/ballu_hairexpert",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Ballu%27s+Hair+Expert%2C+Ballu%27s+Hair+Expert%2C+Silver+Shrushti%2C+Fr+115%2C+Link+Rd%2C+Opposite+HDFC+Bank%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-111",
+    "business_name": "Absolute Hair & Beauty Studio",
+    "phone": "076001 88456",
+    "category": "Salon & Spa",
+    "address": "Absolute Hair & Beauty Studio, Sundaram Complex, Pramukh Swami Maharaj Marg, beside Swastik Food Zone, Ramvatika Society, Bholav, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 141,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Absolute+Hair+%26+Beauty+Studio%2C+Absolute+Hair+%26+Beauty+Studio%2C+Sundaram+Complex%2C+Pramukh+Swami+Maharaj+Marg%2C+beside+Swastik+Food+Zone%2C+Ramvatika+Society%2C+Bholav%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-112",
+    "business_name": "Best look unisex salon",
+    "phone": "096019 99894",
+    "category": "Salon & Spa",
+    "address": "Best look unisex salon, green hotel, ABC Cir, Near Rohini Nagar, Bholav, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 20,
+    "review_rating": 4.7,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Best+look+unisex+salon%2C+Best+look+unisex+salon%2C+green+hotel%2C+ABC+Cir%2C+Near+Rohini+Nagar%2C+Bholav%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-113",
+    "business_name": "Aellezza The Family Salon",
+    "phone": "074054 31394",
+    "category": "Salon & Spa",
+    "address": "Aellezza The Family Salon, Railway Crossing, Shop No.115, Sardar Municipal shopping Center, Link Rd, near Shaktinath, Shakti Nagar, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Link Road",
+    "review_count": 100,
+    "review_rating": 4.4,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Aellezza+The+Family+Salon%2C+Aellezza+The+Family+Salon%2C+Railway+Crossing%2C+Shop+No.115%2C+Sardar+Municipal+shopping+Center%2C+Link+Rd%2C+near+Shaktinath%2C+Shakti+Nagar%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-114",
+    "business_name": "Touch & style hair, beauty and make-up studio unisex salon",
+    "phone": "096247 75980",
+    "category": "Salon & Spa",
+    "address": "Touch & style hair, beauty and make-up studio unisex salon, samrajya shopping, 106, sravan chowkdi, beside swaminarayan school, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 67,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Touch+%26+style+hair%2C+beauty+and+make-up+studio+unisex+salon%2C+Touch+%26+style+hair%2C+beauty+and+make-up+studio+unisex+salon%2C+samrajya+shopping%2C+106%2C+sravan+chowkdi%2C+beside+swaminarayan+school%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-115",
+    "business_name": "Kama",
+    "phone": "098251 59503",
+    "category": "Salon & Spa",
+    "address": "128,129, Kama, Kama Spa and Salon, Kunj Resi Complex, Pramukh Swami Maharaj Marg, opp. Inox Multiplex, Pushpakunj Society, Ramvatika Society, Zadeshwar, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 149,
+    "review_rating": 4.7,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kama%2C+128%2C129%2C+Kama%2C+Kama+Spa+and+Salon%2C+Kunj+Resi+Complex%2C+Pramukh+Swami+Maharaj+Marg%2C+opp.+Inox+Multiplex%2C+Pushpakunj+Society%2C+Ramvatika+Society%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-116",
+    "business_name": "Relief Beauty Parlour",
+    "phone": "098241 26089",
+    "category": "Salon & Spa",
+    "address": "PX2R+J7J Relief Beauty Parlour, Bombay Shopping Centre, Railway Station Rd, opp. IndianOil, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 66,
+    "review_rating": 4.7,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Relief+Beauty+Parlour%2C+PX2R%2BJ7J+Relief+Beauty+Parlour%2C+Bombay+Shopping+Centre%2C+Railway+Station+Rd%2C+opp.+IndianOil%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-117",
+    "business_name": "Sunshine Salon",
+    "phone": "095879 91448",
+    "category": "Salon & Spa",
+    "address": "Shop No - 5, Sunshine Salon, Nandanvan Complex, Sevashram Rd, Shantibaug Estate, Moficer Jin Compound, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 15,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sunshine+Salon%2C+Shop+No+-+5%2C+Sunshine+Salon%2C+Nandanvan+Complex%2C+Sevashram+Rd%2C+Shantibaug+Estate%2C+Moficer+Jin+Compound%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-118",
+    "business_name": "7s unisex Salon professional",
+    "phone": "091063 41538",
+    "category": "Salon & Spa",
+    "address": "Shop 7, 7s unisex Salon professional, 7s Hair Beauty studio, Gunjan lab ke pass, Sayam villa, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 12,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=7s+unisex+Salon+professional%2C+Shop+7%2C+7s+unisex+Salon+professional%2C+7s+Hair+Beauty+studio%2C+Gunjan+lab+ke+pass%2C+Sayam+villa%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-119",
+    "business_name": "Sachi Beauty Parlour",
+    "phone": "078199 20795",
+    "category": "Salon & Spa",
+    "address": "Sachi Beauty Parlour, C 56, opp. Trimurti Hall, Shaktinath, Ambika Nagar, Narayan Nagar 2, Railway Colony, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 34,
+    "review_rating": 4.6,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sachi+Beauty+Parlour%2C+Sachi+Beauty+Parlour%2C+C+56%2C+opp.+Trimurti+Hall%2C+Shaktinath%2C+Ambika+Nagar%2C+Narayan+Nagar+2%2C+Railway+Colony%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-120",
+    "business_name": "FACEBOOK-3 UNISEX FAMILY SALON",
+    "phone": "078348 83868",
+    "category": "Salon & Spa",
+    "address": "1st Floor, FACEBOOK-3 UNISEX FAMILY SALON, City Center, Shop No, 164, opposite fabulous boutique, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 10,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=FACEBOOK-3+UNISEX+FAMILY+SALON%2C+1st+Floor%2C+FACEBOOK-3+UNISEX+FAMILY+SALON%2C+City+Center%2C+Shop+No%2C+164%2C+opposite+fabulous+boutique%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-121",
+    "business_name": "Pooja beauty care",
+    "phone": "099098 31667",
+    "category": "Salon & Spa",
+    "address": "Pooja beauty care, 80,narayan nager, 1, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 32,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "https://instagram.com/pooja_beauty_care?igshid=MzRlODBiNWFlZA==",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Pooja+beauty+care%2C+Pooja+beauty+care%2C+80%2Cnarayan+nager%2C+1%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-122",
+    "business_name": "He & She Unisex Salon & Spa",
+    "phone": "076219 18332",
+    "category": "Salon & Spa",
+    "address": "He & She Unisex Salon & Spa, Nilkanth Apartment, 13, Sevashram Rd, opp. CANARA BANK - BHARUCH, Shantibaug Estate, Moficer Jin Compound, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 17,
+    "review_rating": 4.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=He+%26+She+Unisex+Salon+%26+Spa%2C+He+%26+She+Unisex+Salon+%26+Spa%2C+Nilkanth+Apartment%2C+13%2C+Sevashram+Rd%2C+opp.+CANARA+BANK+-+BHARUCH%2C+Shantibaug+Estate%2C+Moficer+Jin+Compound%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-123",
+    "business_name": "Shine makeover & beuty salon",
+    "phone": "063548 71072",
+    "category": "Salon & Spa",
+    "address": "Shop no.120,1st floor, Shine makeover & beuty salon, Shravan Chowkdi, Sahajanand luxuria, Aakansha Nagri, Sherpura, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Shravan Chokdi",
+    "review_count": 31,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "https://shine-makeover.grexa.site/",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shine+makeover+%26+beuty+salon%2C+Shop+no.120%2C1st+floor%2C+Shine+makeover+%26+beuty+salon%2C+Shravan+Chowkdi%2C+Sahajanand+luxuria%2C+Aakansha+Nagri%2C+Sherpura%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-124",
+    "business_name": "DS Family salon",
+    "phone": "097235 49669",
+    "category": "Salon & Spa",
+    "address": "DS Family salon, Dhan Shree Complex, B-13/14, Link Rd, opposite Swaminarayan SchoolShravan Chowkdi, Nipan Nagar, Navjivan Society, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Link Road",
+    "review_count": 14,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=DS+Family+salon%2C+DS+Family+salon%2C+Dhan+Shree+Complex%2C+B-13%2F14%2C+Link+Rd%2C+opposite+Swaminarayan+SchoolShravan+Chowkdi%2C+Nipan+Nagar%2C+Navjivan+Society%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-125",
+    "business_name": "LookPoint Family Salon",
+    "phone": "093721 44287",
+    "category": "Salon & Spa",
+    "address": "LookPoint Family Salon, CR Chambers, A. 13/14, College Rd, opp. Bank of Baroda, near Shital Circle, Bholav, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 7,
+    "review_rating": 4.4,
+    "stage": "new",
+    "website": "https://lookpoint-family-salon.grexa.site/",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=LookPoint+Family+Salon%2C+LookPoint+Family+Salon%2C+CR+Chambers%2C+A.+13%2F14%2C+College+Rd%2C+opp.+Bank+of+Baroda%2C+near+Shital+Circle%2C+Bholav%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-126",
+    "business_name": "Smit Skin & Hair",
+    "phone": "098982 97689",
+    "category": "Salon & Spa",
+    "address": "Smit Skin & Hair, shilpi green, Narayan Darshan Society, Surya Narayan Society, Bholav, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 27,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Smit+Skin+%26+Hair%2C+Smit+Skin+%26+Hair%2C+shilpi+green%2C+Narayan+Darshan+Society%2C+Surya+Narayan+Society%2C+Bholav%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-127",
+    "business_name": "INFINITY FAMILY SALON& ACADEMY",
+    "phone": "072010 30335",
+    "category": "Salon & Spa",
+    "address": "Shop no.2, INFINITY FAMILY SALON& ACADEMY, yogeshwar nagar, opp. Gangeshwar Mahadev Mandir, beside mira namkin, Government Colony, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 54,
+    "review_rating": 4.4,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=INFINITY+FAMILY+SALON%26+ACADEMY%2C+Shop+no.2%2C+INFINITY+FAMILY+SALON%26+ACADEMY%2C+yogeshwar+nagar%2C+opp.+Gangeshwar+Mahadev+Mandir%2C+beside+mira+namkin%2C+Government+Colony%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-128",
+    "business_name": "BIG BOSS HAIR & beauty world (PRATIK LIMBACHIYA)",
+    "phone": "084010 48131",
+    "category": "Salon & Spa",
+    "address": "BIG BOSS HAIR & beauty world (PRATIK LIMBACHIYA), chamunda tempal, Ganeshpuri Society, Zadeshwar, Bharuch, Gujarat 392011",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 44,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=BIG+BOSS+HAIR+%26+beauty+world+%28PRATIK+LIMBACHIYA%29%2C+BIG+BOSS+HAIR+%26+beauty+world+%28PRATIK+LIMBACHIYA%29%2C+chamunda+tempal%2C+Ganeshpuri+Society%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392011"
+  },
+  {
+    "id": "bh-lead-129",
+    "business_name": "Radhika Beauty Parlour",
+    "phone": "099252 24644",
+    "category": "Salon & Spa",
+    "address": "Radhika Beauty Parlour, SIDDHIVINAYAK PARK SOCIETY, beside Sundaram Residency, Jyoti Nagar, Bholav, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 67,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Radhika+Beauty+Parlour%2C+Radhika+Beauty+Parlour%2C+SIDDHIVINAYAK+PARK+SOCIETY%2C+beside+Sundaram+Residency%2C+Jyoti+Nagar%2C+Bholav%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-130",
+    "business_name": "ALVI hair saloon",
+    "phone": "081401 39064",
+    "category": "Salon & Spa",
+    "address": "Shop-15, ALVI hair saloon, near Sunshine global Hospital, Adarsh Market, Panchbatti, Moti Doongri, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Panchbatti",
+    "review_count": 47,
+    "review_rating": 4.6,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=ALVI+hair+saloon%2C+Shop-15%2C+ALVI+hair+saloon%2C+near+Sunshine+global+Hospital%2C+Adarsh+Market%2C+Panchbatti%2C+Moti+Doongri%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-131",
+    "business_name": "AS BEAUTY SALON & ACADEMY",
+    "phone": "081285 18352",
+    "category": "Salon & Spa",
+    "address": "AS BEAUTY SALON & ACADEMY, Anaya square Dungri, rode, Sherpura, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Sherpura",
+    "review_count": 4,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "https://www.instagram.com/as_makeover_studio01?igsh=MWNhN2tuY3JvNmUzdw==&igsi=MWNhN2tuY3JvNmUzdw==",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=AS+BEAUTY+SALON+%26+ACADEMY%2C+AS+BEAUTY+SALON+%26+ACADEMY%2C+Anaya+square+Dungri%2C+rode%2C+Sherpura%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-132",
+    "business_name": "Shivam Beauty Parlour",
+    "phone": "099095 02586",
+    "category": "Salon & Spa",
+    "address": "7, Shivam Beauty Parlour, prabhat flat, Tulsidham Rd, Mahadev Nagar, Bholav, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 43,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shivam+Beauty+Parlour%2C+7%2C+Shivam+Beauty+Parlour%2C+prabhat+flat%2C+Tulsidham+Rd%2C+Mahadev+Nagar%2C+Bholav%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-133",
+    "business_name": "Deep’s skin clinic & salon",
+    "phone": "083470 06546",
+    "category": "Salon & Spa",
+    "address": "Ground Floor, Deep’s skin clinic & salon, Shravan Chowkdi, Mayuri square, Shop No, 4 - 5, Dahej Bypass Rd, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Shravan Chokdi",
+    "review_count": 73,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Deep%E2%80%99s+skin+clinic+%26+salon%2C+Ground+Floor%2C+Deep%E2%80%99s+skin+clinic+%26+salon%2C+Shravan+Chowkdi%2C+Mayuri+square%2C+Shop+No%2C+4+-+5%2C+Dahej+Bypass+Rd%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-134",
+    "business_name": "Rose Beauty salon & Academy",
+    "phone": "097271 01333",
+    "category": "Salon & Spa",
+    "address": "Rose Beauty salon & Academy, fortune sky City, AB - 5, Bharuch Bypass Rd, opp. kwaja township, near Balaji marble, Madina Park, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Dahej Bypass",
+    "review_count": 27,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Rose+Beauty+salon+%26+Academy%2C+Rose+Beauty+salon+%26+Academy%2C+fortune+sky+City%2C+AB+-+5%2C+Bharuch+Bypass+Rd%2C+opp.+kwaja+township%2C+near+Balaji+marble%2C+Madina+Park%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-135",
+    "business_name": "Ever Shine A.C. Men's Parlour",
+    "phone": "097253 25044",
+    "category": "Salon & Spa",
+    "address": "2, Ever Shine A.C. Men's Parlour, Arzoo Complex, Beside Dabhoiawad Nara, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 26,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Ever+Shine+A.C.+Men%27s+Parlour%2C+2%2C+Ever+Shine+A.C.+Men%27s+Parlour%2C+Arzoo+Complex%2C+Beside+Dabhoiawad+Nara%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-136",
+    "business_name": "Taqdir Hair Salon",
+    "phone": "098987 16207",
+    "category": "Salon & Spa",
+    "address": "Taqdir Hair Salon, Railway Station Rd, Patel Super Market, Moficer Jin Compound, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 43,
+    "review_rating": 4.3,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Taqdir+Hair+Salon%2C+Taqdir+Hair+Salon%2C+Railway+Station+Rd%2C+Patel+Super+Market%2C+Moficer+Jin+Compound%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-137",
+    "business_name": "The Queen House Of Nails",
+    "phone": "088668 42009",
+    "category": "Salon & Spa",
+    "address": "F-2,F-14, The Queen House Of Nails, Akshat Avenue, near Shambhu dairy, opposite sahajanand dairy, Shaktinath, Government Colony, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 143,
+    "review_rating": 4.7,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Queen+House+Of+Nails%2C+F-2%2CF-14%2C+The+Queen+House+Of+Nails%2C+Akshat+Avenue%2C+near+Shambhu+dairy%2C+opposite+sahajanand+dairy%2C+Shaktinath%2C+Government+Colony%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-138",
+    "business_name": "Lavanya beauty parlour",
+    "phone": "096381 54965",
+    "category": "Salon & Spa",
+    "address": "Lavanya beauty parlour, Besides HP petrol pump, Mangala Park Society, B -103, Dahej Bypass Rd, Mangala Park Society, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Dahej Bypass",
+    "review_count": 22,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Lavanya+beauty+parlour%2C+Lavanya+beauty+parlour%2C+Besides+HP+petrol+pump%2C+Mangala+Park+Society%2C+B+-103%2C+Dahej+Bypass+Rd%2C+Mangala+Park+Society%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-139",
+    "business_name": "KN HAIR GURU UNISEX SALON",
+    "phone": "081930 90143",
+    "category": "Salon & Spa",
+    "address": "First Floor-69, KN HAIR GURU UNISEX SALON, R K Elinora, Ganesh Shrishti, Vadadla, Bharuch, Gujarat 392011",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 52,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=KN+HAIR+GURU+UNISEX+SALON%2C+First+Floor-69%2C+KN+HAIR+GURU+UNISEX+SALON%2C+R+K+Elinora%2C+Ganesh+Shrishti%2C+Vadadla%2C+Bharuch%2C+Gujarat+392011"
+  },
+  {
+    "id": "bh-lead-140",
+    "business_name": "SS unisex salon",
+    "phone": "097168 48135",
+    "category": "Salon & Spa",
+    "address": "SS unisex salon, Bedside BOB ATM, Shreeji Darshan Complex, 10, Pramukh Swami Maharaj Marg, near Chamunda Mandir, Ganeshpuri Society, Zadeshwar, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 29,
+    "review_rating": 4.6,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SS+unisex+salon%2C+SS+unisex+salon%2C+Bedside+BOB+ATM%2C+Shreeji+Darshan+Complex%2C+10%2C+Pramukh+Swami+Maharaj+Marg%2C+near+Chamunda+Mandir%2C+Ganeshpuri+Society%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-141",
+    "business_name": "S R Salon",
+    "phone": "087348 03600",
+    "category": "Salon & Spa",
+    "address": "S R Salon, Kasak Main Rd, near Nagina radium, Kasak Fuwara, Bholav, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 4,
+    "review_rating": 4.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=S+R+Salon%2C+S+R+Salon%2C+Kasak+Main+Rd%2C+near+Nagina+radium%2C+Kasak+Fuwara%2C+Bholav%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-142",
+    "business_name": "ICON UNISEX SALON & ACADEMY",
+    "phone": "095866 67575",
+    "category": "Salon & Spa",
+    "address": "Shop 3, ICON UNISEX SALON & ACADEMY, Tulsi Residency, Gail Township Road, Shravan Chokdi, Sherpura, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Shravan Chokdi",
+    "review_count": 3,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=ICON+UNISEX+SALON+%26+ACADEMY%2C+Shop+3%2C+ICON+UNISEX+SALON+%26+ACADEMY%2C+Tulsi+Residency%2C+Gail+Township+Road%2C+Shravan+Chokdi%2C+Sherpura%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-143",
+    "business_name": "DECENT ️LOOK BARBER SHOP unisexsalon",
+    "phone": "093134 37560",
+    "category": "Salon & Spa",
+    "address": "DECENT ️LOOK BARBER SHOP unisexsalon, Shop no, 4 Shyam villa complex, Dahej road shrevan chokdi, Rod, near Rang Platinum, Bharuch, dahej, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Dahej Bypass",
+    "review_count": 78,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=DECENT+%EF%B8%8FLOOK+BARBER+SHOP+unisexsalon%2C+DECENT+%EF%B8%8FLOOK+BARBER+SHOP+unisexsalon%2C+Shop+no%2C+4+Shyam+villa+complex%2C+Dahej+road+shrevan+chokdi%2C+Rod%2C+near+Rang+Platinum%2C+Bharuch%2C+dahej%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-144",
+    "business_name": "BLUNT UNISEX SALON",
+    "phone": "099049 76111",
+    "category": "Salon & Spa",
+    "address": "122, BLUNT UNISEX SALON, Shopping, Link Rd, opp. Hdfc Bank, Madhuvan Society, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Link Road",
+    "review_count": 1,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=BLUNT+UNISEX+SALON%2C+122%2C+BLUNT+UNISEX+SALON%2C+Shopping%2C+Link+Rd%2C+opp.+Hdfc+Bank%2C+Madhuvan+Society%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-145",
+    "business_name": "LASERBLISS BHARUCH",
+    "phone": "076009 19123",
+    "category": "Salon & Spa",
+    "address": "Shop 1, LASERBLISS BHARUCH, Shilpi Green, near Narayan Vidhya, Vihar School, Surya Narayan Society, Bholav, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 20,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=LASERBLISS+BHARUCH%2C+Shop+1%2C+LASERBLISS+BHARUCH%2C+Shilpi+Green%2C+near+Narayan+Vidhya%2C+Vihar+School%2C+Surya+Narayan+Society%2C+Bholav%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-146",
+    "business_name": "Lucky Beauty Parlour",
+    "phone": "098247 02788",
+    "category": "Salon & Spa",
+    "address": "Lucky Beauty Parlour, Mehfooz Complex, opp. Welfare Hospital, Huseniya society-1, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 120,
+    "review_rating": 4.5,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Lucky+Beauty+Parlour%2C+Lucky+Beauty+Parlour%2C+Mehfooz+Complex%2C+opp.+Welfare+Hospital%2C+Huseniya+society-1%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-147",
+    "business_name": "JAYESHBHAI Limbachya",
+    "phone": "099244 83551",
+    "category": "Salon & Spa",
+    "address": "JAYESHBHAI Limbachya, Sardar Shopping Center, Shaktinath Bharuch, C-7, near Shaktinath, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 14,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=JAYESHBHAI+Limbachya%2C+JAYESHBHAI+Limbachya%2C+Sardar+Shopping+Center%2C+Shaktinath+Bharuch%2C+C-7%2C+near+Shaktinath%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-148",
+    "business_name": "Hairport",
+    "phone": "098249 39694",
+    "category": "Salon & Spa",
+    "address": "Shop No. 2, Hairport, Angan Apartment, Pramukh Swami Maharaj Marg, Maktampur, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Maktampur",
+    "review_count": 10,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Hairport%2C+Shop+No.+2%2C+Hairport%2C+Angan+Apartment%2C+Pramukh+Swami+Maharaj+Marg%2C+Maktampur%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-149",
+    "business_name": "Big Boss Hair & Beauty",
+    "phone": "081287 98851",
+    "category": "Salon & Spa",
+    "address": "Big Boss Hair & Beauty, byy pass rod shop, Shrnam residency gnfc, Street Number 7, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "GNFC Township",
+    "review_count": 46,
+    "review_rating": 4.5,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Big+Boss+Hair+%26+Beauty%2C+Big+Boss+Hair+%26+Beauty%2C+byy+pass+rod+shop%2C+Shrnam+residency+gnfc%2C+Street+Number+7%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-150",
+    "business_name": "Crazy Shape",
+    "phone": "097235 49499",
+    "category": "Salon & Spa",
+    "address": "PX5Q+H2P Crazy Shape, Nipan Nagar Link Rd, Shaktinath Circle, Sardar Municipal Market, Railway Colony, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Link Road",
+    "review_count": 26,
+    "review_rating": 4.6,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Crazy+Shape%2C+PX5Q%2BH2P+Crazy+Shape%2C+Nipan+Nagar+Link+Rd%2C+Shaktinath+Circle%2C+Sardar+Municipal+Market%2C+Railway+Colony%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-151",
+    "business_name": "Mansi Nail Art",
+    "phone": "097148 29887",
+    "category": "Salon & Spa",
+    "address": "Mansi Nail Art, 2589, Ayodhya Nagar, near Jalaram Temple, Unnati Nagar, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 66,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Mansi+Nail+Art%2C+Mansi+Nail+Art%2C+2589%2C+Ayodhya+Nagar%2C+near+Jalaram+Temple%2C+Unnati+Nagar%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-152",
+    "business_name": "DMH UNISEX SALON",
+    "phone": "063510 16293",
+    "category": "Salon & Spa",
+    "address": "Shop No. 3, DMH UNISEX SALON, Sai Square, Pramukh Swami Maharaj Marg, beside Navsarjan Honda, Sanskar Bunglows, Zadeshwar, Bharuch, Gujarat 392011",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 4,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=DMH+UNISEX+SALON%2C+Shop+No.+3%2C+DMH+UNISEX+SALON%2C+Sai+Square%2C+Pramukh+Swami+Maharaj+Marg%2C+beside+Navsarjan+Honda%2C+Sanskar+Bunglows%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392011"
+  },
+  {
+    "id": "bh-lead-153",
+    "business_name": "Shivkrupa Hair art",
+    "phone": "099249 67195",
+    "category": "Salon & Spa",
+    "address": "P298+RHG Shivkrupa Hair art, Unnamed Road, Alkananda Park, Bholav, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 24,
+    "review_rating": 4.4,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shivkrupa+Hair+art%2C+P298%2BRHG+Shivkrupa+Hair+art%2C+Unnamed+Road%2C+Alkananda+Park%2C+Bholav%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-154",
+    "business_name": "Sumee’s Hair & Beauty Studio",
+    "phone": "070463 66131",
+    "category": "Salon & Spa",
+    "address": "Shop No. 5, Ground Floor, Sumee’s Hair & Beauty Studio, Vishweshwar Complex, Pramukh Swami Maharaj Marg, near Shell Petrol Pump, Manas Nagar, Zadeshwar, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 10,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sumee%E2%80%99s+Hair+%26+Beauty+Studio%2C+Shop+No.+5%2C+Ground+Floor%2C+Sumee%E2%80%99s+Hair+%26+Beauty+Studio%2C+Vishweshwar+Complex%2C+Pramukh+Swami+Maharaj+Marg%2C+near+Shell+Petrol+Pump%2C+Manas+Nagar%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-155",
+    "business_name": "Deep Auto Care - Bharuch",
+    "phone": "081407 28202",
+    "category": "Car Detailing & Care",
+    "address": "Deep Auto Care - Bharuch, Deep Auto Care, beside SBI Bank, Near Shaktinath Circle, Railway Colony, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 13,
+    "review_rating": 4.2,
+    "stage": "new",
+    "website": "http://www.deepautocare.in/",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Deep+Auto+Care+-+Bharuch%2C+Deep+Auto+Care+-+Bharuch%2C+Deep+Auto+Care%2C+beside+SBI+Bank%2C+Near+Shaktinath+Circle%2C+Railway+Colony%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-156",
+    "business_name": "Manchwala car spa",
+    "phone": "091570 31831",
+    "category": "Salon & Spa",
+    "address": "Manchwala car spa, Bharuch Bypass Rd, near Shilpi Square, Sherpura, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Dahej Bypass",
+    "review_count": 4,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Manchwala+car+spa%2C+Manchwala+car+spa%2C+Bharuch+Bypass+Rd%2C+near+Shilpi+Square%2C+Sherpura%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-157",
+    "business_name": "CAR’S HUB",
+    "phone": "096624 00578",
+    "category": "Car Detailing & Care",
+    "address": "PXCP+W5H CAR’S HUB, opp. Hotel Badgujar, near Shravan Chokdi, Sherpura, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Shravan Chokdi",
+    "review_count": 1,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=CAR%E2%80%99S+HUB%2C+PXCP%2BW5H+CAR%E2%80%99S+HUB%2C+opp.+Hotel+Badgujar%2C+near+Shravan+Chokdi%2C+Sherpura%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-158",
+    "business_name": "ELEVATE CAR CARE",
+    "phone": "093134 61375",
+    "category": "Car Detailing & Care",
+    "address": "ELEVATE CAR CARE, Ruthva Palace, Shop No-6,7 Under Bholav Bridge Ashray Road, Railway Godi Rd, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 19,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "https://www.instagram.com/elevatecarcare2025?igsh=MWpzcGtvaWV3MDlnOQ%3D%3D",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=ELEVATE+CAR+CARE%2C+ELEVATE+CAR+CARE%2C+Ruthva+Palace%2C+Shop+No-6%2C7+Under+Bholav+Bridge+Ashray+Road%2C+Railway+Godi+Rd%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-159",
+    "business_name": "THE CAR STUDIO",
+    "phone": "095742 06090",
+    "category": "Car Detailing & Care",
+    "address": "P256+336 THE CAR STUDIO, Pramukh Swami Maharaj Marg, Pushpakunj Society, Ramvatika Society, Maktampur, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Maktampur",
+    "review_count": 1,
+    "review_rating": 1.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=THE+CAR+STUDIO%2C+P256%2B336+THE+CAR+STUDIO%2C+Pramukh+Swami+Maharaj+Marg%2C+Pushpakunj+Society%2C+Ramvatika+Society%2C+Maktampur%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-160",
+    "business_name": "Supirour car spa and rental",
+    "phone": "097377 22164",
+    "category": "Salon & Spa",
+    "address": "Supirour car spa and rental, Madina Park, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 0,
+    "review_rating": 4.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Supirour+car+spa+and+rental%2C+Supirour+car+spa+and+rental%2C+Madina+Park%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-161",
+    "business_name": "Central Auto Service Station",
+    "phone": "098242 44655",
+    "category": "Car Detailing & Care",
+    "address": "Central Auto Service Station, 28/29, Abc Complex, Nandevar Chowkdi, Near Railway Station, Bholav, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 7,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Central+Auto+Service+Station%2C+Central+Auto+Service+Station%2C+28%2F29%2C+Abc+Complex%2C+Nandevar+Chowkdi%2C+Near+Railway+Station%2C+Bholav%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-162",
+    "business_name": "ONE STOP CAR SPA",
+    "phone": "072029 86455",
+    "category": "Salon & Spa",
+    "address": "ONE STOP CAR SPA, GIDC, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 1,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=ONE+STOP+CAR+SPA%2C+ONE+STOP+CAR+SPA%2C+GIDC%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-163",
+    "business_name": "Bright Magic Car Wash",
+    "phone": "099250 70246",
+    "category": "Car Detailing & Care",
+    "address": "Bright Magic Car Wash, Plot No.100, Bharuch Bypass Rd, Phase 1, GNFC Twp, GIDC, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "GNFC Township",
+    "review_count": 116,
+    "review_rating": 4.5,
+    "stage": "new",
+    "website": "",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bright+Magic+Car+Wash%2C+Bright+Magic+Car+Wash%2C+Plot+No.100%2C+Bharuch+Bypass+Rd%2C+Phase+1%2C+GNFC+Twp%2C+GIDC%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-164",
+    "business_name": "INDIAN CAR SPA",
+    "phone": "074340 25660",
+    "category": "Salon & Spa",
+    "address": "INDIAN CAR SPA, Maktampur Rd, Maktampur, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Maktampur",
+    "review_count": 9,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=INDIAN+CAR+SPA%2C+INDIAN+CAR+SPA%2C+Maktampur+Rd%2C+Maktampur%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-165",
+    "business_name": "GALAXY CAR WASH",
+    "phone": "099136 91693",
+    "category": "Car Detailing & Care",
+    "address": "GALAXY CAR WASH, near Galaxy Garage, Khurshid Park, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 0,
+    "review_rating": 4.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=GALAXY+CAR+WASH%2C+GALAXY+CAR+WASH%2C+near+Galaxy+Garage%2C+Khurshid+Park%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-166",
+    "business_name": "Mr clean car wash",
+    "phone": "084011 72694",
+    "category": "Car Detailing & Care",
+    "address": "MXWC+J2R Mr clean car wash, bhajjuwala society, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 15,
+    "review_rating": 3.8,
+    "stage": "new",
+    "website": "https://www.mrcleancarwash.com/",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Mr+clean+car+wash%2C+MXWC%2BJ2R+Mr+clean+car+wash%2C+bhajjuwala+society%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-167",
+    "business_name": "GALAXY CAR ACCESSORIES / DANTING & PAINTING REPAIR",
+    "phone": "096620 33013",
+    "category": "Car Detailing & Care",
+    "address": "Shop No 1, GALAXY CAR ACCESSORIES / DANTING & PAINTING REPAIR, Florence Complex, Bharuch Bypass Rd, opp. Croma Mall, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Dahej Bypass",
+    "review_count": 4,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=GALAXY+CAR+ACCESSORIES+%2F+DANTING+%26+PAINTING+REPAIR%2C+Shop+No+1%2C+GALAXY+CAR+ACCESSORIES+%2F+DANTING+%26+PAINTING+REPAIR%2C+Florence+Complex%2C+Bharuch+Bypass+Rd%2C+opp.+Croma+Mall%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-168",
+    "business_name": "Sahil auto garage",
+    "phone": "078781 95018",
+    "category": "Car Detailing & Care",
+    "address": "Sahil auto garage, Bridge View Complex, centre, behind SBI Bank, Nandelav, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 0,
+    "review_rating": 4.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sahil+auto+garage%2C+Sahil+auto+garage%2C+Bridge+View+Complex%2C+centre%2C+behind+SBI+Bank%2C+Nandelav%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-169",
+    "business_name": "\"Auto 360°\"",
+    "phone": "077779 07837",
+    "category": "Car Detailing & Care",
+    "address": "\"Auto 360°\", Pramukh sparkle & shine car care, near BOB bank, GIDC, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 9,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=%22Auto+360%C2%B0%22%2C+%22Auto+360%C2%B0%22%2C+Pramukh+sparkle+%26+shine+car+care%2C+near+BOB+bank%2C+GIDC%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-170",
+    "business_name": "Jay Jalaram Auto Garage And Service Station",
+    "phone": "090672 13922",
+    "category": "Car Detailing & Care",
+    "address": "Jay Jalaram Auto Garage And Service Station, Navi vasahat, near healing touch hospital, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 0,
+    "review_rating": 4.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Jay+Jalaram+Auto+Garage+And+Service+Station%2C+Jay+Jalaram+Auto+Garage+And+Service+Station%2C+Navi+vasahat%2C+near+healing+touch+hospital%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-171",
+    "business_name": "Washmart Laundry & Dry Clean Service",
+    "phone": "072177 97548",
+    "category": "Dry Cleaner",
+    "address": "Shop No. A1, Washmart Laundry & Dry Clean Service, Akshar Avenue Complex, Link Rd, near Shambhu Dairy, Government Colony, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Link Road",
+    "review_count": 78,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "https://washmart.in/laundry-and-dry-cleaning-prices-in-bharuch/",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Washmart+Laundry+%26+Dry+Clean+Service%2C+Shop+No.+A1%2C+Washmart+Laundry+%26+Dry+Clean+Service%2C+Akshar+Avenue+Complex%2C+Link+Rd%2C+near+Shambhu+Dairy%2C+Government+Colony%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-172",
+    "business_name": "Premium car care",
+    "phone": "096388 88420",
+    "category": "Car Detailing & Care",
+    "address": "Premium car care, Ramvatika Shopping Centre, Pramukh Swami Maharaj Marg, behind Police Chowki, opposite Sai Mandir, Ramvatika Society, Zadeshwar, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 6,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Premium+car+care%2C+Premium+car+care%2C+Ramvatika+Shopping+Centre%2C+Pramukh+Swami+Maharaj+Marg%2C+behind+Police+Chowki%2C+opposite+Sai+Mandir%2C+Ramvatika+Society%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-173",
+    "business_name": "SHRI HARI CAR SPA",
+    "phone": "097246 22483",
+    "category": "Salon & Spa",
+    "address": "SHRI HARI CAR SPA, Plot No. 4 5, Janakpuri Society-2, Aalekh Society Rd, Pramukh Swami Maharaj Marg, Zadeshwar, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 5,
+    "review_rating": 4.6,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SHRI+HARI+CAR+SPA%2C+SHRI+HARI+CAR+SPA%2C+Plot+No.+4+5%2C+Janakpuri+Society-2%2C+Aalekh+Society+Rd%2C+Pramukh+Swami+Maharaj+Marg%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-174",
+    "business_name": "AMBIKA DETAILING STUDIO",
+    "phone": "096014 00214",
+    "category": "Car Detailing & Care",
+    "address": "AMBIKA DETAILING STUDIO, nr. cable bridge, chokdi, Zadeshwar, Bharuch, Gujarat 392011",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 3,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=AMBIKA+DETAILING+STUDIO%2C+AMBIKA+DETAILING+STUDIO%2C+nr.+cable+bridge%2C+chokdi%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392011"
+  },
+  {
+    "id": "bh-lead-175",
+    "business_name": "Pruthviraj M Solanki",
+    "phone": "088667 25803",
+    "category": "Car Detailing & Care",
+    "address": "Pruthviraj M Solanki, 84, Prasad Society, Ramvatika Society, Maktampur, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Maktampur",
+    "review_count": 1,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Pruthviraj+M+Solanki%2C+Pruthviraj+M+Solanki%2C+84%2C+Prasad+Society%2C+Ramvatika+Society%2C+Maktampur%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-176",
+    "business_name": "MATRIX CAR-BIKE CARE",
+    "phone": "097245 18627",
+    "category": "Chauffeur Service",
+    "address": "MATRIX CAR-BIKE CARE, Florence Complex, Dahej Bypass Rd, opp. Croma Mall, nr. Shravan Chowkdi, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Shravan Chokdi",
+    "review_count": 6,
+    "review_rating": 4.7,
+    "stage": "new",
+    "website": "",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MATRIX+CAR-BIKE+CARE%2C+MATRIX+CAR-BIKE+CARE%2C+Florence+Complex%2C+Dahej+Bypass+Rd%2C+opp.+Croma+Mall%2C+nr.+Shravan+Chowkdi%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-177",
+    "business_name": "New GALAXY WASHING STATION",
+    "phone": "076239 20943",
+    "category": "Car Detailing & Care",
+    "address": "New GALAXY WASHING STATION, SH 6, Bharuch Bypass Rd, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Dahej Bypass",
+    "review_count": 29,
+    "review_rating": 4.5,
+    "stage": "new",
+    "website": "",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=New+GALAXY+WASHING+STATION%2C+New+GALAXY+WASHING+STATION%2C+SH+6%2C+Bharuch+Bypass+Rd%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-178",
+    "business_name": "Magic Car Wash",
+    "phone": "098984 28442",
+    "category": "Car Detailing & Care",
+    "address": "Magic Car Wash, Main Gate, Shop No 10 Maa Residency, Chavaj Rd, opp. Videocon Company, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 0,
+    "review_rating": 4.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Magic+Car+Wash%2C+Magic+Car+Wash%2C+Main+Gate%2C+Shop+No+10+Maa+Residency%2C+Chavaj+Rd%2C+opp.+Videocon+Company%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-179",
+    "business_name": "SUHANA SERVICE STATION",
+    "phone": "090232 95323",
+    "category": "Car Detailing & Care",
+    "address": "Shop No 1, SUHANA SERVICE STATION, Intwala Complex, Bharuch Bypass Rd, Roshan Park, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Dahej Bypass",
+    "review_count": 1,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SUHANA+SERVICE+STATION%2C+Shop+No+1%2C+SUHANA+SERVICE+STATION%2C+Intwala+Complex%2C+Bharuch+Bypass+Rd%2C+Roshan+Park%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-180",
+    "business_name": "Jenil CNG Auto Gas",
+    "phone": "087588 41325",
+    "category": "Cng Fitment Center",
+    "address": "Jenil CNG Auto Gas, College Rd, opp. GOVERDHAN HOSPITAL, Bholav, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 86,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "http://jenilcngautogas.in.com/",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Jenil+CNG+Auto+Gas%2C+Jenil+CNG+Auto+Gas%2C+College+Rd%2C+opp.+GOVERDHAN+HOSPITAL%2C+Bholav%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-181",
+    "business_name": "MG Motor Nanavati Auto Service Center",
+    "phone": "085112 47711",
+    "category": "Car Detailing & Care",
+    "address": "MG Motor Nanavati Auto Service Center, LS56/A, NH-8, near Reliance Petrol Pump, beside MG Showroom, Maitri Nagar Society, Bholav, Vagusana, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 86,
+    "review_rating": 4.5,
+    "stage": "new",
+    "website": "https://www.mgmotor.co.in/tools/car-dealers",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MG+Motor+Nanavati+Auto+Service+Center%2C+MG+Motor+Nanavati+Auto+Service+Center%2C+LS56%2FA%2C+NH-8%2C+near+Reliance+Petrol+Pump%2C+beside+MG+Showroom%2C+Maitri+Nagar+Society%2C+Bholav%2C+Vagusana%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-182",
+    "business_name": "Castrol Service - Shree Ambica Auto Garage",
+    "phone": "097271 88111",
+    "category": "Car Detailing & Care",
+    "address": "Castrol Service - Shree Ambica Auto Garage, Old Nh, Street Number 8, near Poli College, Bholav, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 73,
+    "review_rating": 4.1,
+    "stage": "new",
+    "website": "https://www.castrolautoservice.in/castrolservice/castrol-service-shree-ambica-auto-garage-vehicle-repair-bholav-bharuch-581931/Home",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Castrol+Service+-+Shree+Ambica+Auto+Garage%2C+Castrol+Service+-+Shree+Ambica+Auto+Garage%2C+Old+Nh%2C+Street+Number+8%2C+near+Poli+College%2C+Bholav%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-183",
+    "business_name": "REGAL CAR ACCESSORIES",
+    "phone": "099043 27868",
+    "category": "Auto Accessories Store",
+    "address": "REGAL CAR ACCESSORIES, Shop no 7 SAMIYANA PARK, SHERPURA UMRAN, ROAD, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Sherpura",
+    "review_count": 31,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=REGAL+CAR+ACCESSORIES%2C+REGAL+CAR+ACCESSORIES%2C+Shop+no+7+SAMIYANA+PARK%2C+SHERPURA+UMRAN%2C+ROAD%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-184",
+    "business_name": "Bharuch car travel agency",
+    "phone": "095863 63967",
+    "category": "Travel Agency",
+    "address": "Bharuch car travel agency, Zaseshwar inox, Pushpakunj Society, Ramvatika Society, Zadeshwar, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 8,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bharuch+car+travel+agency%2C+Bharuch+car+travel+agency%2C+Zaseshwar+inox%2C+Pushpakunj+Society%2C+Ramvatika+Society%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-185",
+    "business_name": "CARCRAFT AUTO",
+    "phone": "087586 02558",
+    "category": "Car Detailing & Care",
+    "address": "CARCRAFT AUTO, GIDC Rd, Phase 2, Bholav, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 112,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "https://www.instagram.com/nagina_car_accessories?igsh=MTdkajdhdmFqanF3bg%3D%3D",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=CARCRAFT+AUTO%2C+CARCRAFT+AUTO%2C+GIDC+Rd%2C+Phase+2%2C+Bholav%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-186",
+    "business_name": "Bharuch Car rental self- driving",
+    "phone": "087802 17366",
+    "category": "Car Rental Agency",
+    "address": "Bharuch Car rental self- driving, Shaktinath, Bholav, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 73,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "https://www.instagram.com/bharuch_rental_car?igsh=MTA4cWlqdnp6ejZneQ%3D%3D",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bharuch+Car+rental+self-+driving%2C+Bharuch+Car+rental+self-+driving%2C+Shaktinath%2C+Bholav%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-187",
+    "business_name": "¥ Ambika Car Spa ¥",
+    "phone": "087580 96364",
+    "category": "Salon & Spa",
+    "address": "¥ Ambika Car Spa ¥, sakti chamber, near umiya kathiyawadi hotel, Chokdi, Zadeshwar, Bharuch, Gujarat 392011",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 11,
+    "review_rating": 4.3,
+    "stage": "new",
+    "website": "",
+    "notes": "Salon & Spa • Recurring grooming client base • Front desk TapStars NFC card.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=%C2%A5+Ambika+Car+Spa+%C2%A5%2C+%C2%A5+Ambika+Car+Spa+%C2%A5%2C+sakti+chamber%2C+near+umiya+kathiyawadi+hotel%2C+Chokdi%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392011"
+  },
+  {
+    "id": "bh-lead-188",
+    "business_name": "Just Drive Self-Driven Cars Bharuch",
+    "phone": "063573 90909",
+    "category": "Car Leasing Service",
+    "address": "Ambedkar Shopping Centre, Just Drive Self-Driven Cars Bharuch, B R, Railway Station Rd, opp. Hotel Plaza, Opp. Patel Super Market, Moficer Jin Compound, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 5,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "https://www.justdrive.co.in/",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Just+Drive+Self-Driven+Cars+Bharuch%2C+Ambedkar+Shopping+Centre%2C+Just+Drive+Self-Driven+Cars+Bharuch%2C+B+R%2C+Railway+Station+Rd%2C+opp.+Hotel+Plaza%2C+Opp.+Patel+Super+Market%2C+Moficer+Jin+Compound%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-189",
+    "business_name": "Khanak Travels",
+    "phone": "095864 57491",
+    "category": "Car Rental Agency",
+    "address": "Khanak Travels, near Jay Ambe School Road, Narayan Kunj Vihar Society, Bholav, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 16,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Khanak+Travels%2C+Khanak+Travels%2C+near+Jay+Ambe+School+Road%2C+Narayan+Kunj+Vihar+Society%2C+Bholav%2C+Bharuch%2C+Gujarat+392012"
+  },
+  {
+    "id": "bh-lead-190",
+    "business_name": "Classic lowest taxi service",
+    "phone": "077788 05755",
+    "category": "Car Rental Agency",
+    "address": "Classic lowest taxi service, Tower Rd, Old Town, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Old Town",
+    "review_count": 29,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Classic+lowest+taxi+service%2C+Classic+lowest+taxi+service%2C+Tower+Rd%2C+Old+Town%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-191",
+    "business_name": "Shree Thakorji Travels",
+    "phone": "082640 97931",
+    "category": "Car Leasing Service",
+    "address": "Shree Thakorji Travels, Maktampur Rd, Maktampur, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Maktampur",
+    "review_count": 10,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Shree+Thakorji+Travels%2C+Shree+Thakorji+Travels%2C+Maktampur+Rd%2C+Maktampur%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-192",
+    "business_name": "Fast and friendly detaling hub",
+    "phone": "070162 91741",
+    "category": "Car Detailing & Care",
+    "address": "Shop no 1, Fast and friendly detaling hub, Mitha compound, Jambusar - Bharuch Rd, near Zakeriya Masjid, near Kantharia, Kantharia, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 7,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Auto Detailing & Car Care • Counter checkout NFC card for repeat service visits.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Fast+and+friendly+detaling+hub%2C+Shop+no+1%2C+Fast+and+friendly+detaling+hub%2C+Mitha+compound%2C+Jambusar+-+Bharuch+Rd%2C+near+Zakeriya+Masjid%2C+near+Kantharia%2C+Kantharia%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-193",
+    "business_name": "Royal Car Accessories",
+    "phone": "081606 00032",
+    "category": "Auto Accessories Store",
+    "address": "Royal Car Accessories, Shop no 5, samiyana park SHERPURA UMRAN, ROAD, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Sherpura",
+    "review_count": 27,
+    "review_rating": 4.6,
+    "stage": "new",
+    "website": "",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Royal+Car+Accessories%2C+Royal+Car+Accessories%2C+Shop+no+5%2C+samiyana+park+SHERPURA+UMRAN%2C+ROAD%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-194",
+    "business_name": "ANKITBHAIISHWARBHAIPATEL",
+    "phone": "097235 28536",
+    "category": "Auto Repair Shop",
+    "address": "Shop No 7, ANKITBHAIISHWARBHAIPATEL, Shilpi Green Nare, By, GIDC Rd, Alkananda Park, Bholav, Bharuch, Gujarat 392015",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 4,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=ANKITBHAIISHWARBHAIPATEL%2C+Shop+No+7%2C+ANKITBHAIISHWARBHAIPATEL%2C+Shilpi+Green+Nare%2C+By%2C+GIDC+Rd%2C+Alkananda+Park%2C+Bholav%2C+Bharuch%2C+Gujarat+392015"
+  },
+  {
+    "id": "bh-lead-195",
+    "business_name": "GOOD LUCK CAR ACCESSORIES",
+    "phone": "070411 26826",
+    "category": "Auto Accessories Store",
+    "address": "GOOD LUCK CAR ACCESSORIES, Opposites 7x sales india, College Rd, Avdhoot Nagar, Bholav, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 3,
+    "review_rating": 4.7,
+    "stage": "new",
+    "website": "https://quicksell.co/w/goodluck-car-accessories-/8i4",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=GOOD+LUCK+CAR+ACCESSORIES%2C+GOOD+LUCK+CAR+ACCESSORIES%2C+Opposites+7x+sales+india%2C+College+Rd%2C+Avdhoot+Nagar%2C+Bholav%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-196",
+    "business_name": "New Maruti Motors NEXA AND ARENA (maruti authorised service center)",
+    "phone": "098986 11424",
+    "category": "Car Repair And Maintenance Service",
+    "address": "New Maruti Motors NEXA AND ARENA (maruti authorised service center), 9/16,Aakshganga, B/h CNG Pump Old N.H No 8 nr, Parth Nagar, Bholav, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 77,
+    "review_rating": 4.2,
+    "stage": "new",
+    "website": "",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=New+Maruti+Motors+NEXA+AND+ARENA+%28maruti+authorised+service+center%29%2C+New+Maruti+Motors+NEXA+AND+ARENA+%28maruti+authorised+service+center%29%2C+9%2F16%2CAakshganga%2C+B%2Fh+CNG+Pump+Old+N.H+No+8+nr%2C+Parth+Nagar%2C+Bholav%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-197",
+    "business_name": "Yashasvi Tours and Travels Bharuch",
+    "phone": "097128 45116",
+    "category": "Car Rental Agency",
+    "address": "PX6W+7JJ Yashasvi Tours and Travels Bharuch, Anand Mangal Society, Railway Colony, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bharuch",
+    "review_count": 14,
+    "review_rating": 5.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Yashasvi+Tours+and+Travels+Bharuch%2C+PX6W%2B7JJ+Yashasvi+Tours+and+Travels+Bharuch%2C+Anand+Mangal+Society%2C+Railway+Colony%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-198",
+    "business_name": "StreetBike - Bike Rentals - Bharuch",
+    "phone": "06355 979 730",
+    "category": "Two Wheeler Rental Agency",
+    "address": "StreetBike - Bike Rentals - Bharuch, C.K Pay&Parking, College Rd, near Underground Cafe & Restro, opposite Bharuch Junction Railway stations, Bholav, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Station Road",
+    "review_count": 30,
+    "review_rating": 4.7,
+    "stage": "new",
+    "website": "https://streetbike-bike-282286.grexa.site/",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=StreetBike+-+Bike+Rentals+-+Bharuch%2C+StreetBike+-+Bike+Rentals+-+Bharuch%2C+C.K+Pay%26Parking%2C+College+Rd%2C+near+Underground+Cafe+%26+Restro%2C+opposite+Bharuch+Junction+Railway+stations%2C+Bholav%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-199",
+    "business_name": "Arihant Auto Accessories",
+    "phone": "094274 65702",
+    "category": "Auto Accessories Store",
+    "address": "Arihant Auto Accessories, Annapurna Complex, 5, Pramukh Swami Maharaj Marg, opposite Aangan Flats, near Pritam-1 Society, Kasak, Bholav, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Bholav",
+    "review_count": 11,
+    "review_rating": 4.0,
+    "stage": "new",
+    "website": "",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Arihant+Auto+Accessories%2C+Arihant+Auto+Accessories%2C+Annapurna+Complex%2C+5%2C+Pramukh+Swami+Maharaj+Marg%2C+opposite+Aangan+Flats%2C+near+Pritam-1+Society%2C+Kasak%2C+Bholav%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-200",
+    "business_name": "Maruti Express Packers and Movers Bharuch | Packers and Movers Bharuch | Movers and Packers Bharuch",
+    "phone": "095584 47097",
+    "category": "Packaging Company",
+    "address": "Maruti Express Packers and Movers Bharuch | Packers and Movers Bharuch | Movers and Packers Bharuch, Shravan Chokdi, E-9, Dahej Bypass Rd, Mangla Park Society, Navjivan Society, Bharuch, Gujarat 392001",
+    "city": "Bharuch",
+    "area": "Shravan Chokdi",
+    "review_count": 19,
+    "review_rating": 4.8,
+    "stage": "new",
+    "website": "https://www.marutipackersmovers.com/packers-and-movers-bharuch.html",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Maruti+Express+Packers+and+Movers+Bharuch+%7C+Packers+and+Movers+Bharuch+%7C+Movers+and+Packers+Bharuch%2C+Maruti+Express+Packers+and+Movers+Bharuch+%7C+Packers+and+Movers+Bharuch+%7C+Movers+and+Packers+Bharuch%2C+Shravan+Chokdi%2C+E-9%2C+Dahej+Bypass+Rd%2C+Mangla+Park+Society%2C+Navjivan+Society%2C+Bharuch%2C+Gujarat+392001"
+  },
+  {
+    "id": "bh-lead-201",
+    "business_name": "Prince Auto Garage & Service Station",
+    "phone": "098244 28863",
+    "category": "Ds Automobiles Dealer",
+    "address": "No 9, Prince Auto Garage & Service Station, near bhathuji mandir, beside agriculture collage, Zadeshwar, Bharuch, Gujarat 392012",
+    "city": "Bharuch",
+    "area": "Zadeshwar Road",
+    "review_count": 7,
+    "review_rating": 4.9,
+    "stage": "new",
+    "website": "",
+    "notes": "Counter NFC Review Card candidate.",
+    "deal_value": 1499,
+    "created_at": "2026-11-17T21:53:17Z",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Prince+Auto+Garage+%26+Service+Station%2C+No+9%2C+Prince+Auto+Garage+%26+Service+Station%2C+near+bhathuji+mandir%2C+beside+agriculture+collage%2C+Zadeshwar%2C+Bharuch%2C+Gujarat+392012"
   }
 ];

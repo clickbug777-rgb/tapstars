@@ -16,6 +16,7 @@ import {
   Cloud,
   RefreshCw,
   ExternalLink,
+  Building2,
 } from 'lucide-react';
 import { INITIAL_LEADS, Lead } from '../../data/defaultLeads';
 import { useData } from '../../context/DataContext';
@@ -192,6 +193,7 @@ export const LeadsPage: React.FC = () => {
 
   // Search & Filter States
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedCity, setSelectedCity] = useState<string>('all');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedArea, setSelectedArea] = useState<string>('all');
   const [selectedStage, setSelectedStage] = useState<string>('all');
@@ -206,6 +208,7 @@ export const LeadsPage: React.FC = () => {
   const [newLeadName, setNewLeadName] = useState('');
   const [newLeadPhone, setNewLeadPhone] = useState('');
   const [newLeadCategory, setNewLeadCategory] = useState('Dental clinic');
+  const [newLeadCity, setNewLeadCity] = useState('Gandhinagar');
   const [newLeadArea, setNewLeadArea] = useState('Kudasan');
   const [newLeadAddress, setNewLeadAddress] = useState('');
   const [newLeadReviews, setNewLeadReviews] = useState('10');
@@ -213,7 +216,15 @@ export const LeadsPage: React.FC = () => {
   const [newLeadDealValue, setNewLeadDealValue] = useState('1499');
   const [newLeadGoogleMaps, setNewLeadGoogleMaps] = useState('');
 
-  // Extract unique categories & areas
+  // Extract unique cities, categories & areas
+  const cities = useMemo(() => {
+    const set = new Set<string>();
+    leads.forEach((l) => {
+      set.add(l.city || 'Gandhinagar');
+    });
+    return Array.from(set).sort();
+  }, [leads]);
+
   const categories = useMemo(() => {
     const set = new Set<string>();
     leads.forEach((l) => {
@@ -225,15 +236,22 @@ export const LeadsPage: React.FC = () => {
   const areas = useMemo(() => {
     const set = new Set<string>();
     leads.forEach((l) => {
-      if (l.area) set.add(l.area);
+      if (selectedCity === 'all' || (l.city || 'Gandhinagar') === selectedCity) {
+        if (l.area) set.add(l.area);
+      }
     });
     return Array.from(set).sort();
-  }, [leads]);
+  }, [leads, selectedCity]);
 
   // Filtered and Sorted Leads
   const filteredLeads = useMemo(() => {
     return leads
       .filter((lead) => {
+        // City filter
+        if (selectedCity !== 'all' && (lead.city || 'Gandhinagar') !== selectedCity) {
+          return false;
+        }
+
         // Search query
         if (searchQuery.trim()) {
           const q = searchQuery.toLowerCase();
@@ -241,6 +259,7 @@ export const LeadsPage: React.FC = () => {
             lead.business_name.toLowerCase().includes(q) ||
             lead.phone.toLowerCase().includes(q) ||
             lead.address.toLowerCase().includes(q) ||
+            (lead.city || 'Gandhinagar').toLowerCase().includes(q) ||
             lead.area.toLowerCase().includes(q) ||
             lead.category.toLowerCase().includes(q);
           if (!matches) return false;
@@ -332,9 +351,10 @@ export const LeadsPage: React.FC = () => {
       cleanPhone = '91' + cleanPhone;
     }
 
-    const message = `Namaste! JayrajSinh here from TapStars Gandhinagar.
+    const city = lead.city || 'Gandhinagar';
+    const message = `Namaste! JayrajSinh here from TapStars ${city}.
 
-I noticed that ${lead.business_name} in ${lead.area} has great customer satisfaction with a ${lead.review_rating}★ rating, but only ${lead.review_count} Google reviews. Most happy customers simply forget to post once they leave your counter.
+I noticed that ${lead.business_name} in ${lead.area} (${city}) has great customer satisfaction with a ${lead.review_rating}★ rating, but only ${lead.review_count} Google reviews. Most happy customers simply forget to post once they leave your counter.
 
 With our TapStars Smart NFC Review Card on your counter or billing desk, your customer touches their phone and your Google 5-star review dialog pops up in 1 second. No app or typing needed.
 
@@ -392,7 +412,8 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
     e.preventDefault();
     if (!newLeadName || !newLeadPhone) return;
 
-    const fullAddr = newLeadAddress.trim() || `${newLeadArea}, Gandhinagar`;
+    const leadCity = newLeadCity || 'Gandhinagar';
+    const fullAddr = newLeadAddress.trim() || `${newLeadArea}, ${leadCity}`;
     const mapsQuery = `${newLeadName.trim()}, ${fullAddr}`;
     const generatedMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapsQuery)}`;
 
@@ -401,6 +422,7 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
       business_name: newLeadName.trim(),
       phone: newLeadPhone.trim(),
       category: newLeadCategory,
+      city: leadCity,
       address: fullAddr,
       area: newLeadArea,
       review_count: parseInt(newLeadReviews) || 0,
@@ -427,6 +449,7 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
       'Business Name',
       'Phone',
       'Category',
+      'City',
       'Area',
       'Review Count',
       'Rating',
@@ -442,6 +465,7 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
       `"${l.business_name.replace(/"/g, '""')}"`,
       `"${l.phone}"`,
       `"${l.category}"`,
+      `"${(l.city || 'Gandhinagar').replace(/"/g, '""')}"`,
       `"${l.area}"`,
       l.review_count,
       l.review_rating,
@@ -467,9 +491,9 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
     showToast('Exported CSV file');
   };
 
-  // Reset to default 200 Gandhinagar leads
+  // Reset to default leads
   const handleResetLeads = async () => {
-    if (window.confirm('Reset all leads back to the default 200 verified Gandhinagar businesses across all devices?')) {
+    if (window.confirm('Reset all leads back to default verified leads (Gandhinagar & Bharuch) across all devices?')) {
       setLeads(INITIAL_LEADS);
       localStorage.setItem(STORAGE_KEY, JSON.stringify(INITIAL_LEADS));
       if (supabase) {
@@ -488,7 +512,7 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
           setIsCloudSyncing(false);
         }
       }
-      showToast('Reset leads to default Gandhinagar list across all devices');
+      showToast('Reset leads to default verified list across all devices');
     }
   };
 
@@ -539,7 +563,7 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
             </div>
           </div>
           <p className="text-xs text-neutral-500 mt-1">
-            Gandhinagar High-Opportunity Businesses • NFC Google Review Card Sales System • Auto-synced across Phone & Laptop
+            Gujarat High-Opportunity Businesses • Gandhinagar & Bharuch • NFC Google Review Card Sales System • Auto-synced across Phone & Laptop
           </p>
         </div>
 
@@ -573,7 +597,7 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
 
           <button
             onClick={handleResetLeads}
-            title="Reset to default 200 verified Gandhinagar leads"
+            title="Reset to default verified leads (Gandhinagar & Bharuch)"
             className="p-2 rounded-xl bg-white border border-neutral-200 text-neutral-500 hover:text-neutral-900 hover:bg-neutral-50 transition-colors shadow-xs"
           >
             <RotateCcw className="w-3.5 h-3.5" />
@@ -680,8 +704,67 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
           </div>
         </div>
 
+        {/* City Filter Pills */}
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 pt-0.5">
+          <button
+            onClick={() => {
+              setSelectedCity('all');
+              setSelectedArea('all');
+            }}
+            className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 ${
+              selectedCity === 'all'
+                ? 'bg-neutral-950 text-white shadow-xs'
+                : 'bg-neutral-100 text-neutral-600 hover:text-neutral-900 hover:bg-neutral-200/70'
+            }`}
+          >
+            <Building2 className="w-3.5 h-3.5" />
+            <span>All Cities ({leads.length})</span>
+          </button>
+          {cities.map((c) => {
+            const count = leads.filter((l) => (l.city || 'Gandhinagar') === c).length;
+            return (
+              <button
+                key={c}
+                onClick={() => {
+                  setSelectedCity(c);
+                  setSelectedArea('all');
+                }}
+                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 ${
+                  selectedCity === c
+                    ? 'bg-neutral-950 text-white shadow-xs'
+                    : 'bg-neutral-100 text-neutral-600 hover:text-neutral-900 hover:bg-neutral-200/70'
+                }`}
+              >
+                <MapPin className="w-3.5 h-3.5 text-amber-500" />
+                <span>{c} ({count})</span>
+              </button>
+            );
+          })}
+        </div>
+
         {/* Dropdown Filters Row */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 pt-2 border-t border-neutral-100 text-xs">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 pt-2 border-t border-neutral-100 text-xs">
+          <div>
+            <label className="block text-[10px] font-semibold text-neutral-500 mb-1 uppercase tracking-wider font-mono">
+              City
+            </label>
+            <select
+              value={selectedCity}
+              onChange={(e) => {
+                setSelectedCity(e.target.value);
+                setSelectedArea('all');
+              }}
+              className="w-full text-xs bg-neutral-50 border border-neutral-200 rounded-xl px-2.5 py-1.5 text-neutral-800 font-medium focus:outline-none"
+            >
+              <option value="all">All Cities ({leads.length})</option>
+              {cities.map((c) => (
+                <option key={c} value={c}>
+                  {c} ({leads.filter((l) => (l.city || 'Gandhinagar') === c).length})
+                </option>
+              ))}
+            </select>
+          </div>
+
           <div>
             <label className="block text-[10px] font-semibold text-neutral-500 mb-1 uppercase tracking-wider font-mono">
               Category
@@ -832,7 +915,7 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
                         <div className="flex items-center justify-between gap-1 text-[10px] text-neutral-500 mt-1">
                           <div className="flex items-center gap-1 truncate">
                             <MapPin className="w-3 h-3 shrink-0 text-neutral-400" />
-                            <span className="truncate">{lead.area}</span>
+                            <span className="truncate">{lead.area} • {lead.city || 'Gandhinagar'}</span>
                           </div>
                           {lead.google_maps_url && (
                             <a
@@ -969,7 +1052,10 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
                       </div>
                     </td>
 
-                    <td className="py-3 px-4 font-medium text-neutral-700">{lead.area}</td>
+                    <td className="py-3 px-4 font-medium text-neutral-700">
+                      <div>{lead.area}</div>
+                      <div className="text-[10px] text-neutral-400 font-normal">{lead.city || 'Gandhinagar'}</div>
+                    </td>
 
                     <td className="py-3 px-4">
                       <span className="px-2 py-0.5 rounded-md bg-neutral-100 text-neutral-700 font-medium text-[11px]">
@@ -1211,23 +1297,40 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <div>
                   <label className="block text-xs font-semibold text-neutral-700 mb-1">Category</label>
                   <select
                     value={newLeadCategory}
                     onChange={(e) => setNewLeadCategory(e.target.value)}
-                    className="w-full text-xs bg-neutral-50 border border-neutral-200 rounded-xl px-2.5 py-2 text-neutral-900 font-medium focus:outline-none"
+                    className="w-full text-xs bg-neutral-50 border border-neutral-200 rounded-xl px-2 py-2 text-neutral-900 font-medium focus:outline-none"
                   >
                     <option value="Dental clinic">Dental Clinic</option>
                     <option value="Beauty Parlour">Beauty Parlour / Salon</option>
+                    <option value="Salon & Spa">Salon & Spa</option>
                     <option value="Barber shop">Barber Shop / Grooming</option>
                     <option value="Cafe">Cafe / Bistro</option>
-                    <option value="High-End Cafe">High-End / Roastery Cafe</option>
+                    <option value="High-End Cafe">High-End Cafe</option>
                     <option value="Restaurant">Restaurant</option>
-                    <option value="Car Wash">Car Wash & Detailing</option>
+                    <option value="Car Detailing & Care">Car Detailing & Care</option>
                     <option value="Gym">Gym & Fitness</option>
                     <option value="Retail">Retail Store</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-neutral-700 mb-1">City</label>
+                  <select
+                    value={newLeadCity}
+                    onChange={(e) => {
+                      const c = e.target.value;
+                      setNewLeadCity(c);
+                      setNewLeadArea(c === 'Bharuch' ? 'Zadeshwar Road' : 'Kudasan');
+                    }}
+                    className="w-full text-xs bg-neutral-50 border border-neutral-200 rounded-xl px-2 py-2 text-neutral-900 font-medium focus:outline-none"
+                  >
+                    <option value="Gandhinagar">Gandhinagar</option>
+                    <option value="Bharuch">Bharuch</option>
                   </select>
                 </div>
 
@@ -1236,21 +1339,40 @@ I am demonstrating these cards to businesses in ${lead.area} today. Can I drop b
                   <select
                     value={newLeadArea}
                     onChange={(e) => setNewLeadArea(e.target.value)}
-                    className="w-full text-xs bg-neutral-50 border border-neutral-200 rounded-xl px-2.5 py-2 text-neutral-900 font-medium focus:outline-none"
+                    className="w-full text-xs bg-neutral-50 border border-neutral-200 rounded-xl px-2 py-2 text-neutral-900 font-medium focus:outline-none"
                   >
-                    <option value="Kudasan">Kudasan</option>
-                    <option value="Sargasan">Sargasan</option>
-                    <option value="Infocity">Infocity</option>
-                    <option value="GIFT City">GIFT City</option>
-                    <option value="Raysan / PDPU">Raysan / PDPU</option>
-                    <option value="Bhaijipura">Bhaijipura</option>
-                    <option value="Sector 21">Sector 21</option>
-                    <option value="Sector 22">Sector 22</option>
-                    <option value="Sector 11">Sector 11</option>
-                    <option value="Sector 6">Sector 6</option>
-                    <option value="Sector 7">Sector 7</option>
-                    <option value="Randesan">Randesan</option>
-                    <option value="Koba">Koba</option>
+                    {newLeadCity === 'Bharuch' ? (
+                      <>
+                        <option value="Zadeshwar Road">Zadeshwar Road</option>
+                        <option value="Link Road">Link Road</option>
+                        <option value="Bholav">Bholav</option>
+                        <option value="Station Road">Station Road</option>
+                        <option value="Kasak">Kasak</option>
+                        <option value="Shravan Chokdi">Shravan Chokdi</option>
+                        <option value="ABC Chokdi">ABC Chokdi</option>
+                        <option value="Maktampur">Maktampur</option>
+                        <option value="GNFC Township">GNFC Township</option>
+                        <option value="Diva Road">Diva Road</option>
+                        <option value="Panchbatti">Panchbatti</option>
+                        <option value="Bharuch">Bharuch (Central)</option>
+                      </>
+                    ) : (
+                      <>
+                        <option value="Kudasan">Kudasan</option>
+                        <option value="Sargasan">Sargasan</option>
+                        <option value="Infocity">Infocity</option>
+                        <option value="GIFT City">GIFT City</option>
+                        <option value="Raysan / PDPU">Raysan / PDPU</option>
+                        <option value="Bhaijipura">Bhaijipura</option>
+                        <option value="Sector 21">Sector 21</option>
+                        <option value="Sector 22">Sector 22</option>
+                        <option value="Sector 11">Sector 11</option>
+                        <option value="Sector 6">Sector 6</option>
+                        <option value="Sector 7">Sector 7</option>
+                        <option value="Randesan">Randesan</option>
+                        <option value="Koba">Koba</option>
+                      </>
+                    )}
                   </select>
                 </div>
               </div>
