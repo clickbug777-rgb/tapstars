@@ -26,7 +26,7 @@ import { Footer } from '../../components/common/Footer';
 export const HomePage: React.FC = () => {
   // Active state for interactive tap simulator
   const [activeDemoTab, setActiveDemoTab] = useState<
-    'reviews' | 'menu' | 'vcard' | 'socials' | 'booking'
+    'reviews' | 'menu' | 'vcard' | 'socials' | 'booking' | 'menu_review'
   >('reviews');
 
   // FAQ state
@@ -388,6 +388,26 @@ export const HomePage: React.FC = () => {
                   </p>
                 </div>
               </button>
+
+              {/* Tab 6: Menu + Review 2-in-1 */}
+              <button
+                onClick={() => setActiveDemoTab('menu_review')}
+                className={`w-full p-4 rounded-2xl border text-left transition-all flex items-start gap-3.5 ${
+                  activeDemoTab === 'menu_review'
+                    ? 'bg-white border-orange-500 shadow-md ring-2 ring-orange-400/20'
+                    : 'bg-white/60 border-neutral-200 hover:bg-white'
+                }`}
+              >
+                <div className="w-10 h-10 rounded-xl bg-orange-50 text-orange-600 flex items-center justify-center shrink-0">
+                  <Utensils className="w-5 h-5" />
+                </div>
+                <div>
+                  <div className="font-bold text-neutral-900 text-sm">Menu + Review 2-in-1 Card</div>
+                  <p className="text-xs text-neutral-500 mt-0.5">
+                    One card: table tap opens menu, counter tap opens Google review form.
+                  </p>
+                </div>
+              </button>
             </div>
 
             {/* Right Realistic Mobile Phone Frame Simulation */}
@@ -559,6 +579,40 @@ export const HomePage: React.FC = () => {
                         <button className="w-full py-2.5 rounded-xl bg-blue-600 text-white text-xs font-bold shadow-xs">
                           Confirm Booking
                         </button>
+                      </div>
+                    )}
+
+                    {/* Scenario 6: Menu + Review 2-in-1 */}
+                    {activeDemoTab === 'menu_review' && (
+                      <div className="space-y-3 animate-in fade-in duration-300">
+                        <div className="text-center pb-1 border-b border-neutral-100">
+                          <div className="font-bold text-sm text-neutral-950">2-in-1 NFC Card</div>
+                          <div className="text-[10px] text-neutral-500">Same card. Two smart destinations.</div>
+                        </div>
+
+                        <div className="p-3 rounded-2xl bg-orange-50 border border-orange-200 space-y-1.5">
+                          <div className="font-bold text-xs text-orange-900 flex items-center gap-1.5">
+                            <span>🪑</span> At the Table → Menu
+                          </div>
+                          <div className="text-[11px] text-orange-800">Opens interactive digital menu with photos, prices & daily specials</div>
+                        </div>
+
+                        <div className="p-3 rounded-2xl bg-amber-50 border border-amber-200 space-y-1.5">
+                          <div className="font-bold text-xs text-amber-900 flex items-center gap-1.5">
+                            <span>🧾</span> At Billing Counter → Review
+                          </div>
+                          <div className="text-[11px] text-amber-800">Opens Google 5★ review form instantly — no search needed</div>
+                        </div>
+
+                        <div className="flex gap-1.5">
+                          {[...Array(5)].map((_, i) => (
+                            <Star key={i} className="w-6 h-6 fill-amber-400 text-amber-400 flex-1" />
+                          ))}
+                        </div>
+
+                        <div className="p-2 rounded-xl bg-emerald-50 text-emerald-800 text-[10px] text-center font-semibold">
+                          One physical card — programmed per placement
+                        </div>
                       </div>
                     )}
                   </div>
@@ -827,6 +881,22 @@ export const HomePage: React.FC = () => {
                 resolution forms.
               </p>
               <div className="text-[11px] font-semibold text-blue-600 pt-2">Best for: Hospitality, Hotels, Healthcare</div>
+            </div>
+
+            {/* 9. Menu + Reviews 2-in-1 */}
+            <div className="p-6 rounded-3xl bg-orange-50 border border-orange-200/80 shadow-xs space-y-3 hover:bg-white hover:shadow-md transition-all">
+              <div className="w-10 h-10 rounded-xl bg-orange-100 text-orange-700 flex items-center justify-center">
+                <Utensils className="w-5 h-5" />
+              </div>
+              <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-orange-200 text-orange-900 text-[10px] font-bold">
+                F&amp;B Exclusive
+              </div>
+              <h3 className="font-bold text-neutral-950 text-base">Menu + Reviews 2-in-1</h3>
+              <p className="text-xs text-neutral-600 leading-relaxed">
+                Table tap opens your digital menu. Counter tap opens your Google review form. One card — two
+                revenue-driving actions for restaurants and cafes.
+              </p>
+              <div className="text-[11px] font-semibold text-orange-700 pt-2">Best for: Restaurants, Cafes, Bistros</div>
             </div>
           </div>
         </div>

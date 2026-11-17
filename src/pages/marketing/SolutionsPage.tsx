@@ -52,6 +52,22 @@ export const SolutionsPage: React.FC = () => {
       status: 'Live & Available',
     },
     {
+      id: 'menu-review-combo',
+      category: 'hospitality',
+      title: 'Menu + Google Reviews: 2-in-1 Card',
+      icon: Utensils,
+      iconBg: 'bg-orange-50 text-orange-600',
+      badge: 'F&B Exclusive',
+      problem:
+        'Restaurant and cafe owners struggle with two separate challenges: expensive paper menus that go out of date constantly, and customers who mean to leave reviews but forget once they walk out the door.',
+      tapAction:
+        'At the table, tapping opens an instant, photo-rich digital menu. At the billing counter, tapping opens your Google 5-star review dialog — same physical card, two programmable destinations based on placement.',
+      benefit:
+        'Eliminate menu reprinting costs while simultaneously building your Google review count at checkout. Restaurants deploying both see faster review accumulation alongside a reduction in menu-related staff queries.',
+      idealFor: 'Sit-Down Restaurants, Cafes & Bistros, Cloud Kitchens, Rooftop Lounges, Brewery Taprooms',
+      status: 'Live & Available',
+    },
+    {
       id: 'vcard',
       category: 'corporate',
       title: 'Digital Business Card (vCard)',
@@ -163,7 +179,7 @@ export const SolutionsPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-100 border border-neutral-200 text-neutral-800 text-xs font-semibold">
             <Layers className="w-3.5 h-3.5 text-blue-600" />
-            <span>8 Proven Business Applications</span>
+            <span>9 Proven Business Applications</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-neutral-950">
@@ -178,7 +194,7 @@ export const SolutionsPage: React.FC = () => {
           {/* Filter Pills */}
           <div className="pt-4 flex flex-wrap items-center justify-center gap-2">
             {[
-              { id: 'all', label: 'All Solutions (8)' },
+              { id: 'all', label: 'All Solutions (9)' },
               { id: 'reputation', label: 'Reputation & Reviews' },
               { id: 'hospitality', label: 'Dining & Hospitality' },
               { id: 'corporate', label: 'Corporate & Networking' },
