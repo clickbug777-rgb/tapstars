@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import {
   Phone,
   MessageCircle,
@@ -24,6 +24,52 @@ import { Business } from '../../types';
 export const BusinessProfilePage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const { getBusinessBySlug, recordEvent, isLoading } = useData();
+  const location = useLocation();
+
+  // Detect ?lang=gu for Gujarati UI
+  const langParam = new URLSearchParams(location.search).get('lang');
+  const isGu = langParam === 'gu';
+
+  // ── Gujarati UI strings (only for ?lang=gu) ──────────────────────────────
+  const t = isGu
+    ? {
+        loading: 'બિઝનેસ પ્રોફાઇલ ખોલી રહ્યા છે...',
+        notFoundTitle: 'પ્રોફાઇલ મળ્યો નહીં',
+        notFoundBody: 'આ URL પર કોઈ બિઝનેસ પ્રોફાઇલ નોંધાયેલ નથી અથવા બંધ કરવામાં આવ્યો છે.',
+        goHome: 'TapStars હોમ પર જાઓ',
+        inactiveTitle: 'પ્રોફાઇલ નિષ્ક્રિય',
+        inactiveBody: (name: string) => `${name} એ આ પ્રોફાઇલ અસ્થાયી રૂપે બંધ કરી છે. કૃપા કરીને પછી ફરી આવો.`,
+        verified: 'ચકાસાયેલ બિઝનેસ',
+        reviewBtn: 'અમને 5-સ્ટાર રિવ્યૂ આપો',
+        saveContact: 'ફોનમાં સંપર્ક સાચવો',
+        call: 'ફોન કરો',
+        whatsapp: 'WhatsApp',
+        email: 'ઈ-મેઈલ',
+        quickActions: 'ઝડપી ક્રિયાઓ',
+        locationHours: 'સ્થળ અને સમય',
+        directions: 'ડ્રાઇવિંગ દિશાઓ મેળવો',
+        connectSocial: 'સોશ્યલ મીડિયા પર જોડાઓ',
+        powered: 'TapStars NFC Platform દ્વારા સંચાલિત',
+      }
+    : {
+        loading: 'Opening business profile...',
+        notFoundTitle: 'Profile Not Found',
+        notFoundBody: 'The requested business profile URL is not registered or has been retired.',
+        goHome: 'Go to TapStars Home',
+        inactiveTitle: 'Profile Inactive',
+        inactiveBody: (name: string) => `${name} has temporarily deactivated this profile. Please check back later.`,
+        verified: 'Verified Business',
+        reviewBtn: 'Leave Us a 5-Star Review',
+        saveContact: 'Save Contact to Phone',
+        call: 'Call',
+        whatsapp: 'WhatsApp',
+        email: 'Email',
+        quickActions: 'Quick Actions',
+        locationHours: 'Location & Hours',
+        directions: 'Get Driving Directions',
+        connectSocial: 'Connect on Social',
+        powered: 'Powered by TapStars NFC Platform',
+      };
 
   const [directBusiness, setDirectBusiness] = useState<Business | null>(null);
   const [directLoading, setDirectLoading] = useState(false);
@@ -77,7 +123,7 @@ export const BusinessProfilePage: React.FC = () => {
       <div className="min-h-screen bg-neutral-100/70 flex items-center justify-center p-4">
         <div className="flex flex-col items-center gap-3">
           <div className="w-8 h-8 border-2 border-neutral-900 border-t-transparent rounded-full animate-spin"></div>
-          <span className="text-xs text-neutral-500 font-medium">Opening business profile...</span>
+          <span className="text-xs text-neutral-500 font-medium">{t.loading}</span>
         </div>
       </div>
     );
@@ -90,15 +136,15 @@ export const BusinessProfilePage: React.FC = () => {
           <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center mx-auto">
             <AlertCircle className="w-6 h-6" />
           </div>
-          <h2 className="text-xl font-bold text-neutral-900">Profile Not Found</h2>
+          <h2 className="text-xl font-bold text-neutral-900">{t.notFoundTitle}</h2>
           <p className="text-xs text-neutral-500 leading-relaxed">
-            The requested business profile URL is not registered or has been retired.
+            {t.notFoundBody}
           </p>
           <Link
             to="/"
             className="inline-block mt-2 px-5 py-2.5 rounded-full bg-neutral-900 text-white text-xs font-semibold hover:bg-neutral-800"
           >
-            Go to TapStars Home
+            {t.goHome}
           </Link>
         </div>
       </div>
@@ -109,9 +155,9 @@ export const BusinessProfilePage: React.FC = () => {
     return (
       <div className="min-h-screen bg-neutral-50 flex items-center justify-center p-4">
         <div className="max-w-md w-full p-8 bg-white rounded-3xl border border-neutral-200 text-center shadow-lg space-y-3">
-          <h2 className="text-xl font-bold text-neutral-900">Profile Inactive</h2>
+          <h2 className="text-xl font-bold text-neutral-900">{t.inactiveTitle}</h2>
           <p className="text-xs text-neutral-500 leading-relaxed">
-            {business.name} has temporarily deactivated this profile. Please check back later.
+            {t.inactiveBody(business.name)}
           </p>
         </div>
       </div>
@@ -184,8 +230,7 @@ export const BusinessProfilePage: React.FC = () => {
               {/* Verified Badge */}
               <div className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-neutral-100 text-neutral-700 text-[11px] font-semibold">
                 <ShieldCheck className="w-3.5 h-3.5 text-blue-600" />
-                <span>Verified Business</span>
-              </div>
+                <span>{t.verified}</span>              </div>
             </div>
 
             {/* Business Titles */}
@@ -210,7 +255,7 @@ export const BusinessProfilePage: React.FC = () => {
                 className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-2xl bg-amber-500 hover:bg-amber-600 text-neutral-950 font-bold text-sm shadow-md transition-all group"
               >
                 <Star className="w-4 h-4 fill-neutral-950" />
-                <span>Leave Us a 5-Star Review</span>
+                <span>{t.reviewBtn}</span>
                 <ExternalLink className="w-3.5 h-3.5 opacity-60 group-hover:translate-x-0.5 transition-transform" />
               </a>
             )}
@@ -221,7 +266,7 @@ export const BusinessProfilePage: React.FC = () => {
               className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-2xl bg-neutral-900 hover:bg-neutral-800 text-white font-semibold text-sm shadow-sm transition-all"
             >
               <Download className="w-4 h-4 text-blue-400" />
-              <span>Save Contact to Phone</span>
+              <span>{t.saveContact}</span>
             </button>
 
             {/* Quick Contact Action Grid */}
@@ -234,7 +279,7 @@ export const BusinessProfilePage: React.FC = () => {
                   className="flex flex-col items-center justify-center p-3 rounded-2xl bg-neutral-50 hover:bg-neutral-100 border border-neutral-200/80 transition-all text-neutral-800"
                 >
                   <Phone className="w-5 h-5 text-neutral-700 mb-1" />
-                  <span className="text-[11px] font-semibold">Call</span>
+                  <span className="text-[11px] font-semibold">{t.call}</span>
                 </a>
               ) : null}
 
@@ -248,7 +293,7 @@ export const BusinessProfilePage: React.FC = () => {
                   className="flex flex-col items-center justify-center p-3 rounded-2xl bg-emerald-50 hover:bg-emerald-100/80 border border-emerald-200 text-emerald-900 transition-all"
                 >
                   <MessageCircle className="w-5 h-5 text-emerald-600 mb-1" />
-                  <span className="text-[11px] font-semibold">WhatsApp</span>
+                  <span className="text-[11px] font-semibold">{t.whatsapp}</span>
                 </a>
               ) : null}
 
@@ -259,7 +304,7 @@ export const BusinessProfilePage: React.FC = () => {
                   className="flex flex-col items-center justify-center p-3 rounded-2xl bg-neutral-50 hover:bg-neutral-100 border border-neutral-200/80 transition-all text-neutral-800"
                 >
                   <Mail className="w-5 h-5 text-neutral-700 mb-1" />
-                  <span className="text-[11px] font-semibold">Email</span>
+                  <span className="text-[11px] font-semibold">{t.email}</span>
                 </a>
               ) : null}
             </div>
@@ -268,7 +313,7 @@ export const BusinessProfilePage: React.FC = () => {
             {business.custom_links && business.custom_links.length > 0 && (
               <div className="space-y-2 pt-2">
                 <span className="text-[11px] font-semibold uppercase tracking-wider text-neutral-400 block">
-                  Quick Actions
+                  {t.quickActions}
                 </span>
                 {business.custom_links.map((link) => (
                   <a
@@ -289,7 +334,7 @@ export const BusinessProfilePage: React.FC = () => {
             {(business.address || business.google_maps_url) && (
               <div className="pt-2">
                 <span className="text-[11px] font-semibold uppercase tracking-wider text-neutral-400 block mb-2">
-                  Location & Hours
+                  {t.locationHours}
                 </span>
                 <div className="p-3.5 rounded-2xl bg-neutral-50 border border-neutral-200/80 space-y-2.5">
                   {business.address && (
@@ -307,7 +352,7 @@ export const BusinessProfilePage: React.FC = () => {
                       className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-800 pt-1"
                     >
                       <MapPin className="w-3.5 h-3.5" />
-                      <span>Get Driving Directions</span>
+                      <span>{t.directions}</span>
                     </a>
                   )}
                 </div>
@@ -322,7 +367,7 @@ export const BusinessProfilePage: React.FC = () => {
               business.website) && (
               <div className="pt-2">
                 <span className="text-[11px] font-semibold uppercase tracking-wider text-neutral-400 block mb-2">
-                  Connect on Social
+                  {t.connectSocial}
                 </span>
                 <div className="flex flex-wrap gap-2">
                   {business.instagram_url && (
@@ -391,7 +436,7 @@ export const BusinessProfilePage: React.FC = () => {
         <div className="py-4 border-t border-neutral-100 text-center text-[10px] text-neutral-400 font-medium">
           <Link to="/" className="inline-flex items-center gap-1 hover:text-neutral-700 transition-colors">
             <Sparkles className="w-3 mx-auto text-amber-500" />
-            <span>Powered by TapStars NFC Platform</span>
+            <span>{t.powered}</span>
           </Link>
         </div>
       </div>
