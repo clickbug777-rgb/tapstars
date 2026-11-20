@@ -17,6 +17,7 @@ const CATEGORIES = [
   'Education & School',
   'Play School & Daycare',
   'Restaurant & Cafe',
+  'Salon',
   'Salon & Spa',
   'Clinic & Healthcare',
   'Retail Store',

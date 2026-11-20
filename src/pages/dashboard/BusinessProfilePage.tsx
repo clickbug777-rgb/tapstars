@@ -156,6 +156,7 @@ export const BusinessProfilePage: React.FC = () => {
                 className="w-full text-xs bg-neutral-50 border border-neutral-200 rounded-xl px-3.5 py-2.5 text-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-900/10"
               >
                 <option value="Restaurant & Cafe">Restaurant & Cafe</option>
+                <option value="Salon">Salon</option>
                 <option value="Salon & Spa">Salon & Spa</option>
                 <option value="Gym & Fitness">Gym & Fitness</option>
                 <option value="Clinic & Healthcare">Clinic & Healthcare</option>
